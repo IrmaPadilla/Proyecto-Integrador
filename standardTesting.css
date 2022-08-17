@@ -1,0 +1,106 @@
+code{
+    border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: brown;
+    color: rgb(102, 196, 84);
+    border: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    
+
+.fontUno{
+    font-family: Roboto;
+}
+
+.fontDos{
+    font-family: Days One;
+}
+
+.primerColor{
+    background-color: #1C2B2D;
+    width: 35rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: Days One;
+    border: solid;
+    border-radius: 7px;
+    padding: 3rem;
+    margin: 2rem;
+}
+
+.segundoColor{
+    background-color: #1F6F8B;
+    width: 35rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: Days One;
+    border: solid;
+    border-radius: 7px;
+    padding: 3rem;
+    margin: 2rem;
+}
+
+.tercerColor{
+    background-color: #7D9D9C;
+    width: 35rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: Days One;
+    border: solid;
+    border-radius: 7px;
+    padding: 3rem;
+    margin: 2rem;
+}
+
+.cuartoColor{
+    background-color:#D9D9D9;
+    width: 35rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: Days One;
+    border: solid;
+    border-radius: 7px;
+    padding: 3rem;
+    margin: 2rem;
+}
+
+.quintoColor{
+    background-color: #E6D5B8;
+    width: 35rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: Days One;
+    border: solid;
+    border-radius: 7px;
+    padding: 3rem;
+    margin: 2rem;
+}
+
