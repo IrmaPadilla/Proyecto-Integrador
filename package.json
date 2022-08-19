@@ -1,0 +1,24 @@
+{
+  "name": "proyecto-integrador",
+  "version": "1.0.0",
+  "description": "",
+  "main": "standardScriptTest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IrmaPadilla/Proyecto-Integrador.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IrmaPadilla/Proyecto-Integrador/issues"
+  },
+  "homepage": "https://github.com/IrmaPadilla/Proyecto-Integrador#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "sass": "^1.54.4"
+  }
+}
