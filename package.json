@@ -19,6 +19,6 @@
   "homepage": "https://github.com/IrmaPadilla/Proyecto-Integrador#readme",
   "dependencies": {
     "bootstrap": "^5.2.0",
-    "sass": "^1.54.4"
+    "sass": "^1.54.5"
   }
 }
