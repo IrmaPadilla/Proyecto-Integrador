@@ -10758,8 +10758,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.estilo {
+h1, .h1 {
   color: red;
 }
 
-/*# sourceMappingURL=bootstrap-custom.css.map */
+/*# sourceMappingURL=custom-boostrap.css.map */
