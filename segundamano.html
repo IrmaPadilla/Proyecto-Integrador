@@ -6,13 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./public/src/styles/custom-boostrap.css">
+  <link rel="stylesheet" href="/public/css/segundamano.css">
   <title>Document</title>
 </head>
 <body>
   <!-- nav-bar -->
   <nav class="navbar navbar-expand-lg bg-psglightgray">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">PSG</a>
+      <a class="navbar-brand" href="">PSG</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -59,13 +60,13 @@
     </div>
     <div class="carousel-inner"s>
       <div class="carousel-item active">
-        <img src="/src/assets/ofertas/BOAP-1-2.jpg" class="d-block" style="width:1400px ;" alt="1">
+        <img src="/src/assets/carrousel/BOAP-1-2.jpg" class="d-block" style="width:1400px ;" alt="1">
       </div>
       <div class="carousel-item">
-        <img src="/src/assets/ofertas/SET-104.jpg" class="d-block" style="width: 1400px;" alt="2">
+        <img src="/src/assets/carrousel/SET-104.jpg" class="d-block" style="width: 1400px;" alt="2">
       </div>
       <div class="carousel-item">
-        <img src="/src/assets/ofertas/TAL-3-8A2.jpg" class="d-block" style="width:1400px;" alt="3">
+        <img src="/src/assets/carrousel/TAL-3-8A2.jpg" class="d-block" style="width:1400px;" alt="3">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -78,33 +79,84 @@
     </button>
   </div>
   <!--TARJETA1-->
-  <div class="card" style="width: 10rem ;">
-    <img src="src/assets/productos/Captura de pantalla 2022-08-23 225312.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h6 class="card-title">Juego De Dados Y Puntas Con Desarmador Matraca 81 Piezas</h6>
-      <p class="card-text">Especificaciones:
-        Cuadro mando: 1/4'' (6.3mm)
-        Dureza: 50 HRc
-        Empaque: Estuche plástico
-        Medidas: Mixtas
-        </p>
-      <a href="#" class="btn bg-psglightgray">ver mas</a>
+  <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="mt-4 mb-4">Bootstrap 5 Cards</h2>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <!-- Bootstrap 5 card box -->
+            <div class="card-box">
+                <div class="card-thumbnail">
+                    <img src="images/office-image-one.jpg" class="img-fluid" alt="">
+                </div>
+                <h3><a href="#" class="mt-2 text-danger">What is Lorem Ipsum?</a></h3>
+                <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                <a href="#" class="btn btn-sm btn-danger float-right">Read more >></a>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <!-- Bootstrap 5 card box -->
+            <div class="card-box">
+                <div class="card-thumbnail">
+                    <img src="images/office-image-two.jpg" class="img-fluid" alt="">
+                </div>
+                <h3><a href="#" class="mt-2 text-danger">Why do we use it?</a></h3>
+                <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                <a href="#" class="btn btn-sm btn-danger float-right">Read more >></a>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <!-- Bootstrap 5 card box -->
+            <div class="card-box">
+                <div class="card-thumbnail">
+                    <img src="images/office-image-three.jpg" class="img-fluid" alt="">
+                </div>
+                <h3><a href="#" class="mt-2 text-danger">Where does it come from?</a></h3>
+                <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                <a href="#" class="btn btn-sm btn-danger float-right">Read more >></a>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <!-- Bootstrap 5 card box -->
+            <div class="card-box">
+                <div class="card-thumbnail">
+                    <img src="images/office-image-four.jpg" class="img-fluid" alt="">
+                </div>
+                <h3><a href="#" class="mt-2 text-danger">Where can I get some?</a></h3>
+                <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                <a href="#" class="btn btn-sm btn-danger float-right">Read more >></a>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <!-- Bootstrap 5 card box -->
+            <div class="card-box">
+                <div class="card-thumbnail">
+                    <img src="images/office-image-five.jpg" class="img-fluid" alt="">
+                </div>
+                <h3><a href="#" class="mt-2 text-danger">Standard Lorem Ipsum passage</a></h3>
+                <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                <a href="#" class="btn btn-sm btn-danger float-right">Read more >></a>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <!-- Bootstrap 5 card box -->
+            <div class="card-box">
+                <div class="card-thumbnail">
+                    <img src="images/office-image-six.jpg" class="img-fluid" alt="">
+                </div>
+                <h3><a href="#" class="mt-2 text-danger">What is Lorem Ipsum?</a></h3>
+                <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                <a href="#" class="btn btn-sm btn-danger float-right">Read more >></a>
+            </div>
+        </div>
     </div>
-  </div>
-  <!--TARJETA2-->
-  <div class="card" style="width: 10rem ; align-items: center;">
-    <img src="src/assets/productos/Captura de pantalla 2022-08-23 225312.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h6 class="card-title">Juego De Dados Y Puntas Con Desarmador Matraca 81 Piezas</h6>
-      <p class="card-text">Especificaciones:
-        Cuadro mando: 1/4'' (6.3mm)
-        Dureza: 50 HRc
-        Empaque: Estuche plástico
-        Medidas: Mixtas
-        </p>
-      <a href="#" class="btn bg-psglightgray">ver mas</a>
-    </div>
-  </div>
+</div>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
