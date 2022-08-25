@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Roboto:wght@500&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+li,
+a,
+button {
+	font-family: 'Roboto', arial;
+	font-weight: 500;
+	font-size: 16px;
+	color: #1f6f8b;
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px 10%;
+	background-color: #d9d9d9;
+}
+
+.logo {
+	cursor: pointer;
+	width: 100px;
+	height: auto;
+	margin-right: auto;
+}
+
+.nav-links {
+	list-style: none;
+}
+
+.nav-links li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav-links li a {
+	transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+	color: #1c2b2d;
+}
+
+button {
+	padding: 9px 25px;
+	background-color: rgba(0, 136, 169, 1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	color: #e6d5b8;
+}
+
+button:hover {
+	background-color: rgba(0, 64, 80, 0.8);
+}
