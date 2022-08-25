@@ -2,11 +2,23 @@
 
 
 
-/*Copia todo, ten en cuenta el import de las fuentes de Google Fonts en la linea 9 :D */
+/*Copia todo, ten en cuenta el import de las fuentes de Google Fonts :D */
 
 /* ESTILOS DEL HEADER */
 
 @import url('https://fonts.googleapis.com/css2?family=Days+One&family=Roboto:wght@500&display=swap');
+    
+
+/* Mobile first */
+
+
+
+
+
+
+
+
+/* Desktop */
 
 * {
   box-sizing: border-box;
@@ -63,11 +75,21 @@ button {
   cursor: pointer;
   transition: all 0.3s ease 0s;
   color: #E6D5B8;
+  word-wrap:break-word;
 }
 
 button:hover {
   background-color: rgba(0, 64, 80, 0.8);
 }
+
+@media screen and (max-width: 1364px){
+  body{
+    background-color: red;
+  }
+}
+
+
+
 /* FIN DE ESTILOS DEL HEADER */
 
 
