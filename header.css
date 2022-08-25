@@ -22,7 +22,7 @@ header {
   background-color: #D9D9D9;
 }
 
-.logo {
+.header-logo-eU {
   cursor: pointer;
   width: 100px;
   height: auto;
@@ -30,20 +30,20 @@ header {
 
 }
 
-.nav-links {
+.nav-links-eU {
   list-style: none;
 }
 
-.nav-links li {
+.nav-links-eU li {
   display: inline-block;
   padding: 0px 20px;
 }
 
-.nav-links li a {
+.nav-links-eU li a {
   transition: all 0.3s ease 0s;
 }
 
-.nav-links li a:hover {
+.nav-links-eU li a:hover {
   color: #1C2B2D;
 }
 
