@@ -60,9 +60,3 @@ button {
 button:hover {
   background-color: rgba(0, 64, 80, 0.8);
 }
-
-.meme {
-  width: auto;
-  height: auto;
-  align-items: center;
-}
