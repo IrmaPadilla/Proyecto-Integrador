@@ -1,3 +1,11 @@
+
+
+
+
+/*Copia todo, ten en cuenta el import de las fuentes de Google Fonts en la linea 9 :D */
+
+/* ESTILOS DEL HEADER */
+
 @import url('https://fonts.googleapis.com/css2?family=Days+One&family=Roboto:wght@500&display=swap');
 
 * {
@@ -60,3 +68,12 @@ button {
 button:hover {
   background-color: rgba(0, 64, 80, 0.8);
 }
+/* FIN DE ESTILOS DEL HEADER */
+
+
+
+
+
+/* INICIO DE ESTILOS DEL FOOTER */
+
+/* FIN DE ESTILOS DEL FOOTER */
