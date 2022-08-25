@@ -5,10 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre nosotros</title>
+    <link rel="stylesheet" href="./src/styles/custom-boostrap.css">
     <link rel="shortcut icon" href="../src/assets/favicon-16x16.png" sizes="16x16" type="image/x-icon">
     <link rel="shortcut icon" href="../src/assets/favicon-32x32.png" sizes="32x32" type="image/x-icon">
 </head>
 <body>
-    
+    <!-- nav-bar -->
+  <nav class="navbar navbar-expand-lg bg-psglightgold">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PSG</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mi Cuenta</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorías
+            </a>
+            <ul class="dropdown-menu bg-psgblue">
+              <li><a class="dropdown-item text-light" href="#">Carpintería</a></li>
+              <li><a class="dropdown-item text-light" href="#">Plomería</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-light" href="#">Segunda mano</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Descuentos para socios</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Herramienta, pintura..." aria-label="Search">
+          <button class="btn btn-outline-psgblue" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
 </body>
 </html>
