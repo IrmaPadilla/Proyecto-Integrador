@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/src/styles/custom-boostrap.css">
+    <link rel="stylesheet" href="public/src/styles/custom-boostrap.css">
     <link rel="stylesheet" href="public/css/header.css">
-    <title>Document</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
+    <title>Garantía</title>
 </head>
 
 <body>
@@ -29,18 +30,82 @@
     </header>
 
     <!-- título de bienvenida -->
-    <h1 class="text-psgblue">GARANTÍAS</h1>
+    <h1 class="text-psggray fw-bold my-4 text-center">GARANTÍAS</h1>
 
-    <!-- ejemplo de tarjeta -->
-    <div class="card" style="width: 18rem;">
-        <img src="src/assets/taladro-ejemplo.webp" class="card-img-top" alt="...">
-        <div class="card-body bg-psglightgray">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="#" class="btn btn-psgdarkblue">Go somewhere</a>
+    <form>
+        <!-- 2 column grid layout with text inputs for the first and last names -->
+        <div class="container my-2 p-3">
+            <div class="row mb-4 mx-2 px-2">
+                <div class="col-6 bg-psglightgray rounded p-5">
+
+                    <h6>Por favor ingrese sus datos completos</h6>
+                    <!-- Name input -->
+                    <div class="form-outline my-4">
+                        <iconify-icon icon="material-symbols:account-circle" style="color: #1f6f8b;" width="35">
+                        </iconify-icon>
+                        <input type="text" id="name" class="form-control" placeholder="Nombre completo" required />
+                        <label class="form-label text-psgblue" for="name"></label>
+                    </div>
+
+                    <!-- Ticket number -->
+                    <div class="form-outline mb-4">
+                        <iconify-icon icon="material-symbols:receipt-long" style="color: #1f6f8b;" width="35">
+                        </iconify-icon>
+                        <input type="text" id="ticketNumber" class="form-control" placeholder="Ticket de compra"
+                            required />
+                        <label class="form-label" for="ticketNumber"></label>
+                    </div>
+
+                    <!-- Purchase date input -->
+                    <div class="form-outline mb-4">
+                        <iconify-icon icon="material-symbols:calendar-month-rounded" style="color: #1f6f8b;" width="35">
+                        </iconify-icon>
+                        <input type="text" id="purchaseDate" class="form-control" placeholder="Fecha de compra"
+                            required />
+                        <label class="form-label" for="purchaseDate"></label>
+                    </div>
+
+                    <div class="input-group mb-4 pb-4">
+                        <label class="input-group-text" for="categoria">Categoría</label>
+                        <select class="form-select" id="categoria">
+                            <option selected>Elija una opción...</option>
+                            <option value="1">Carpintería</option>
+                            <option value="2">Electricidad</option>
+                            <option value="3">Plomería</option>
+                        </select>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <iconify-icon icon="material-symbols:alternate-email" style="color: #1f6f8b;" width="35">
+                        </iconify-icon>
+                        <input type="email" id="emailInput" class="form-control" placeholder="Correo" required />
+                        <label class="form-label" for="emailInput"></label>
+                    </div>
+
+                    <!-- Number input -->
+                    <div class="form-outline mb-4">
+                        <input type="number" id="telefono" class="form-control" placeholder="Teléfono de contacto" />
+                        <label class="form-label" for="telefono"></label>
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-center mb-4">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
+                        <label class="form-check-label" for="form6Example8"> Create an account? </label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Registrar</button>
+                </div>
+
+
+            </div>
+
+            <!-- Text input -->
+
         </div>
-    </div>
+    </form>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
