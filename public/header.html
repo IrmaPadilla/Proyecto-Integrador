@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/header.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/header.css"><!-- <<<< Copia este link y re-rutealo a tu conveniencia :D (excepto en la branch Develop xd ) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Days+One&family=Roboto:wght@500&display=swap%27">
+    <title>Elementos Universales</title>
 </head>
 <body>
     <!-- Notas del editor (Por favor no quitar de la branch original, pero puedes borrarla de tu codigo :D ) -->
-    <!-- Responsive treshold: below 1364px width is optimal for responsiveness toggle -->
+
+    <!-- Responsive treshold for tablet and landscape mode mobiles : 1200px wide and below is optimal for responsiveness toggle -->
+    <!-- Responsive treshold for portrait phones : 500px wide and below is optimal for responsiveness toggle -->
 
 
 
@@ -21,22 +24,59 @@
 
 
     <!-- Comienzo de Header -->
-
-
-
-
     <header>
-        <img src="/logo-header.png" alt="logo de la empresa" class="header-logo-eU">
+        <a href="#">
+            <img src="/src/assets/logo-header.png" alt="logo de la empresa" class="header-logo-eU">
+        </a>
         <nav>
-            <ul class="nav-links-eU">
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Marcas</a></li>
-                <li><a href="#">Cerrajería</a></li>
-                <li><a href="#">Hogar</a></li>
-                <li><a href="#">Construcción</a></li>
-                <li><a href="#">Carpintería</a></li>
-                <li><a href="#">Segunda Mano</a></li>
-                <li><a href="#"></a></li>
+            <ul id="nav-links-eU" class="nav-links-eU">
+                <div class="desktop-hidden-eU">
+                    <li>
+                        <a href="#">
+                            Menú Tablet >:D
+                        </a>
+                    </li>
+                </div>
+                <li>
+                    <a href="#">
+                        <span aria-hidden="true">Titulo 01</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="hidden-for-responsiveness-eU" href="#">
+                        <span aria-hidden="true">Titulo 02</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="hidden-for-responsiveness-eU" href="#">
+                        <span aria-hidden="true">Titulo 03</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="hidden-for-responsiveness-eU" href="#">
+                        <span aria-hidden="true">Titulo 04</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="hidden-for-responsiveness-eU" href="#">
+                        <span aria-hidden="true">Titulo 05</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="hidden-for-responsiveness-eU" href="#">
+                        <span aria-hidden="true">Titulo 06</span>                    
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span aria-hidden="true">Titulo 07</span>                    
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span aria-hidden="true">Titulo 08</span>
+                    </a>
+                </li>
             </ul>
         </nav>
         <a href="#" class="cta-eU"><button>Inicia Sesión</button></a>
@@ -52,6 +92,6 @@
     
     <!-- ~ ~ ~ ~ ~ Copiar hasta aqui ~ ~ ~ ~ ~ -->
 
-
+    <script src="/src/js/header.js"></script>
 </body>
 </html>

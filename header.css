@@ -83,7 +83,7 @@ button:hover {
 }
 
 @media screen and (max-width: 1364px){
-  body{
+  *{
     background-color: red;
   }
 }
