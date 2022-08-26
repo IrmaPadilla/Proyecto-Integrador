@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Days+One&family=Roboto:wght@500&display=swap');
+    
+
+/* Mobile first */
+
+
+
+
+
+
+
+
+/* Desktop */
 
 * {
   box-sizing: border-box;
@@ -55,6 +67,7 @@ button {
   cursor: pointer;
   transition: all 0.3s ease 0s;
   color: #E6D5B8;
+  word-wrap:break-word;
 }
 
 button:hover {
