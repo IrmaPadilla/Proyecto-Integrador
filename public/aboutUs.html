@@ -1,30 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre nosotros</title>
-    <link rel="stylesheet" href="./css/custom.css">
-    <link rel="stylesheet" href="/header.css">
-    <link rel="shortcut icon" href="../src/assets/favicon-16x16.png" sizes="16x16" type="image/x-icon">
-    <link rel="shortcut icon" href="../src/assets/favicon-32x32.png" sizes="32x32" type="image/x-icon">
-</head>
-<body>
-  <header>
-    <img src="../src/assets/logo-header.png" alt="logo de la empresa" class="header-logo-eU">
-    <nav>
-        <ul class="nav-links-eU">
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Carrito</a></li>
-            <li><a href="#">Categorías</a></li>
-            <li><a href="#">Segunda Mano</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Carrito</a></li>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/custom-boostrap.css" />
+    <link rel="stylesheet" href="/header.css" />
+    <link rel="stylesheet" href="./css/aboutUs.css" />
+    <link
+      rel="shortcut icon"
+      href="../src/assets/favicon-16x16.png"
+      sizes="16x16"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="../src/assets/favicon-32x32.png"
+      sizes="32x32"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        src="../src/assets/logo-header.png"
+        alt="logo de la empresa"
+        class="header-logo-eU"
+      />
+      <nav>
+        <ul id="nav-links-eU" class="nav-links-eU">
+          <li>
+            <a href="#">
+              <span aria-hidden="true">Titulo 01</span>
+            </a>
+          </li>
+          <li>
+            <a class="hidden-for-responsiveness-eU" href="#">
+              <span aria-hidden="true">Titulo 02</span>
+            </a>
+          </li>
+          <li>
+            <a class="hidden-for-responsiveness-eU" href="#">
+              <span aria-hidden="true">Titulo 03</span>
+            </a>
+          </li>
+          <li>
+            <a class="hidden-for-responsiveness-eU" href="#">
+              <span aria-hidden="true">Titulo 04</span>
+            </a>
+          </li>
+          <li>
+            <a class="hidden-for-responsiveness-eU" href="#">
+              <span aria-hidden="true">Titulo 05</span>
+            </a>
+          </li>
+          <li>
+            <a class="hidden-for-responsiveness-eU" href="#">
+              <span aria-hidden="true">Titulo 06</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span aria-hidden="true">Titulo 07</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span aria-hidden="true">Titulo 08</span>
+            </a>
+          </li>
         </ul>
-    </nav>
-    <a href="#" class="cta-eU"><button>Inicia Sesión</button></a>
-</header>
-</body>
+      </nav>
+      <a href="#" class="cta-eU"><button>Inicia Sesión</button></a>
+    </header>
+    <div class="container-md" id="descriptionBox">
+      <h3>Sobre nosotros</h3>
+      <p>
+        Somos un equipo creativo apasionado por dos grandes industrias: la
+        tecnologica y la ferretera. Decidimos combinar ambas pasiones y esto
+        resultó en un gran proyecto donde podemos contribuir y agregar valor a
+        la experiencia de nuestros clientes.
+      </p>
+      <p>Conocenos.</p>
+    </div>
+    <div class="container-fluid px-5 py-5">
+      <div class="row justify-content-center">
+        <div class="col-xl-4 col-md-6 col-12 my-4">
+          <div class="card text-center rounded-0 border-0" id="card1">
+            <div class="hex-img mt-5 mb-4">
+              <svg
+                viewBox="0 0 100 100"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <pattern
+                    id="img1"
+                    patternUnits="userSpaceOnUse"
+                    width="100"
+                    height="100"
+                  >
+                    <image
+                      xlink:href="https://i.imgur.com/RCwPA3O.jpg"
+                      x="-25"
+                      width="150"
+                      height="100"
+                    />
+                  </pattern>
+                </defs>
+                <polygon
+                  points="50 1 95 25 95 75 50 99 5 75 5 25"
+                  fill="url(#img1)"
+                />
+              </svg>
+            </div>
+            <h3 class="card-name">Paulina Meza</h3>
+            <p class="position">Scrum Master</p>
+            <div class="row mx-5 mb-5 mt-3 justify-content-center">
+              <div class="col-2 px-1 py-2">
+                <div class="py-4 fa fa-linkedin"></div>
+              </div>
+              <div class="col-2 px-1 py-2">
+                <div class="py-4 fa fa-github"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-12 my-4">
+          <div class="card text-center rounded-0 border-0" id="card1">
+            <div class="hex-img mt-5 mb-4">
+              <svg
+                viewBox="0 0 100 100"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <pattern
+                    id="img1"
+                    patternUnits="userSpaceOnUse"
+                    width="100"
+                    height="100"
+                  >
+                    <image
+                      xlink:href="https://i.imgur.com/RCwPA3O.jpg"
+                      x="-25"
+                      width="150"
+                      height="100"
+                    />
+                  </pattern>
+                </defs>
+                <polygon
+                  points="50 1 95 25 95 75 50 99 5 75 5 25"
+                  fill="url(#img1)"
+                />
+              </svg>
+            </div>
+            <h3 class="card-name">Juan Carrera</h3>
+            <p class="position">Product Owner</p>
+            <div class="row mx-5 mb-5 mt-3 justify-content-center">
+              <div class="col-2 px-1 py-2">
+                <div class="py-4 fa fa-linkedin"></div>
+              </div>
+              <div class="col-2 px-1 py-2">
+                <div class="py-4 fa fa-github"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-12 my-4">
+          <div class="card text-center rounded-0 border-0" id="card1">
+            <div class="hex-img mt-5 mb-4">
+              <svg
+                viewBox="0 0 100 100"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <pattern
+                    id="img1"
+                    patternUnits="userSpaceOnUse"
+                    width="100"
+                    height="100"
+                  >
+                    <image
+                      xlink:href="https://i.imgur.com/RCwPA3O.jpg"
+                      x="-25"
+                      width="150"
+                      height="100"
+                    />
+                  </pattern>
+                </defs>
+                <polygon
+                  points="50 1 95 25 95 75 50 99 5 75 5 25"
+                  fill="url(#img1)"
+                />
+              </svg>
+            </div>
+            <h3 class="card-name">Adal Obregón</h3>
+            <p class="position">Desarrollador</p>
+            <div class="row mx-5 mb-5 mt-3 justify-content-center">
+              <div class="col-2 px-1 py-2">
+                <div class="py-4 fa fa-linkedin"></div>
+              </div>
+              <div class="col-2 px-1 py-2">
+                <div class="py-4 fa fa-github"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-12 my-4">
+          <div class="card text-center rounded-0 border-0" id="card1">
+            <div class="hex-img mt-5 mb-4">
+              <svg
+                viewBox="0 0 100 100"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <pattern
+                    id="img1"
+                    patternUnits="userSpaceOnUse"
+                    width="100"
+                    height="100"
+                  >
+                    <image
+                      xlink:href="https://i.imgur.com/RCwPA3O.jpg"
+                      x="-25"
+                      width="150"
+                      height="100"
+                    />
+                  </pattern>
+                </defs>
+                <polygon
+                  points="50 1 95 25 95 75 50 99 5 75 5 25"
+                  fill="url(#img1)"
+                />
+              </svg>
+            </div>
+            <h3 class="card-name">Luzmy García</h3>
+            <p class="position">Desarrolladora</p>
+            <div class="row mx-5 mb-5 mt-3 justify-content-center">
+              <div class="col-2 px-1 py-2">
+                <div class="py-4 fa fa-linkedin"></div>
+              </div>
+              <div class="col-2 px-1 py-2">
+                <div class="py-4 fa fa-github"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-12 my-4">
+          <div class="card text-center rounded-0 border-0" id="card1">
+            <div class="hex-img mt-5 mb-4">
+              <svg
+                viewBox="0 0 100 100"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <pattern
+                    id="img1"
+                    patternUnits="userSpaceOnUse"
+                    width="100"
+                    height="100"
+                  >
+                    <image
+                      xlink:href="https://i.imgur.com/RCwPA3O.jpg"
+                      x="-25"
+                      width="150"
+                      height="100"
+                    />
+                  </pattern>
+                </defs>
+                <polygon
+                  points="50 1 95 25 95 75 50 99 5 75 5 25"
+                  fill="url(#img1)"
+                />
+              </svg>
+            </div>
+            <h3 class="card-name">Angel Martínez</h3>
+            <p class="position">Desarrollador</p>
+            <div class="row mx-5 mb-5 mt-3 justify-content-center">
+              <div class="col-2 px-1 py-2">
+                <div class="py-4 fa fa-linkedin"></div>
+              </div>
+              <div class="col-2 px-1 py-2">
+                <div class="py-4 fa fa-github"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-12 my-4">
+          <div class="card text-center rounded-0 border-0" id="card1">
+            <div class="hex-img mt-5 mb-4">
+              <svg
+                viewBox="0 0 100 100"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <pattern
+                    id="img1"
+                    patternUnits="userSpaceOnUse"
+                    width="100"
+                    height="100"
+                  >
+                    <image
+                      xlink:href="https://i.imgur.com/RCwPA3O.jpg"
+                      x="-25"
+                      width="150"
+                      height="100"
+                    />
+                  </pattern>
+                </defs>
+                <polygon
+                  points="50 1 95 25 95 75 50 99 5 75 5 25"
+                  fill="url(#img1)"
+                />
+              </svg>
+            </div>
+            <h3 class="card-name">Jaciel Menera</h3>
+            <p class="position">Desarrollador</p>
+            <div class="row mx-5 mb-5 mt-3 justify-content-center">
+              <div class="col-2 px-1 py-2">
+                <div class="py-4 fa fa-linkedin"></div>
+              </div>
+              <div class="col-2 px-1 py-2">
+                <div class="py-4 fa fa-github"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-12 my-4">
+          <div class="card text-center rounded-0 border-0" id="card1">
+            <div class="hex-img mt-5 mb-4">
+              <svg
+                viewBox="0 0 100 100"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <pattern
+                    id="img1"
+                    patternUnits="userSpaceOnUse"
+                    width="100"
+                    height="100"
+                  >
+                    <image
+                      xlink:href="https://i.imgur.com/RCwPA3O.jpg"
+                      x="-25"
+                      width="150"
+                      height="100"
+                    />
+                  </pattern>
+                </defs>
+                <polygon
+                  points="50 1 95 25 95 75 50 99 5 75 5 25"
+                  fill="url(#img1)"
+                />
+              </svg>
+            </div>
+            <h3 class="card-name">Laura Sánchez</h3>
+            <p class="position">Desarrolladora</p>
+            <div class="row mx-5 mb-5 mt-3 justify-content-center">
+              <div class="col-2 px-1 py-2">
+                <div class="py-4 fa fa-linkedin"></div>
+              </div>
+              <div class="col-2 px-1 py-2">
+                <div class="py-4 fa fa-github"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

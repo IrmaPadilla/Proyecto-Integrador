@@ -1,16 +1,15 @@
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  font-family: 'Days One', sans-serif;
+}
+
 #descriptionBox {
     margin-top: 2rem;
-    
 }
-
-#descriptionBox h3 {
-    font-family: 'Days One', sans-serif;
-}
-
-#descriptionBox p {
-    font-family: 'Roboto', sans-serif;
-}
-
 
 .card {
 	background-color: #E8EAF6;
@@ -42,23 +41,8 @@
   transition: 0.2s;
 }
 
-.fa-facebook {
-  background-color: #4267B2;
-  opacity: 0.8;
-}
-
-.fa-twitter {
-  background-color: #1DA1F2;
-  opacity: 0.8;
-}
-
 .fa-linkedin {
   background-color: #0077B5;
-  opacity: 0.8;
-}
-
-.fa-pinterest {
-  background-color: #E60023;
   opacity: 0.8;
 }
 
