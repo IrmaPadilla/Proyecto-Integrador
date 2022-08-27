@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./public/src/styles/custom-boostrap.css">
-  <link rel="stylesheet" href="/public/css/segundamano.css">
-  <link rel="stylesheet" href="/public/css/carousel.css">
+  <link rel="stylesheet" href="./src/styles/custom-boostrap.css">
+  <link rel="stylesheet" href="./css/segundamano.css">
+  <link rel="stylesheet" href="/public/css/header.css">
   <title>Document</title>
 </head>
 <body>
+  <!--logo-->
+  <!-- <header>
+    <img src="/src/assets/logo/logo-header.png" alt="logo de la empresa" class="header-logo-eU">
+    <nav>
+        <ul class="nav-links-eU">
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Carrito</a></li>
+            <li><a href="#">Categorías</a></li>
+            <li><a href="#">Segunda Mano</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Carrito</a></li>
+        </ul>
+    </nav>
+    <a href="#" class="cta-eU"><button>Inicia Sesión</button></a>
+</header> -->
   <!-- nav-bar -->
   <nav class="navbar navbar-expand-lg bg-psglightgray">
     <div class="container-fluid">
@@ -50,22 +67,23 @@
       </div>
     </div>
   </nav>
+
   <!-- CAROUSEL -->
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-    <div class="carousel-indicators g-12">
+    <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/src/assets/carrousel/BOAP-1-2.jpg" class="d-block" width="100%" height="100%" alt="1">
+        <img src="/src/assets/carrousel/BOAP-1-2.jpg" class="d-block" style="width:1400px ;" alt="1">
       </div>
       <div class="carousel-item">
-        <img src="/src/assets/carrousel/SET-104.jpg" class="d-block" width="100%" height="100%" alt="2">
+        <img src="/src/assets/carrousel/SET-104.jpg" class="d-block" style="width: 1400px;" alt="2">
       </div>
       <div class="carousel-item">
-        <img src="/src/assets/carrousel/TAL-3-8A2.jpg" class="d-block" width="100%" height="100%" alt="3">
+        <img src="/src/assets/carrousel/TAL-3-8A2.jpg" class="d-block" style="width:1400px;" alt="3">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -77,53 +95,48 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <!--CHECKBOX-->
-  
-<!--TITULO-->
-<div class="titulo">
-    <h2 class="mt-4 mb-4">Agregado</h2>
-</div>
   <!--TARJETA1-->
   <div class="container">
     <div class="row">
+        <div class="col-10">
+            <h2 class="mt-4 mb-4">Agregado</h2>
+        </div>
         <div class="col-md-6 col-lg-4">
             <!-- Bootstrap 5 card box -->
-            <div class="card-box">
+            <div class="card-box" style="width: 250px;">
                 <div class="card-thumbnail">
                     <img src="/src/assets/productos/Herramientas-importado-de-segunda-mano-Mai-Bao-Tai-multifunci-n-mano-taladro-usado-220-V-taladros.jpg_Q90.jpg_.jpg" class="img-fluid" alt="">
                 </div>
-                <h3><a href="#" class="mt-2 text-black">multifunción mano taladro</a></h3>
-                <p class="text-secondary">220 V taladros taladros de percusión dsfadsfzsdfgd</p>
-                <a href="#" class="btn btn-sm btn-light float-right" >Ver mas>></a>
+                <h3><a href="#" class="mt-2 text-black">Mai Bao Tai multifunción mano taladro?</a></h3>
+                <p class="text-secondary">220 V taladros taladros de percusión</p>
+                <a href="#" class="btn btn-sm btn-light float-right">Ver mas>></a>
             </div>
         </div>
-
         <div class="col-md-6 col-lg-4">
           <!-- Bootstrap 5 card box -->
-          <div class="card-box" " >
+          <div class="card-box" style="width: 250px;">
               <div class="card-thumbnail">
                   <img src="/src/assets/productos/8128518251.webp" class="img-fluid" alt="">
               </div>
-              <h3><a href="#" class="mt-2 text-black" >Llaves españolas</a></h3>
+              <h3><a href="#" class="mt-2 text-black">Mai Bao Tai multifunción mano taladro?</a></h3>
               <p class="text-secondary">Lote llaves españolas - (20.6 mm a 41 mm)</p>
-              <a href="#" class="btn btn-sm btn-light float-right">Ver mas >></a>
+              <a href="#" class="btn btn-sm btn-light float-right">Ver mas>></a>
           </div>
       </div>
-
       <div class="col-md-6 col-lg-4">
         <!-- Bootstrap 5 card box -->
-        <div class="card-box" ">
+        <div class="card-box" style="width: 250px;"">
             <div class="card-thumbnail">
-                <img src="/src/assets/productos/0269888145.jpg" class="img-fluid" alt="">
+                <img src="/src/assets/productos/Herramientas-importado-de-segunda-mano-Mai-Bao-Tai-multifunci-n-mano-taladro-usado-220-V-taladros.jpg_Q90.jpg_.jpg" class="img-fluid" alt="">
             </div>
-            <h3><a href="#" class="mt-2 text-black">Martillo</a></h3>
-            <p class="text-secondary">Buen estado</p>
-            <a href="#" class="btn btn-sm btn-light float-right">Ver mas >></a>
+            <h3><a href="#" class="mt-2 text-black">Mai Bao Tai multifunción mano taladro?</a></h3>
+            <p class="text-secondary">220 V taladros taladros de percusión</p>
+            <a href="#" class="btn btn-sm btn-light float-right">Ver mas>></a>
         </div>
     </div>
-    
+       
     </div>
 </div>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
