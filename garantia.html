@@ -34,13 +34,13 @@
 
     <form>
         <!-- 2 column grid layout with text inputs for the first and last names -->
-        <div class="container my-2 p-3">
-            <div class="row mb-4 mx-2 px-2">
-                <div class="col-6 bg-psglightgray rounded p-5">
+        <div class="container-fluid my-md-2 p-3">
+            <div class="row mb-md-4 mx-md-2 px-2">
+                <div class="col-12 col-md-5 bg-psglightgray rounded p-md-5 p-3 mx-auto">
 
-                    <h6>Por favor ingrese sus datos completos</h6>
+                    <h6 class="text-dark fw-bold py-2">Por favor ingrese sus datos completos</h6>
                     <!-- Name input -->
-                    <div class="form-outline my-4">
+                    <div class="form-outline my-md-4">
                         <iconify-icon icon="material-symbols:account-circle" style="color: #1f6f8b;" width="35">
                         </iconify-icon>
                         <input type="text" id="name" class="form-control" placeholder="Nombre completo" required />
@@ -48,7 +48,7 @@
                     </div>
 
                     <!-- Ticket number -->
-                    <div class="form-outline mb-4">
+                    <div class="form-outline mb-md-2">
                         <iconify-icon icon="material-symbols:receipt-long" style="color: #1f6f8b;" width="35">
                         </iconify-icon>
                         <input type="text" id="ticketNumber" class="form-control" placeholder="Ticket de compra"
@@ -57,7 +57,7 @@
                     </div>
 
                     <!-- Purchase date input -->
-                    <div class="form-outline mb-4">
+                    <div class="form-outline mb-md-2">
                         <iconify-icon icon="material-symbols:calendar-month-rounded" style="color: #1f6f8b;" width="35">
                         </iconify-icon>
                         <input type="text" id="purchaseDate" class="form-control" placeholder="Fecha de compra"
@@ -65,7 +65,9 @@
                         <label class="form-label" for="purchaseDate"></label>
                     </div>
 
-                    <div class="input-group mb-4 pb-4">
+                    <iconify-icon icon="material-symbols:category-outline-rounded" style="color: #1f6f8b;" width="35">
+                    </iconify-icon>
+                    <div class="input-group mb-md-2 pb-md-4">
                         <label class="input-group-text" for="categoria">Categoría</label>
                         <select class="form-select" id="categoria">
                             <option selected>Elija una opción...</option>
@@ -76,35 +78,97 @@
                     </div>
 
                     <!-- Email input -->
-                    <div class="form-outline mb-4">
+                    <div class="form-outline mb-md-2">
                         <iconify-icon icon="material-symbols:alternate-email" style="color: #1f6f8b;" width="35">
                         </iconify-icon>
                         <input type="email" id="emailInput" class="form-control" placeholder="Correo" required />
                         <label class="form-label" for="emailInput"></label>
                     </div>
 
-                    <!-- Number input -->
-                    <div class="form-outline mb-4">
+                    <!-- Phone Number input -->
+                    <div class="form-outline mb-md-2">
+                        <iconify-icon icon="material-symbols:phone-callback-outline-rounded" style="color: #1f6f8b;"
+                            width="35"></iconify-icon>
                         <input type="number" id="telefono" class="form-control" placeholder="Teléfono de contacto" />
                         <label class="form-label" for="telefono"></label>
                     </div>
 
                     <!-- Checkbox -->
-                    <div class="form-check d-flex justify-content-center mb-4">
-                        <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
-                        <label class="form-check-label" for="form6Example8"> Create an account? </label>
+                    <h6 class="text-dark fw-bold mb-md-2">¿Desea agregar la cobertura extendida?</h6>
+                    <div class="form-check my-md-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio1">
+                        <label class="form-check-label" for="radio1">
+                            No, gracias
+                        </label>
+                    </div>
+                    <div class="form-check my-md-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio2">
+                        <label class="form-check-label" for="radio2">
+                            +6 meses
+                        </label>
+                    </div>
+                    <div class="form-check my-md-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio3" checked>
+                        <label class="form-check-label" for="radio3">
+                            +12 meses
+                        </label>
                     </div>
 
                     <!-- Submit button -->
-                    <button type="submit" class="btn btn-primary btn-block mb-4">Registrar</button>
+                </div>
+                <div class="col-12 col-md-5 py-md-0 px-md-0 mx-auto my-0">
+                    <div class="row bg-psglightgray p-md-5 p-3 rounded">
+                        <iconify-icon icon="material-symbols:add-card-outline-rounded" style="color: #1f6f8b;"
+                            width="35"></iconify-icon>
+                        <h6 class="text-dark fw-bold mb-2">Datos de pago</h6>
+                        <h6 class="text-dark my-2">1 × Garantía extendida +12 meses</h6>
+
+                        <!-- Numero de tarjeta  -->
+                        <div class="form-outline mb-md-2">
+                            <input type="text" id="cardNumber" class="form-control" placeholder="xxxx-xxxx-xxxx-xxxx"
+                                required />
+                            <label class="form-label" for="cardNumber">Número de tarjeta</label>
+                        </div>
+                        <div class="row mx-1 g-2">
+                            <div class="col-md-8">
+                                <div class="form-outline">
+                                    <input type="email" class="form-control" id="cardName"
+                                        placeholder="Alguien Ejemplo">
+                                    <label for="cardName">Nombre como aparece en la tarjeta</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-outline">
+                                    <input type="email" class="form-control" id="cardExpiration" placeholder="MM/AA">
+                                    <label for="cardExpiration"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-psgdarkblue btn-block my-4">Pagar</button>
+
+                    </div>
+                    <!-- Terminos y condiciones -->
+                    <div class="my-md-5">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="newsletter" checked>
+                            <label class="form-check-label" for="newsletter">
+                                Suscribirme al newsletter
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="terms" required>
+                            <label class="form-check-label" for="terms">
+                                He leído y estoy de acuerdo con los <a href="#">Términos y Condiciones</a> de la
+                                garantía limitada.
+                            </label>
+                        </div>
+                    </div>
                 </div>
 
 
             </div>
-
-            <!-- Text input -->
-
         </div>
+
     </form>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
