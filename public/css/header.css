@@ -1,63 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Roboto:wght@500&display=swap');
+/* ESTILOS DEL HEADER */
+
+/* Desktop */
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 li,
 a,
 button {
-	font-family: 'Roboto', arial;
-	font-weight: 500;
-	font-size: 16px;
-	color: #1f6f8b;
-	text-decoration: none;
+  font-family: "Days One", arial;
+  font-weight: 500;
+  font-size: 16px;
+  color: #7d9d9c;
+  text-decoration: none;
 }
 
 header {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding: 30px 10%;
-	background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+  background-color: #d9d9d9;
 }
 
-.logo {
-	cursor: pointer;
-	width: 100px;
-	height: auto;
-	margin-right: auto;
+a,
+.header-logo-eU {
+  cursor: pointer;
+  width: 100px;
+  height: auto;
+  margin-right: auto;
+}
+.cta-eU {
+  margin-left: auto;
+  display: table-header-group;
+}
+.nav-links-eU {
+  list-style: none;
 }
 
-.nav-links {
-	list-style: none;
+.nav-links-eU li {
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-.nav-links li {
-	display: inline-block;
-	padding: 0px 20px;
+.nav-links-eU li a {
+  transition: all 0.3s ease 0s;
 }
 
-.nav-links li a {
-	transition: all 0.3s ease 0s;
-}
-
-.nav-links li a:hover {
-	color: #1c2b2d;
+.nav-links-eU li a:hover {
+  color: #1c2b2d;
 }
 
 button {
-	padding: 9px 25px;
-	background-color: rgba(0, 136, 169, 1);
-	border: none;
-	border-radius: 50px;
-	cursor: pointer;
-	transition: all 0.3s ease 0s;
-	color: #e6d5b8;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: #e6d5b8;
+  word-wrap: break-word;
 }
 
 button:hover {
-	background-color: rgba(0, 64, 80, 0.8);
+  background-color: rgba(28, 43, 45, 0.8);
+  color: #ffffff;
 }
+
+/* Header Tablet Responsive*/
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 1201px) {
+  /* Magia de sirena chafa para esconder el menu que va a contener los demas submenus porque no quiero aventarme 5 horas de JavaScript */
+  .desktop-hidden-eU {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* <<< ---- Mobile */
+  * {
+    background-color: rgb(56, 103, 203);
+  }
+}
+
+/* FIN DE ESTILOS DEL HEADER */
+
+/* INICIO DE ESTILOS DEL FOOTER */
+
+/* FIN DE ESTILOS DEL FOOTER */
