@@ -1,0 +1,98 @@
+/* Barra de busqueda */
+html {
+  font-size: 62.5%;
+}
+
+/* .searchbar {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+.searchbar__container {
+  align-items: center;
+  margin: 4rem auto;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+.searchbar__input {
+  height: 5rem;
+  width: 63.5rem;
+  margin-right: -4px;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid rgb(217, 217, 217);
+  font-size: 1.7rem;
+  padding-left: 2rem;
+}
+
+.searchbar__button {
+  background-color: rgb(31, 111, 139);
+  border-radius: 0px 6px 6px 0;
+  align-items: center;
+  border: 1px solid rgb(217, 217, 217);
+  padding: 1.4rem 2.5rem;
+} */
+
+/* .container__filter {
+  display: flex;
+  margin: 0 6.7rem;
+  flex-direction: column;
+  width: 20rem;
+}
+.container__filter--marca {
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.container__filter--marca input {
+  margin-bottom: 1rem;
+}
+.container__filter--marca label {
+  font-size: 1.6rem;
+  color: #000;
+
+}
+.container__filter--name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.container__filter--price {
+  font-size: 1.6rem;
+}
+.container__filter--customPrice div {
+  align-items: center;
+  justify-content: center;
+}
+.container__filter--customPrice input {
+  width: 5rem;
+  height: 4rem;
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+  border-radius: 0.4rem;
+  border: 1px solid rgb(217, 217, 217);
+  font-size: 1.4rem;
+  padding-left: .5rem;
+}
+.container__filter--customPrice button {
+  width: 2rem;
+  height: 4rem;
+  border-radius: 0.4rem;
+  background-color: transparent;
+  border: 1px solid rgb(217, 217, 217);
+  color: #000;
+  padding-left: 16px;
+}
+.container__filter--price a {
+  color: #000;
+  font-size: 1.4rem;
+}
+
+
+@media (max-width: 375px) {
+  .searchbar__input {
+    width: 20rem;
+  }
+} */
