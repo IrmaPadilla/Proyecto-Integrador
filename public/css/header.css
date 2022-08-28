@@ -1,12 +1,6 @@
-
-
-
-
-/*Copia todo, ten en cuenta el import de las fuentes de Google Fonts en la linea 9 :D */
-
 /* ESTILOS DEL HEADER */
 
-@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Roboto:wght@500&display=swap');
+/* Desktop */
 
 * {
   box-sizing: border-box;
@@ -14,30 +8,35 @@
   padding: 0;
 }
 
-li, a, button {
-  font-family: "Roboto", arial;
+li,
+a,
+button {
+  font-family: "Days One", arial;
   font-weight: 500;
   font-size: 16px;
-  color: #1F6F8B;
+  color: #7d9d9c;
   text-decoration: none;
 }
 
 header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  padding: 30px 10%;
-  background-color: #D9D9D9;
+  padding: 1rem 1rem;
+  background-color: #d9d9d9;
 }
 
+a,
 .header-logo-eU {
   cursor: pointer;
   width: 100px;
   height: auto;
   margin-right: auto;
-
 }
-
+.cta-eU {
+  margin-left: auto;
+  display: table-header-group;
+}
 .nav-links-eU {
   list-style: none;
 }
@@ -52,7 +51,7 @@ header {
 }
 
 .nav-links-eU li a:hover {
-  color: #1C2B2D;
+  color: #1c2b2d;
 }
 
 button {
@@ -62,17 +61,34 @@ button {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  color: #E6D5B8;
+  color: #e6d5b8;
+  word-wrap: break-word;
 }
 
 button:hover {
-  background-color: rgba(0, 64, 80, 0.8);
+  background-color: rgba(28, 43, 45, 0.8);
+  color: #ffffff;
 }
+
+/* Header Tablet Responsive*/
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 1201px) {
+  /* Magia de sirena chafa para esconder el menu que va a contener los demas submenus porque no quiero aventarme 5 horas de JavaScript */
+  .desktop-hidden-eU {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* <<< ---- Mobile */
+  * {
+    background-color: rgb(56, 103, 203);
+  }
+}
+
 /* FIN DE ESTILOS DEL HEADER */
-
-
-
-
 
 /* INICIO DE ESTILOS DEL FOOTER */
 

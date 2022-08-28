@@ -1,0 +1,45 @@
+html {
+  font-size: 62.5%;
+}
+
+/* Barra de busqueda */
+.container{
+    margin-top: 4.5rem;
+}
+.searchbar {
+  margin-top: 2rem;
+  height: 4rem !important;
+  font-size: 2rem;
+  padding-left: 2rem;
+  border-radius: 12px 0 0 12px;
+  border: 1px solid #d9d9d9;
+}
+.search__button {
+  height: 4rem !important;
+  border-radius: 0 12px 12px 0;
+}
+
+/* Filtros */
+select {
+    background-color: transparent;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    width: auto;
+    padding: .5rem;
+}
+
+
+/* Productos */
+.seccion{
+    margin-top: 7rem;
+}
+.button__cart{
+    background-color: rgb(31, 111, 139);
+}
+
+
+
+footer{
+    background-color: rgb(31, 111, 139);
+    height: 200px;
+}
