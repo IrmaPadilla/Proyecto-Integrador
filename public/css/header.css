@@ -81,12 +81,6 @@ button:hover {
     display: none;
   }
 }
-@media screen and (max-width: 500px) {
-  /* <<< ---- Mobile */
-  * {
-    background-color: rgb(56, 103, 203);
-  }
-}
 
 /* FIN DE ESTILOS DEL HEADER */
 
