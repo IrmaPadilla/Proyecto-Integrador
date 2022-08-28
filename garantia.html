@@ -97,7 +97,7 @@
                     <div class="form-outline mb-md-2">
                         <iconify-icon icon="material-symbols:calendar-month-rounded" style="color: #1f6f8b;" width="35">
                         </iconify-icon>
-                        <input type="text" id="purchaseDate" class="form-control" placeholder="Fecha de compra"
+                        <input type="date" id="purchaseDate" class="form-control" placeholder="Fecha de compra"
                             required />
                         <label class="form-label" for="purchaseDate"></label>
                     </div>
@@ -151,8 +151,8 @@
                         </label>
                     </div>
 
-                    <!-- Submit button -->
                 </div>
+                <!-- pago de garantia extendida -->
                 <div class="col-12 col-md-5 py-md-0 px-md-0 mx-auto my-0">
                     <div class="row bg-psglightgray p-md-5 p-3 rounded">
                         <iconify-icon icon="material-symbols:add-card-outline-rounded" style="color: #1f6f8b;"
@@ -169,14 +169,13 @@
                         <div class="row mx-1 g-2">
                             <div class="col-md-8">
                                 <div class="form-outline">
-                                    <input type="email" class="form-control" id="cardName"
-                                        placeholder="Alguien Ejemplo">
+                                    <input type="text" class="form-control" id="cardName" placeholder="Alguien Ejemplo">
                                     <label for="cardName">Nombre como aparece en la tarjeta</label>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-outline">
-                                    <input type="email" class="form-control" id="cardExpiration" placeholder="MM/AA">
+                                    <input type="month" class="form-control" id="cardExpiration" placeholder="MM/AA">
                                     <label for="cardExpiration">Vencimiento</label>
                                 </div>
                             </div>
