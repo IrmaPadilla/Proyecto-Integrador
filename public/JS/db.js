@@ -1,0 +1,58 @@
+const products = [
+    {
+        marca: 'TRUPPER',
+        nombre: 'CARRETILLA DE 1 RUEDA 350 KG ROJO',
+        precio: '2099',
+        rating: '4',
+        imagen:'' ,
+    },
+    {
+        marca: 'TRUPPER',
+        nombre: 'CARRETILLA DE 1 RUEDA 580 KG AZUL',
+        precio: '1969',
+        rating: '4',
+        imagen:'' ,
+    },
+    {
+        marca: 'TRUPPER',
+        nombre: 'CARRETILLA DE 65L NARANJA',
+        precio: '1,899',
+        rating: '5',
+        imagen:'' ,
+    },
+    {
+        marca: 'TRUPPER',
+        nombre: 'CARRETILLA CONCHA PLASTICA NEGRA',
+        precio: '1,785',
+        rating: '4',
+        imagen:'' ,
+    },
+    {
+        marca: 'TRUPPER',
+        nombre: 'CARRETILLA BASTIDOR TUBULAR ROJA',
+        precio: '2,015',
+        rating: '5',
+        imagen:'' ,
+    },
+    {
+        marca: 'TRUPPER',
+        nombre: 'CARRETILLA BASTIDORES DE MADERA ROJA',
+        precio: '2,015',
+        rating: '5',
+        imagen:'' ,
+    },
+    {
+        marca: 'TRUPPER',
+        nombre: 'CARRETILLA IMPONCHABLE VERDE',
+        precio: '2,015',
+        rating: '4',
+        imagen:'' ,
+    },
+    {
+        marca: 'TRUPPER',
+        nombre: 'CARRETILLA PLASTICA DOBLE LLANTA NEGRA',
+        precio: '2,165',
+        rating: '5',
+        imagen:'' ,
+    },
+]
