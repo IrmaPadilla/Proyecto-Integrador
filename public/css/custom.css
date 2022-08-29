@@ -240,7 +240,7 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
+  color: #1F6F8B var(--bs-link-color);
   text-decoration: underline;
 }
 a:hover {
@@ -336,7 +336,7 @@ label {
 }
 
 button {
-  border-radius: 0;
+  border-radius: 3;
 }
 
 button:focus:not(:focus-visible) {
@@ -676,7 +676,7 @@ progress {
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 .row > * {
-  flex-shrink: 0;
+  flex-shrink:0;
   width: 100%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);

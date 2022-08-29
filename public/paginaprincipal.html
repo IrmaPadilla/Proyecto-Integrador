@@ -1,44 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página principal</title>
     <link rel="stylesheet" href="/public/paginaprincipal.css">
+    <link rel="stylesheet" href="/public/css/custom.css">
+    <link rel="stylesheet" href="/src/custom.scss">
+
     <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+    <!-- Comienzo de Header -->
     <header>
-        <img src="/public/images/logo-header.png" alt="logo de la empresa" class="header-logo-eU">
+        <a href="#">
+            <img src="/public/images/logo-header.png" alt="logo de la empresa" class="header-logo-eU">
+        </a>
         <nav>
-            <ul class="nav-links-eU">
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Marcas</a></li>
-                <li><a href="#">Cerrajería</a></li>
-                <li><a href="#">Hogar</a></li>
-                <li><a href="#">Construcción</a></li>
-                <li><a href="#">Carpintería</a></li>
-                <li><a href="#">Segunda Mano</a></li>
-                <li><a href="#"></a></li>
+            <ul id="nav-links-eU" class="nav-links-eU">
+                <div class="desktop-hidden-eU">
+                    <li>
+                        <a href="#">
+
+                        </a>
+                    </li>
+                </div>
+                <li>
+                    <a href="#">
+                        <span aria-hidden="true">OFERTAS</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="hidden-for-responsiveness-eU" href="#">
+                        <span aria-hidden="true">MARCAS</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="hidden-for-responsiveness-eU" href="#">
+                        <span aria-hidden="true">CERRAJERÍA</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="hidden-for-responsiveness-eU" href="#">
+                        <span aria-hidden="true">HOGAR</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="hidden-for-responsiveness-eU" href="#">
+                        <span aria-hidden="true">CONSTRUCCIÓN</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="hidden-for-responsiveness-eU" href="#">
+                        <span aria-hidden="true">CARPINTERÍA</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span aria-hidden="true">SEGUNDA MANO</span>
+                    </a>
+                </li>
             </ul>
         </nav>
-        <a href="#" class="cta-eU"><button>Inicia Sesión</button></a>
-        
+        <a href="#" class="cta-eU"><button>Inicia sesión</button></a>
     </header>
-    
+    <!-- Fin del Header -->
+
     <form action="" class="search">
         <!-- We'll have a button that'll make the search input appear, a submit button and the input -->
-        
+
         <!-- Alos, a label for it so that we can style it however we want it-->
-        <input id="submit" value="" type="submit">
-        <label for="submit" class="submit"></label>
-        
+       
+
         <!-- trigger button and input
         <a href="javascript: void(0)" class="icon"></a>
         <input type="search" name="Search" id="search" placeholder="Search"> -->
     </form>
+    <!-- Barra de busqueda  -->
+    <!-- ================= -->
+    <nav class="container">
+        <div class="row">
+            <div class="col-4">
+
+
+            </div>
+            <div class="col-4 pt-0 mt-4">
+                <input type="text" class="w-100 rounded border-15" id="search" placeholder="Busca un producto...">
+            </div>
+            <div class="col-3 mt-4 pt-2">
+                <button class="searchbar_button"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="20"
+                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 20">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg></button>
+            </div>
+        
+             <div class="col-1 pt-1 mt-4">
+            <button class="heart_button"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="heart" viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+
+            </button>
+            <button class="cart_button"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="cart" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg></button>
+
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     
+    
+    
+
+    <div class="col-1 pt-0 mt-3"></div>
+    <button class="mensaje_button"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+          </svg> Contáctanos</button> 
+          <br>
+          <button class="dudas_button"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+          </svg>¿Necesitas ayuda?</button>
+
+    <div class="col-1 mt-4 pt-1">
+    <div class="dy-100905994">
+        <div class="dy_close-btn">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://wwww.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M21.1318 20.0001L23.5658 17.5661C23.8778 17.2531 23.8778 16.7471 23.5658 16.4341C23.2538 16.1231 22.7468 16.1231 22.4338 16.4341L19.9998 18.8681L17.5658 16.4341C17.2538 16.1231 16.7468 16.1231 16.4338 16.4341C16.1218 16.7471 16.1218 17.2531 16.4338 17.5661L18.8678 20.0001L16.4338 22.4341C16.1218 22.7471 16.1218 23.2531 16.4338 23.5661C16.5898 23.7221 16.7958 23.8001 16.9998 23.8001C17.2048 23.8001 17.4098 23.7221 17.5658 23.5661L19.9998 21.1321L22.4338 23.5661C22.5898 23.7221 22.7958 23.8001 22.9998 23.8001C23.2048 23.8001 23.4098 23.7221 23.5658 23.5661C23.8778 23.2531 23.8778 22.7471 23.5658 22.4341L21.1318 20.0001Z"
+                    fill="black"></path>
+            </svg>
+        </div>
+        <div class="col-2 mt-6 pt-0"></div>
+        <div class="dy_content-area">
+            <!-- <span class="dy_tittle">SEGUNDA MANO</span>-->
+            <span class="dy_text">¡Échale un vistazo a nuestros productos de SEGUNDA MANO!</span>
+            <button class="dy_cta">IR</button>
+        </div>
+    </div>
+
 </body>
+
 </html>
