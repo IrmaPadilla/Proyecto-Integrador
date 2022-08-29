@@ -145,9 +145,7 @@ body {
     .desktop-hidden-eU {
       display: none;
     }
-    {
-      display: none;
-    }
+   
   }
   @media screen and (max-width: 500px){ /* <<< ---- Mobile */
     *{
