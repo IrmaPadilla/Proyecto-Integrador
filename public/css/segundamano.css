@@ -1,5 +1,8 @@
 .titulo{
     text-align:center;
+    margin-top: 0px;
+    border: 1px solid black;
+    letter-spacing: 0.1em;
 }
 
 body{
@@ -82,3 +85,10 @@ button{
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
 }
+
+footer{
+    margin-top: 125px;
+    border: 0px solid black;
+    letter-spacing: 0.1em;
+    }
+
