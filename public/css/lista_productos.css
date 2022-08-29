@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Barra de busqueda */
@@ -43,5 +44,9 @@ select {
 
 footer{
     background-color: rgb(31, 111, 139);
-    height: 200px;
+    height: 5rem;
+    margin-bottom: 0;
+}
+footer p{
+  padding: .5rem;
 }
