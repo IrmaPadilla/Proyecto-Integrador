@@ -109,6 +109,7 @@ button:hover {
 .subnav {
   float: left;
   overflow: hidden;
+  padding-left: 40px;
 }
 
 /* Subnav button */
