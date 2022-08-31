@@ -10,7 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
+    <script src="src/js/footer.js" defer></script>
+    <script src="src/js/pago-completado.js" defer></script>
     <title>Garantía</title>
 </head>
 
@@ -172,7 +175,7 @@
                                 required />
                             <label class="form-label" for="cardNumber">Número de tarjeta</label>
                         </div>
-                        <div class="row mx-1 g-2">
+                        <div id="pago" class="row mx-1 g-2">
                             <div class="col-md-8">
                                 <div class="form-outline">
                                     <input type="text" class="form-control" id="cardName" placeholder="Alguien Ejemplo">
@@ -185,8 +188,10 @@
                                     <label for="cardExpiration">Vencimiento</label>
                                 </div>
                             </div>
+                            <h5 id="alert" class="">
+                            </h5>
                         </div>
-                        <button type="submit" class="btn btn-psgdarkblue btn-block my-4">Pagar</button>
+                        <button id="pagar" type="button" class="btn btn-psgdarkblue btn-block my-4">Pagar</button>
 
                     </div>
                     <!-- Terminos y condiciones -->
@@ -219,9 +224,9 @@
 
     <footer class="bg-psgblue">
         <!-- Copyright -->
-        <div id="copy" class="text-center text-white py-1">
-            © 2022
-            <a class="text-white" href="https://github.com/IrmaPadilla/Proyecto-Integrador" target="_blank">SwarmDev</a>
+        <div class="text-center text-white py-1">
+            <a id="copy" class="text-white" href="https://github.com/IrmaPadilla/Proyecto-Integrador"
+                target="_blank"></a>
         </div>
         <!-- Copyright -->
     </footer>
