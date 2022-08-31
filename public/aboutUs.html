@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre nosotros</title>
+    <!--Fonts y hojas de estilos-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,9 +23,10 @@
       href="https://fonts.googleapis.com/css2?family=Days+One&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/styles/custom-boostrap.css" />
-    <link rel="stylesheet" href="/header.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
     <link rel="stylesheet" href="./css/aboutUs.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <!--Favicon de la página en diferentes tamaños-->
     <link
       rel="shortcut icon"
       href="../src/assets/favicon-16x16.png"
@@ -32,59 +41,63 @@
     />
   </head>
   <body>
+    <!--Navbar-->
     <header>
-      <img
-        src="../src/assets/logo-header.png"
-        alt="logo de la empresa"
-        class="header-logo-eU"
-      />
+      <a href="#">
+        <img
+          src="/src/assets/logo-header.png"
+          alt="logo de la empresa"
+          class="header-logo-eU"
+        />
+      </a>
       <nav>
         <ul id="nav-links-eU" class="nav-links-eU">
+          <div class="desktop-hidden-eU">
+            <li>
+              <a href="#"> Menú Tablet >:D </a>
+            </li>
+          </div>
           <li>
             <a href="#">
-              <span aria-hidden="true">Titulo 01</span>
+              <span aria-hidden="true">Ofertas</span>
             </a>
           </li>
           <li>
             <a class="hidden-for-responsiveness-eU" href="#">
-              <span aria-hidden="true">Titulo 02</span>
+              <span aria-hidden="true">Marcas</span>
             </a>
           </li>
           <li>
             <a class="hidden-for-responsiveness-eU" href="#">
-              <span aria-hidden="true">Titulo 03</span>
+              <span aria-hidden="true">Cerrajería</span>
             </a>
           </li>
           <li>
             <a class="hidden-for-responsiveness-eU" href="#">
-              <span aria-hidden="true">Titulo 04</span>
+              <span aria-hidden="true">Hogar</span>
             </a>
           </li>
           <li>
             <a class="hidden-for-responsiveness-eU" href="#">
-              <span aria-hidden="true">Titulo 05</span>
+              <span aria-hidden="true">Construcción</span>
             </a>
           </li>
           <li>
             <a class="hidden-for-responsiveness-eU" href="#">
-              <span aria-hidden="true">Titulo 06</span>
+              <span aria-hidden="true">Carpintería</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <span aria-hidden="true">Titulo 07</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span aria-hidden="true">Titulo 08</span>
+              <span aria-hidden="true">Segunda Mano</span>
             </a>
           </li>
         </ul>
       </nav>
       <a href="#" class="cta-eU"><button>Inicia Sesión</button></a>
     </header>
-    <div class="container-md" id="descriptionBox">
+    <!--Descripción del equipo (version resumida de de Misión y Visión)-->
+    <div class="container" id="descriptionBox">
       <h3>Sobre nosotros</h3>
       <p>
         Somos un equipo creativo apasionado por dos grandes industrias: la
@@ -94,16 +107,13 @@
       </p>
       <p>Conócenos.</p>
     </div>
+    <!--Cards de miembros del equipo-->
     <div class="container-fluid px-5 py-4">
       <div class="row justify-content-center">
-        <div class="col-xl-4 col-md-6 col-12 my-4">
+        <div class="col-xl-3 col-md-4 my-4">
           <div class="card text-center rounded-0 border-0" id="card1">
             <div class="hex-img mt-5 mb-4">
-              <svg
-                viewBox="0 0 100 100"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg viewBox="0 0 100 100">
                 <defs>
                   <pattern
                     id="img1"
@@ -112,9 +122,9 @@
                     height="100"
                   >
                     <image
-                      xlink:href="https://i.imgur.com/RCwPA3O.jpg"
-                      x="-25"
-                      width="150"
+                      xlink:href="./../src/assets/aboutUs/hexBg.png"
+                      x="0"
+                      width="180"
                       height="100"
                     />
                   </pattern>
@@ -128,262 +138,270 @@
             <h5 class="card-name">Paulina Meza</h5>
             <p class="position">Scrum Master</p>
             <div class="row mx-5 mb-5 mt-3 justify-content-center">
-              <div class="col-2 px-1 py-2">
-                <div class="py-4 fa fa-linkedin"></div>
+              <div class="col-6 col-md-6 px-0 py-1">
+                <a class="li btn btn-sm border-0" href="https://www.linkedin.com/in/irma-paulina-meza-b24a84239/" role="button" target="_blank"
+                  ><i class="fa fa-brands fa-linkedin-in"></i
+                ></a>
               </div>
-              <div class="col-2 px-1 py-2">
-                <div class="py-4 fa fa-github"></div>
+              <div class="col-6 col-md-6 px-0 py-1">
+                <a class="gh btn btn-sm border-0" href="https://github.com/IrmaPadilla" role="button" target="_blank"
+                  ><i class="fa fa-brands fa-github"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-md-6 col-12 my-4">
+        <div class="col-xl-3 col-md-4 my-4">
           <div class="card text-center rounded-0 border-0" id="card1">
             <div class="hex-img mt-5 mb-4">
-              <svg
-                viewBox="0 0 100 100"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg viewBox="0 0 100 100">
                 <defs>
                   <pattern
-                    id="img1"
+                    id="img2"
                     patternUnits="userSpaceOnUse"
                     width="100"
                     height="100"
                   >
                     <image
-                      xlink:href="https://i.imgur.com/RCwPA3O.jpg"
-                      x="-25"
-                      width="150"
+                      xlink:href="./../src/assets/aboutUs/hexBg.png"
+                      x="0"
+                      width="180"
                       height="100"
                     />
                   </pattern>
                 </defs>
                 <polygon
                   points="50 1 95 25 95 75 50 99 5 75 5 25"
-                  fill="url(#img1)"
+                  fill="url(#img2)"
                 />
               </svg>
             </div>
             <h5 class="card-name">Juan Carrera</h5>
             <p class="position">Product Owner</p>
             <div class="row mx-5 mb-5 mt-3 justify-content-center">
-              <div class="col-2 px-1 py-2">
-                <div class="py-4 fa fa-linkedin"></div>
+              <div class="col-6 col-md-6 col-s-6">
+                <a class="li btn btn-sm border-0" href="https://www.linkedin.com/in/juan-cristobal-carrera-mendoza-185300246/" role="button" target="_blank"
+                  ><i class="fa fa-brands fa-linkedin-in"></i
+                ></a>
               </div>
-              <div class="col-2 px-1 py-2">
-                <div class="py-4 fa fa-github"></div>
+              <div class="col-6 col-md-6 col-s-6">
+                <a class="gh btn btn-sm border-0" href="https://github.com/JuanCCM57" role="button" target="_blank"
+                  ><i class="fa fa-brands fa-github"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-md-6 col-12 my-4">
+        <div class="col-xl-3 col-md-4 my-4">
           <div class="card text-center rounded-0 border-0" id="card1">
             <div class="hex-img mt-5 mb-4">
-              <svg
-                viewBox="0 0 100 100"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg viewBox="0 0 100 100">
                 <defs>
                   <pattern
-                    id="img1"
+                    id="img3"
                     patternUnits="userSpaceOnUse"
                     width="100"
                     height="100"
                   >
                     <image
-                      xlink:href="https://i.imgur.com/RCwPA3O.jpg"
-                      x="-25"
-                      width="150"
+                      xlink:href="./../src/assets/aboutUs/hexBg.png"
+                      x="0"
+                      width="180"
                       height="100"
                     />
                   </pattern>
                 </defs>
                 <polygon
                   points="50 1 95 25 95 75 50 99 5 75 5 25"
-                  fill="url(#img1)"
+                  fill="url(#img3)"
                 />
               </svg>
             </div>
             <h5 class="card-name">Adal Obregón</h5>
             <p class="position">Desarrollador</p>
             <div class="row mx-5 mb-5 mt-3 justify-content-center">
-              <div class="col-2 px-1 py-2">
-                <div class="py-4 fa fa-linkedin"></div>
+              <div class="col-6 col-md-6 col-s-6">
+                <a class="li btn btn-sm border-0" href="https://www.linkedin.com/in/adal-obregon/" role="button" target="_blank"
+                  ><i class="fa fa-brands fa-linkedin-in"></i
+                ></a>
               </div>
-              <div class="col-2 px-1 py-2">
-                <div class="py-4 fa fa-github"></div>
+              <div class="col-6 col-md-6 col-s-6">
+                <a class="gh btn btn-sm border-0" href="https://github.com/AdalObregon" role="button" target="_blank"
+                  ><i class="fa fa-brands fa-github"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-md-6 col-12 my-4">
+        <div class="col-xl-3 col-md-4 my-4">
           <div class="card text-center rounded-0 border-0" id="card1">
             <div class="hex-img mt-5 mb-4">
-              <svg
-                viewBox="0 0 100 100"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg viewBox="0 0 100 100">
                 <defs>
                   <pattern
-                    id="img1"
+                    id="img4"
                     patternUnits="userSpaceOnUse"
                     width="100"
                     height="100"
                   >
                     <image
-                      xlink:href="https://i.imgur.com/RCwPA3O.jpg"
-                      x="-25"
-                      width="150"
+                      xlink:href="./../src/assets/aboutUs/hexBg.png"
+                      x="0"
+                      width="180"
                       height="100"
                     />
                   </pattern>
                 </defs>
                 <polygon
                   points="50 1 95 25 95 75 50 99 5 75 5 25"
-                  fill="url(#img1)"
+                  fill="url(#img4)"
                 />
               </svg>
             </div>
             <h5 class="card-name">Luzmy García</h5>
             <p class="position">Desarrolladora</p>
             <div class="row mx-5 mb-5 mt-3 justify-content-center">
-              <div class="col-2 px-1 py-2">
-                <div class="py-4 fa fa-linkedin"></div>
+              <div class="col-6 col-md-6 col-s-6">
+                <a class="li btn btn-sm border-0" href="https://www.linkedin.com/in/luzmy-garc%C3%ADa-b1b480246/" role="button" target="_blank"
+                  ><i class="fa fa-brands fa-linkedin-in"></i
+                ></a>
               </div>
-              <div class="col-2 px-1 py-2">
-                <div class="py-4 fa fa-github"></div>
+              <div class="col-6 col-md-6 col-s-6">
+                <a class="gh btn btn-sm border-0" href="https://github.com/LuzmyGaal" role="button" target="_blank"
+                  ><i class="fa fa-brands fa-github"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-md-6 col-12 my-4">
+        <div class="col-xl-3 col-md-4 my-4">
           <div class="card text-center rounded-0 border-0" id="card1">
             <div class="hex-img mt-5 mb-4">
-              <svg
-                viewBox="0 0 100 100"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg viewBox="0 0 100 100">
                 <defs>
                   <pattern
-                    id="img1"
+                    id="img5"
                     patternUnits="userSpaceOnUse"
                     width="100"
                     height="100"
                   >
                     <image
-                      xlink:href="https://i.imgur.com/RCwPA3O.jpg"
-                      x="-25"
-                      width="150"
+                      xlink:href="./../src/assets/aboutUs/hexBg.png"
+                      x="0"
+                      width="180"
                       height="100"
                     />
                   </pattern>
                 </defs>
                 <polygon
                   points="50 1 95 25 95 75 50 99 5 75 5 25"
-                  fill="url(#img1)"
+                  fill="url(#img5)"
                 />
               </svg>
             </div>
             <h5 class="card-name">Angel Martínez</h5>
             <p class="position">Desarrollador</p>
             <div class="row mx-5 mb-5 mt-3 justify-content-center">
-              <div class="col-2 px-1 py-2">
-                <div class="py-4 fa fa-linkedin"></div>
+              <div class="col-6 col-md-6 col-s-6">
+                <a class="li btn btn-sm border-0" href="https://www.linkedin.com/in/%C3%A1ngel-mart%C3%ADnez-b87842207/" role="button" target="_blank"
+                  ><i class="fa fa-brands fa-linkedin-in"></i
+                ></a>
               </div>
-              <div class="col-2 px-1 py-2">
-                <div class="py-4 fa fa-github"></div>
+              <div class="col-6 col-md-6 col-s-6">
+                <a class="gh btn btn-sm border-0" href="https://github.com/soyangelmtz" role="button" target="_blank"
+                  ><i class="fa fa-brands fa-github"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-md-6 col-12 my-4">
+        <div class="col-xl-3 col-md-4 my-4">
           <div class="card text-center rounded-0 border-0" id="card1">
             <div class="hex-img mt-5 mb-4">
-              <svg
-                viewBox="0 0 100 100"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg viewBox="0 0 100 100">
                 <defs>
                   <pattern
-                    id="img1"
+                    id="img6"
                     patternUnits="userSpaceOnUse"
                     width="100"
                     height="100"
                   >
                     <image
-                      xlink:href="https://i.imgur.com/RCwPA3O.jpg"
-                      x="-25"
-                      width="150"
+                      xlink:href="./../src/assets/aboutUs/hexBg.png"
+                      x="0"
+                      width="180"
                       height="100"
                     />
                   </pattern>
                 </defs>
                 <polygon
                   points="50 1 95 25 95 75 50 99 5 75 5 25"
-                  fill="url(#img1)"
+                  fill="url(#img6)"
                 />
               </svg>
             </div>
             <h5 class="card-name">Jaciel Menera</h5>
             <p class="position">Desarrollador</p>
             <div class="row mx-5 mb-5 mt-3 justify-content-center">
-              <div class="col-2 px-1 py-2">
-                <div class="py-4 fa fa-linkedin"></div>
+              <div class="col-6 col-md-6 col-s-6">
+                <a class="li btn btn-sm border-0" href="https://www.linkedin.com/in/jacieljm/" role="button" target="_blank"
+                  ><i class="fa fa-brands fa-linkedin-in"></i
+                ></a>
               </div>
-              <div class="col-2 px-1 py-2">
-                <div class="py-4 fa fa-github"></div>
+              <div class="col-6 col-md-6 col-s-6">
+                <a class="gh btn btn-sm border-0" href="https://github.com/JacielJM" role="button" target="_blank"
+                  ><i class="fa fa-brands fa-github"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-md-6 col-12 my-4">
+        <div class="col-xl-3 col-md-4 my-4">
           <div class="card text-center rounded-0 border-0" id="card1">
             <div class="hex-img mt-5 mb-4">
-              <svg
-                viewBox="0 0 100 100"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg viewBox="0 0 100 100">
                 <defs>
                   <pattern
-                    id="img1"
+                    id="img7"
                     patternUnits="userSpaceOnUse"
                     width="100"
                     height="100"
                   >
                     <image
-                      xlink:href="https://i.imgur.com/RCwPA3O.jpg"
-                      x="-25"
-                      width="150"
+                      xlink:href="./../src/assets/aboutUs/hexBg.png"
+                      x="0"
+                      width="180"
                       height="100"
                     />
                   </pattern>
                 </defs>
                 <polygon
                   points="50 1 95 25 95 75 50 99 5 75 5 25"
-                  fill="url(#img1)"
+                  fill="url(#img7)"
                 />
               </svg>
             </div>
             <h5 class="card-name">Laura Sánchez</h5>
             <p class="position">Desarrolladora</p>
             <div class="row mx-5 mb-5 mt-3 justify-content-center">
-              <div class="col-2 px-1 py-2">
-                <div class="py-4 fa fa-linkedin"></div>
+              <div class="col-6 col-md-6 col-s-6">
+                <a class="li btn btn-sm border-0" href="http://www.linkedin.com/in/lauraszsoft" role="button" target="_blank"
+                  ><i class="fa fa-brands fa-linkedin-in"></i
+                ></a>
               </div>
-              <div class="col-2 px-1 py-2">
-                <div class="py-4 fa fa-github"></div>
+              <div class="col-6 col-md-6 col-s-6">
+                <a class="gh btn btn-sm border-0" href="https://github.com/lausanchez98" role="button" target="_blank"
+                  ><i class="fa fa-brands fa-github"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="container bg-black h1"></div>
+    </footer>
+    <script src="./../src/js/aboutUs.js"></script>
   </body>
 </html>
