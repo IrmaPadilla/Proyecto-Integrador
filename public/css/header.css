@@ -74,7 +74,7 @@ button:hover {
   .desktop-hidden-eU {
     display: none;
   }
-   {
+  * {
     display: none;
   }
 }
