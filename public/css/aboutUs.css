@@ -35,8 +35,8 @@ h3, h5 {
 }
 
 .fa {
-  color: white;
-  width: 40px;
+  color: #ffffff;
+  width: 4rem;
   transition: 0.2s;
 }
 
@@ -69,5 +69,19 @@ svg {
 
 footer{
   background-color: #1F6F8B;
-  height: 20rem;
+  height: 3rem;
+}
+
+footer .container {
+  padding-top: 1rem;
+}
+
+footer a, span{
+  font-family: 'Days One', sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #D9D9D9;
 }
