@@ -70,19 +70,6 @@ ul{
     align-items: center;
     padding-top: 0;
 }
-button{
-    text-align: center;
-    font-size: 24px;
-    color: #fff;
-    width: 100%;
-    padding: 15px;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    margin-top: 5px;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
 
 footer{
     margin-top: 125px;
