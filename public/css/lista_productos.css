@@ -21,7 +21,10 @@ html {
 }
 /* Carrito de compras */
 
-
+nav {
+  font-family: Days One, sans-serif;
+  font-size: 1.6rem;
+}
 /* Filtros */
 select {
     background-color: transparent;

@@ -61,7 +61,7 @@ function mostrarProductos() {
     const productosHTML = document.createElement("div");
     productosHTML.classList.add("col-md-3", "col-sm-6", "mb-5", "col-6");
     productosHTML.innerHTML += `
-    <div class="card">
+    <div class="card h-100">
         <img class="card-mg-top" src=${imagen} />
         <div class="card-body">
           <h2 class="fw-semibold">${marca}</h2>

@@ -26,6 +26,20 @@ header {
   background-color: #d9d9d9;
 }
 
+nav {
+  font-family: Days One, sans-serif;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-image: url(/public/src/img/login-bg.jpg);
+}
+
+.boton-login{
+  align-items: center;
+}
+
+
 a,
 .header-logo-eU {
   cursor: pointer;
