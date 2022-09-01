@@ -1,16 +1,8 @@
-const btnPagar = document.getElementById('pagar');
-const divPago = document.getElementById('pago');
-const alerta = document.getElementById('alert');
-const cardNumber = document.getElementById('cardNumber');
-const cardName = document.getElementById('cardName');
-const cardExpiration = document.getElementById('cardExpiration');
-
-btnPagar.addEventListener('click', e => {
-	e.preventDefault();
-	verifyPago();
-});
-
-function verifyPago() {
+export function verifyPago() {
+	const alerta = document.getElementById('alert');
+	const cardNumber = document.getElementById('cardNumber');
+	const cardName = document.getElementById('cardName');
+	const cardExpiration = document.getElementById('cardExpiration');
 	if (cardNumber.value && cardName.value && cardExpiration.value) {
 		alerta.innerHTML =
 			'Pago completado <iconify-icon icon="flat-color-icons:ok"></iconify-icon>';
