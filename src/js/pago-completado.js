@@ -3,7 +3,11 @@ export function verifyPago() {
 	const cardNumber = document.getElementById('cardNumber');
 	const cardName = document.getElementById('cardName');
 	const cardExpiration = document.getElementById('cardExpiration');
-	if (cardNumber.value && cardName.value && cardExpiration.value) {
+
+	const valores = [cardNumber.value, cardName.value, cardExpiration.value];
+	let flag = valores.some(v => v == '');
+	console.log(flag);
+	if (!flag) {
 		alerta.setAttribute(
 			'class',
 			'bg-success rounded text-white mt-5 py-3 text-center'

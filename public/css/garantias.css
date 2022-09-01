@@ -1,4 +1,4 @@
 #alertReg,
 #alert {
-	transition: 0.8s;
+	transition: 0.8s ease-out;
 }
