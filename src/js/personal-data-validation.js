@@ -1,25 +1,11 @@
-const clientName = document.getElementById('name');
-const ticketNumber = document.getElementById('ticketNumber');
-const purchaseDate = document.getElementById('purchaseDate');
-const category = document.getElementById('categoria');
-const email = document.getElementById('email');
-const phone = document.getElementById('telefono');
-const alertaReg = document.getElementById('alertReg');
-
-const btnReg = document.getElementById('reg');
-btnReg.addEventListener('click', e => {
-	e.preventDefault();
-	verifyInfo();
-});
-
-alertaReg.addEventListener('mouseleave', cleanAlert);
-
-function cleanAlert() {
-	alertaReg.innerHTML = '';
-	alertaReg.setAttribute('class', '');
-}
-
-function verifyInfo() {
+export function verifyInfo() {
+	const alertaReg = document.getElementById('alertReg');
+	const clientName = document.getElementById('name');
+	const ticketNumber = document.getElementById('ticketNumber');
+	const purchaseDate = document.getElementById('purchaseDate');
+	const category = document.getElementById('categoria');
+	const email = document.getElementById('emailInput');
+	const phone = document.getElementById('telefono');
 	if (
 		clientName.value &&
 		ticketNumber.value &&
