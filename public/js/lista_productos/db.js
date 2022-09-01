@@ -15,7 +15,7 @@ export const products = [
   },
   {
     marca: "TRUPPER",
-    nombre: "CARRETILLA DE 65L NARANJA",
+    nombre: "CARRETILLA DE 65 LITROS NARANJA METALICA",
     precio: "1,899",
     rating: "5",
     imagen: "../src/assets/lista_productos/product_3.png",

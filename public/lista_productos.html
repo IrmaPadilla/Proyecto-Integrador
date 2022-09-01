@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="../src/assets/favicon-32x32.png" sizes="32x32" type="image/x-icon">
     <title>Nuestros Productos</title>
+    <script src="/public/js/lista_productos/main.js" type="module" async defer></script>
 
 </head>
 
@@ -81,52 +82,58 @@
     <!-- ================= -->
     <!-- Barra de navegacion  -->
     <!-- ================= -->
-
-    <div class="container mx-auto">
-        <div class="row mx-auto">
-            <div class="col-xl-10 col-sm-9 col-8 g-0 mx-auto">
-                <input type="text" placeholder="Buscar un producto..." class="w-100 mt-3 searchbar form-check-input">
-            </div>
-            <div class="col-xl-1 col-sm-2 col-3 g-0 mx-auto">
-                <button class="search__button mt-3"><i class="bi bi-search w-100"></i></button>
-            </div>
-            </input>
-            <!-- ================= -->
-            <!-- Carrito de compras-->
-            <!-- ================= -->
-            <div class="col-xl-1 col-sm-1 col-1 g-0 mt-3 cart__icon">
-                <i class="bi bi-cart fs-1"></i>
+    <form action="#" id="formulario" method="POST">
+        <div class="container mx-auto">
+            <div class="row mx-auto">
+                <div class="col-xl-10 col-sm-9 col-8 g-0 mx-auto">
+                    <input type="text" placeholder="Buscar un producto..." class="w-100 mt-3 searchbar form-check-input"
+                        id="buscar__productos">
+                </div>
+                <div class="col-xl-1 col-sm-2 col-3 g-0 mx-auto">
+                    <button class="search__button mt-3"><i class="bi bi-search w-100"></i></button>
+                </div>
+                </input>
+                <!-- ================= -->
+                <!-- Carrito de compras-->
+                <!-- ================= -->
+                <div class="col-xl-1 col-sm-1 col-1 g-0 mt-3 cart__icon">
+                    <i class="bi bi-cart fs-1"></i>
+                </div>
             </div>
         </div>
-    </div>
+    </form>
 
 
     <!-- ================= -->
     <!-- Filtros Busqueda  -->
     <!-- ================= -->
-
-    <div class="container mx-auto">
-        <div class="row mx-auto">
-            <div class="col-md-4 text-center col-4 mt">
-                <p class="fs-2">Marca</p>
-                <select name="" id="" class="fs-4">
-                    <option value="">--Seleccionar--</option>
-                </select>
-            </div>
-            <div class="col-md-4 text-center col-4">
-                <p class="fs-2">Precio</p>
-                <select name="" id="" class="fs-4">
-                    <option value="">--Seleccionar--</option>
-                </select>
-            </div>
-            <div class="col-md-4 text-center col-4">
-                <p class="fs-2">Ordenar</p>
-                <select name="" id="" class="fs-4">
-                    <option value="">--Seleccionar--</option>
-                </select>
+    <form id="buscador">
+        <div class="container mx-auto">
+            <div class="row mx-auto">
+                <div class="col-md-4 text-center col-4 mt">
+                    <p class="fs-2">Marca</p>
+                    <select name="" class="fs-4" id="marca">
+                        <option value="">--Seleccionar--</option>
+                        <!-- <option value="Trupper">trupper</option> -->
+                    </select>
+                </div>
+                <div class="col-md-4 text-center col-4">
+                    <p class="fs-2">Precio</p>
+                    <select name="" class="fs-4" id="precio">
+                        <option value="">--Seleccionar--</option>
+                    </select>
+                </div>
+                <div class="col-md-4 text-center col-4">
+                    <p class="fs-2">Ordenar</p>
+                    <select name="" class="fs-4" id="ordenar">
+                        <option value="">--Seleccionar--</option>
+                        <option value="">Mayor a Menor</option>
+                        <option value="">Menor a Mayor</option>
+                    </select>
+                </div>
             </div>
         </div>
-    </div>
+    </form>
 
     <!-- ================= -->
     <!-- Cards de productos-->
@@ -135,126 +142,16 @@
     <section class="seccion" id="lista__productos">
         <div class="container mx-auto">
             <div class="row" id="container__products">
-                <div class="col-md-3 col-sm-6 mb-5 col-6">
-                    <div class="card">
-                        <img class="card-mg-top" src="../src/assets/lista_productos/product-1.png" alt="">
-                        <div class="card-body">
-                            <h2 class="fw-semibold">Trupper</h2>
-                            <h2 class="card-title">Carretilla 4.5 ft3 Neumática, bastidor tubular, Truper</h2>
-                            <div>
-                                <p></p>
-                            </div>
-                            <p class="card-title fs-2 fw-bold precio">$1,795.00</p>
-                            <button href="#" class="btn btn-primary w-100 button__cart fs-3 agregar__carrito">
-                                Agregar al Carrito
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-5 col-6">
-                    <div class="card">
-                        <img class="card-mg-top" src="../src/assets/lista_productos/product-1.png" alt="">
-                        <div class="card-body">
-                            <h2 class="fw-semibold">Trupper</h2>
-                            <h2 class="card-title">Carretilla 4.5 ft3 Neumática, bastidor tubular, Truper</h2>
-                            <p class="card-text fs-2 fw-bold precio">$1,795.00</p>
-                            <button href="#" class="btn btn-primary w-100 button__cart fs-3 agregar__carrito">
-                                Agregar al Carrito
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-5 col-6">
-                    <div class="card">
-                        <img class="card-mg-top" src="../src/assets/lista_productos/product-1.png" alt="">
-                        <div class="card-body">
-                            <h2 class="fw-semibold">Trupper</h2>
-                            <h2 class="card-title">Carretilla 4.5 ft3 Neumática, bastidor tubular, Truper</h2>
-                            <p class="card-text fs-2 fw-bold precio">$1,795.00</p>
-                            <button href="#" class="btn btn-primary w-100 button__cart fs-3 agregar__carrito">
-                                Agregar al Carrito
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-5 col-6">
-                    <div class="card">
-                        <img class="card-mg-top" src="../src/assets/lista_productos/product-1.png" alt="">
-                        <div class="card-body">
-                            <h2 class="fw-semibold">Trupper</h2>
-                            <h2 class="card-title">Carretilla 4.5 ft3 Neumática, bastidor tubular, Truper</h2>
-                            <p class="card-text fs-2 fw-bold precio">$1,795.00</p>
-                            <button href="#" class="btn btn-primary w-100 button__cart fs-3 agregar__carrito">
-                                Agregar al Carrito
-                            </button>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-3 col-sm-6 mb-5 col-6">
-                    <div class="card">
-                        <img class="card-mg-top" src="../src/assets/lista_productos/product-1.png" alt="">
-                        <div class="card-body">
-                            <h2 class="fw-semibold">Trupper</h2>
-                            <h2 class="card-title">Carretilla 4.5 ft3 Neumática, bastidor tubular, Truper</h2>
-                            <div>
-                                <p></p>
-                            </div>
-                            <p class="card-title fs-2 fw-bold precio">$1,795.00</p>
-                            <button href="#" class="btn btn-primary w-100 button__cart fs-3 agregar__carrito">
-                                Agregar al Carrito
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-5 col-6">
-                    <div class="card">
-                        <img class="card-mg-top" src="../src/assets/lista_productos/product-1.png" alt="">
-                        <div class="card-body">
-                            <h2 class="fw-semibold">Trupper</h2>
-                            <h2 class="card-title fs-2">Carretilla 4.5 ft3 Neumática, bastidor tubular, Truper
-                            </h2>
-                            <p class="card-text fs-2 fw-bold precio">$1,795.00</p>
-                            <button href="#" class="btn btn-primary w-100 button__cart fs-3 agregar__carrito">
-                                Agregar al Carrito
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-5 col-6">
-                    <div class="card">
-                        <img class="card-mg-top" src="../src/assets/lista_productos/product-1.png" alt="">
-                        <div class="card-body">
-                            <h2 class="fw-semibold">Trupper</h2>
-                            <h2 class="card-title fs-2">Carretilla 4.5 ft3 Neumática, bastidor tubular, Truper
-                            </h2>
-                            <p class="card-text fs-2 fw-bold precio">$1,795.00</p>
-                            <button href="#" class="btn btn-primary w-100 button__cart fs-3 agregar__carrito">
-                                Agregar al Carrito
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-5 col-6">
-                    <div class="card">
-                        <img class="card-mg-top" src="../src/assets/lista_productos/product-1.png" alt="">
-                        <div class="card-body">
-                            <h2 class="fw-semibold">Trupper</h2>
-                            <h2 class="card-title fs-2">Carretilla 4.5 ft3 Neumática, bastidor tubular, Truper
-                            </h2>
-                            <p class="card-text fs-2 fw-bold precio">$1,795.00</p>
-                            <button href="#" class="btn btn-primary w-100 button__cart fs-3 agregar__carrito">
-                                Agregar al Carrito
-                            </button>
-                        </div>
-                    </div>
+            </div>
+        </div>
 
     </section>
 
     <footer>
         <div class="container" id="copyright"></div>
     </footer>
-    <script src="/public/JS/main.js" type="module"></script>
+
 </body>
 
 </html>

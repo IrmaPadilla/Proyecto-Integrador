@@ -1,16 +1,31 @@
 //Imports
 import { products } from "./db.js";
-// console.table(products);
+import { llenarMarca, llenarPrecio } from "./filters.js";
+import { copyrightDate } from "./copyright.js";
 
 //Variables
 const botonCarrito = document.querySelector("#botonCarrito");
 const listaProductos = document.querySelector("#lista__productos");
+const formulario = document.querySelector("#formulario");
 
 //Eventos
 cargarEventListeners();
 function cargarEventListeners() {
   //Agregar al carrito presionando el boton
   listaProductos.addEventListener("click", agregarAlCarrito);
+  window.addEventListener("submit", buscarLosProductos);
+}
+
+//Llenar option Marca
+llenarMarca();
+
+//Llenar option Precio
+llenarPrecio();
+
+function buscarLosProductos(e) {
+  e.preventDefault();
+  const buscarProductos = document.querySelector("#buscar__productos").value;
+  console.log(buscarProductos);
 }
 
 //Funciones
@@ -22,29 +37,8 @@ function agregarAlCarrito(e) {
   }
 }
 
-//Copyright
-copyrightDate();
-function copyrightDate() {
-  const year = new Date();
-  console.log(year.getFullYear());
-  const copyright = document.querySelector("#copyright");
-  const copyrightDateShow = document.createElement("p");
-  copyrightDateShow.classList.add(
-    "fs-2",
-    "text-white",
-    "fw-bold",
-    "text-center"
-  );
-  copyrightDateShow.innerHTML = `
-    Copyright ${year.getFullYear()}
-  `;
-  copyright.appendChild(copyrightDateShow);
-}
-
 //Lee el contenido y extrae la información del producto.
 function leerContenidoProducto(producto) {
-  console.log(producto);
-
   //Crear un objeto con el contenido del card del producto seleccionado.
   const infoProducto = {
     imagen: producto.querySelector("img").src,
@@ -52,7 +46,8 @@ function leerContenidoProducto(producto) {
     precio: producto.querySelector(".precio").textContent,
     cantidad: 1,
   };
-  console.log(infoProducto);
+  console.table(infoProducto);
+  // console.table(infoProducto);
 }
 
 //Mostrando productos con JS
@@ -60,13 +55,12 @@ mostrarProductos();
 function mostrarProductos() {
   // Leer el elemento donde ira el HTML
   const contenedorProductos = document.querySelector("#container__products");
-  // Construir el html de los autos
+  // Construir el html de los productos
   products.forEach((productos) => {
     const { marca, nombre, precio, rating, imagen } = productos;
-    console.table(productos);
     const productosHTML = document.createElement("div");
     productosHTML.classList.add("col-md-3", "col-sm-6", "mb-5", "col-6");
-    productosHTML.innerHTML = `
+    productosHTML.innerHTML += `
     <div class="card">
         <img class="card-mg-top" src=${imagen} />
         <div class="card-body">
@@ -85,3 +79,7 @@ function mostrarProductos() {
     contenedorProductos.appendChild(productosHTML);
   });
 }
+
+//Copyright
+copyrightDate();
+
