@@ -56,3 +56,17 @@ export const products = [
     imagen: "../src/assets/lista_productos/product_8.png",
   },
 ];
+
+// class products {
+//   constructor(marca, nombre, precio, rating, imagen) {
+//     this.marca = marca;
+//     this.nombre = nombre;
+//     this.precio = precio;
+//     this.rating = rating;
+//     this.imagen = imagen;
+//   }
+// }
+
+// const product3 = new products("trupper", "carretilla", 2143, 4, "url");
+
+// console.log(product3);
