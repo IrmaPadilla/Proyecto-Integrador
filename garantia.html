@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos -->
     <link rel="stylesheet" href="public/src/styles/custom-boostrap.css">
     <link rel="stylesheet" href="public/css/header.css">
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Iconos -->
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
+    <!-- Funciones -->
     <script src="src/js/footer.js" defer></script>
     <script src="src/js/pago-completado.js" defer></script>
+    <script src="src/js/personal-data-validation.js" defer></script>
     <title>Garantía</title>
 </head>
 
@@ -177,8 +182,10 @@
                             </label>
                         </div>
                         <div class="text-center">
-                            <button type="button"
+                            <button id="reg" type="submit"
                                 class="btn btn-psgdarkblue btn-md-lg m-md-5 px-md-5 fs-1">Registrar</button>
+                            <h5 id="alertReg" class="">
+                            </h5>
                         </div>
                     </div>
                 </div>
