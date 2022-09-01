@@ -7,6 +7,6 @@ body {
     background-image: url(/public/src/img/login-bg.jpg);
 }
 
-.boton-login{
-    align-items: center;
+.registro-h1{
+    text-align: center;
 }
