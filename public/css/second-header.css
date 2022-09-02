@@ -1,0 +1,77 @@
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(51, 153, 217);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-radius: 0.2rem;
+  }
+
+  .logo-del-header-eU {
+    width: 6rem;
+    height: auto;
+    margin: 0;
+    padding: 0rem 1rem;
+  }
+  
+
+  .navbar a {
+    float: right;
+    font-size: 16px;
+    font-family: "Days One";
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: "Days One";
+    margin: 0;
+  }
+  
+
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgb(145, 38, 190);
+  }
+  
+
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+  }
+  
+
+  .subnav-content a {
+    float: left;
+    color: rgb(56, 183, 47);
+    text-decoration: none;
+  }
+  
+
+  .subnav-content a:hover {
+    background-color: rgb(37, 148, 151);
+    color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }

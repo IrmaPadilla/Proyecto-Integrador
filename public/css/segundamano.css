@@ -1,0 +1,24 @@
+.titulo{
+    text-align:center;
+    letter-spacing: 0.1em;
+}
+
+
+.imgall{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+footer{
+    margin-top: 125px;
+    border: 0px solid black;
+    letter-spacing: 0.1em;
+    }
+
+.cardbutton {
+    background-color: rgba(0, 136, 169, 1)!important;
+    color: #e6d5b8!important;
+}
