@@ -22,14 +22,14 @@ export const products = [
   },
   {
     marca: "TRUPPER",
-    nombre: "CARRETILLA CONCHA PLASTICA NEGRA",
+    nombre: "CARRETILLA CONCHA PLASTICA NEGRA 80 LITROS",
     precio: "1,785",
     rating: "4",
     imagen: "../src/assets/lista_productos/product_4.png",
   },
   {
     marca: "TRUPPER",
-    nombre: "CARRETILLA BASTIDOR TUBULAR ROJA",
+    nombre: "CARRETILLA BASTIDOR TUBULAR ROJA 80 LITROS",
     precio: "2,015",
     rating: "5",
     imagen: "../src/assets/lista_productos/product_5.png",

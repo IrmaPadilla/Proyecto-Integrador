@@ -40,6 +40,8 @@ html {
 nav {
   font-family: Days One, sans-serif;
   font-size: 1.6rem;
+  padding: 1.3rem !important;
+  font-weight: 400 !important;
 }
 /* Filtros */
 select {

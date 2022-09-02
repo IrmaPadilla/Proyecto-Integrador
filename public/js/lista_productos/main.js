@@ -16,8 +16,7 @@ function cargarEventListeners() {
   window.addEventListener("submit", buscarLosProductos);
 }
 
-//Llenar option Marca
-llenarMarca();
+
 
 //Llenar option Precio
 llenarPrecio();
