@@ -1,0 +1,225 @@
+body {
+  background-image: url(/public/images/WhatsApp\ Image\ 2022-08-17\ at\ 8.32.00\ PM\ \(2\).jpeg);
+  background-size: 100%;
+  background-position-x:3px 3px 3px 3px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  
+  li, a, button {
+    font-family: "Days One", arial;
+    font-weight: 500px;
+    font-size: 16px;
+    color:#155770;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-color: #f1f1f1;
+  }
+  
+  a, .header-logo-eU {
+    cursor: pointer;
+    width: 130px;
+    height: auto;
+    margin-right: 3px;
+    margin-top: 2px;
+  
+  }
+  .cta-eU {
+    margin-left:0fr;
+    display:table-header-group;
+    font-size: 15px;
+    font-family: "Days One";
+
+  }
+  .nav-links-eU {
+    list-style: none;
+    color: #155770;
+    margin-top: 20px;
+    margin-right: 70px;
+  }
+
+  
+  .nav-links-eU li {
+    display: inline-block;
+    padding: 10px 18px;
+    margin:1px;
+  }
+  
+  .nav-links-eU li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav-links-eU li a:hover {
+    color: #155770;
+  }
+
+  #search {
+    margin: 10px 250px;
+    padding: 3px 3px;
+    border-color: #ffffff;
+  }
+
+
+  button {
+    padding: 8px 18px 5px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    color: #E6D5B8;
+    word-wrap:break-word;
+    text-align: center;
+    text-align-last: center;
+  }
+  .searchbar_button {
+    margin: 3px 230px;
+    padding: 4px 6px;
+    align-content: center;
+    background-color: #ffffff;
+    color: black;
+  }
+
+  .heart_button {
+    padding:0px;
+    margin:0px;
+    color: rgb(255, 255, 255);
+    background-color: #ffffff00; 
+    
+  }
+
+  .cart_button {
+    padding:0px;
+    margin:0px; 
+    color: rgb(255, 255, 255);
+    background-color: #ffffff00;
+  }
+  
+  .mensaje_button {
+    padding:0px 0px 0px 0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    margin:8px -10px 15px 37px; 
+    color: rgb(255, 255, 255);
+    background-color: #ffffff00;
+    text-align: center;
+    text-justify: auto;
+    font-weight: 500;
+  }
+
+  .dudas_button {
+    padding:0px 0px 0px 0px;
+    padding-top:10px;
+    padding-bottom:0px;
+    margin:8px -10px 10px 30px; 
+    color: rgb(255, 255, 255);
+    background-color: #ffffff00;
+    text-align:center;
+    font-weight: 500;
+  }
+  
+  button:hover {
+    background-color: rgba(28, 43, 45, 0.8);
+    color: #ffffff;
+  }
+  
+  /* Header Tablet Responsive*/
+  
+  @media screen and (max-width: 1200px){
+  
+  }
+  
+  @media screen and (min-width: 1201px){ /* Magia de sirena chafa para esconder el menu que va a contener los demas submenus porque no quiero aventarme 5 horas de JavaScript */
+    .desktop-hidden-eU {
+      display: none;
+    }
+   
+  }
+  @media screen and (max-width: 500px){ /* <<< ---- Mobile */
+    *{
+      background-color: rgb(56, 103, 203);
+    }
+  }
+
+  .dy-100905994 {
+    padding:8px;
+    margin: 1000px 1000px 70px 1150px;
+    margin-bottom: 110px;
+    margin-top: -120px;
+    box-sizing: border-box;
+    width: 300px;
+    height:300px;
+  }
+  
+  .dy-100905994 {
+    font-family: Arial, Helvetica, sans-serif;
+    height: min-content;
+    background-color: #7D9D9C;
+    border-radius: 20px;
+  }
+
+  .dy-100905994 .dy_close-btn {
+    position: fixed;
+    top: 0;
+    right:0px;
+    width:0px;
+    height:0px;
+  }
+
+  .dy-100905994 .dy_content-area {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 30px 12px 30px;
+
+  }
+
+  .dy-100905994 .dy_tittle {
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    padding: 0px 8px;
+    background: linear-gradient(0deg, #E6D5B8(255, 232, 0, 0.33) 60%, while 40%);
+  }
+
+  .dy-100905994 .dy_text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14.4px;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #E6D5B8;
+  }
+
+  .dy-100905994 .dy_cta {
+    all: unset;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    padding: 8px 40px;
+    background-color: #E6D5B8;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
