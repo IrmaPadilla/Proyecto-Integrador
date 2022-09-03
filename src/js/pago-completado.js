@@ -6,14 +6,13 @@ export function verifyPago() {
 
 	const valores = [cardNumber.value, cardName.value, cardExpiration.value];
 	let flag = valores.some(v => v == '');
-	console.log(flag);
 	if (!flag) {
 		alerta.setAttribute(
 			'class',
-			'bg-success rounded text-white mt-5 py-3 text-center'
+			'bg-transparent rounded text-dark mt-2 py-1 text-center'
 		);
 		alerta.innerHTML =
-			'Pago completado <iconify-icon icon="flat-color-icons:ok"></iconify-icon>';
+			'Datos validados correctamente <iconify-icon icon="flat-color-icons:ok"></iconify-icon>';
 	} else {
 		alerta.setAttribute(
 			'class',
@@ -22,4 +21,5 @@ export function verifyPago() {
 		alerta.innerHTML =
 			'Por favor complete sus datos <iconify-icon icon="bxs:error" style="color: orange;"></iconify-icon>';
 	}
+	return !flag;
 }

@@ -26,8 +26,8 @@
         <!-- nav-bar -->
         <nav class="navbar navbar-expand-lg bg-psgblue">
             <div class="container-fluid">
-                <a class="navbar-brand text-psglightgold" href="/public/paginaprincipal.html"><img src="/src/assets/psg-navbar-logo-night.png"
-                        height="72" width="128"></a>
+                <a class="navbar-brand text-psglightgold" href="/public/paginaprincipal.html"><img
+                        src="/src/assets/psg-navbar-logo-night.png" height="72" width="128"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -138,7 +138,7 @@
 
                     </div>
                     <!-- pago de garantia extendida -->
-                    <div class="col-12 col-md-5 py-md-0 px-md-0 mx-auto my-0">
+                    <div id="pagoGarantia" class="col-12 col-md-5 py-md-0 px-md-0 mx-auto my-0">
                         <div class="row bg-psglightgray p-md-5 p-3 rounded">
                             <iconify-icon icon="material-symbols:add-card-outline-rounded" style="color: #1f6f8b;"
                                 width="35"></iconify-icon>
@@ -147,21 +147,21 @@
 
                             <!-- Numero de tarjeta  -->
                             <div class="form-outline mb-md-2">
-                                <input type="text" id="cardNumber" class="form-control"
+                                <input type="text" id="cardNumber" class="form-control pago"
                                     placeholder="xxxx-xxxx-xxxx-xxxx" required />
                                 <label class="form-label" for="cardNumber">Número de tarjeta</label>
                             </div>
                             <div id="pago" class="row mx-1 g-2">
                                 <div class="col-md-8">
                                     <div class="form-outline">
-                                        <input type="text" class="form-control" id="cardName"
+                                        <input type="text" class="form-control pago" id="cardName"
                                             placeholder="Alguien Ejemplo">
                                         <label for="cardName">Nombre como aparece en la tarjeta</label>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-outline">
-                                        <input type="month" class="form-control" id="cardExpiration"
+                                        <input type="month" class="form-control pago" id="cardExpiration"
                                             placeholder="MM/AA">
                                         <label for="cardExpiration">Vencimiento</label>
                                     </div>
@@ -169,7 +169,8 @@
                                 <h5 id="alert" class="">
                                 </h5>
                             </div>
-                            <button id="pagar" type="button" class="btn btn-psgdarkblue btn-block my-4">Pagar</button>
+                            <button id="pagar" type="button" class="btn btn-psgdarkblue btn-block my-4"
+                                disabled>Pagar</button>
 
                         </div>
                         <!-- Terminos y condiciones -->
@@ -188,22 +189,22 @@
                                 </label>
                             </div>
                             <div class="text-center">
-                                <button id="reg" type="submit"
-                                    class="btn btn-psgdarkblue btn-md-lg m-md-5 px-md-5 fs-1">Registrar</button>
-                                <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+                                <button id="reg" type="submit" class="btn btn-psgdarkblue btn-md-lg m-md-5 px-md-5 fs-1"
+                                    disabled>Registrar</button>
+                                <!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button> -->
 
                                 <div class="toast-container position-fixed bottom-0 end-0 p-3">
                                     <div id="liveToast" class="toast" role="alert" aria-live="assertive"
                                         aria-atomic="true">
                                         <div class="toast-header">
-                                            <img src="..." class="rounded me-2" alt="...">
-                                            <strong class="me-auto">Bootstrap</strong>
-                                            <small>11 mins ago</small>
+                                            <img src="/src/assets/favicon-32x32.png" class="rounded me-2" alt="...">
+                                            <strong class="me-auto">Ferretería PSG</strong>
+                                            <small>Paypal</small>
                                             <button type="button" class="btn-close" data-bs-dismiss="toast"
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="toast-body">
-                                            Hello, world! This is a toast message.
+                                            Su pago ha sido completado con éxito.
                                         </div>
                                     </div>
                                 </div>
