@@ -7,16 +7,20 @@ export function verifyPago() {
 	const valores = [cardNumber.value, cardName.value, cardExpiration.value];
 	let flag = valores.some(v => v == '');
 	if (!flag) {
-		alerta.setAttribute(
-			'class',
-			'bg-transparent rounded text-dark mt-2 py-1 text-center'
-		);
 		alerta.innerHTML =
-			'Datos validados correctamente <iconify-icon icon="flat-color-icons:ok"></iconify-icon>';
+			'<div class="spinner-border text-psgblue" role="status"><span class="visually-hidden">Loading...</span></div>';
+		setTimeout(() => {
+			alerta.setAttribute(
+				'class',
+				'bg-transparent rounded text-dark mt-2 py-1 text-center'
+			);
+			alerta.innerHTML =
+				'Datos validados correctamente <iconify-icon icon="flat-color-icons:ok"></iconify-icon>';
+		}, 2500);
 	} else {
 		alerta.setAttribute(
 			'class',
-			'bg-danger rounded text-white mt-5 py-3 text-center'
+			'bg-transparent rounded text-dark mt-2 py-1 text-center'
 		);
 		alerta.innerHTML =
 			'Por favor complete sus datos <iconify-icon icon="bxs:error" style="color: orange;"></iconify-icon>';

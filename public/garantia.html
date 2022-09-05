@@ -55,43 +55,50 @@
             <!-- 2 column grid layout with text inputs for the first and last names -->
             <div class="container-fluid my-md-2 p-3">
                 <div class="row mb-md-4 mx-md-2 px-2">
-                    <div class="col-12 col-md-5 bg-psglightgray rounded p-md-5 p-3 mx-auto">
+                    <div class="col-12 col-md-5 bg-psglightgray shadow rounded p-md-5 p-3 mx-auto">
 
                         <h6 class="text-dark fw-bold py-2">Por favor ingrese sus datos completos</h6>
                         <!-- Name input -->
-                        <div class="form-outline my-md-4">
-                            <iconify-icon icon="material-symbols:account-circle" style="color: #1f6f8b;" width="35">
-                            </iconify-icon>
+                        <div class="input-group my-md-4 rounded">
+                            <span class="input-group-text flex-nowrap" id="basic-addon1">
+                                <iconify-icon inline icon="material-symbols:account-circle" style="color: #1f6f8b;"
+                                    width="35"></iconify-icon>
+                            </span>
                             <input type="text" id="name" class="form-control" placeholder="Nombre completo" required />
                             <label class="form-label text-psgblue" for="name"></label>
                         </div>
 
                         <!-- Ticket number -->
-                        <div class="form-outline mb-md-2">
-                            <iconify-icon icon="material-symbols:receipt-long" style="color: #1f6f8b;" width="35">
-                            </iconify-icon>
+                        <div class="input-group my-md-4">
+                            <span class="input-group-text flex-nowrap" id="basic-addon1">
+                                <iconify-icon icon="material-symbols:receipt-long" style="color: #1f6f8b;" width="35">
+                                </iconify-icon>
+                            </span>
                             <input type="text" id="ticketNumber" class="form-control" placeholder="Ticket de compra"
                                 required />
                             <label class="form-label" for="ticketNumber"></label>
                         </div>
 
                         <!-- Purchase date input -->
-                        <div class="form-outline mb-md-2">
-                            <iconify-icon icon="material-symbols:calendar-month-rounded" style="color: #1f6f8b;"
-                                width="35">
-                            </iconify-icon>
+                        <div class="input-group my-md-4">
+                            <span class="input-group-text" id="basic-addon1">
+                                <iconify-icon icon="material-symbols:calendar-month-rounded" style="color: #1f6f8b;"
+                                    width="35">
+                                </iconify-icon>
+                            </span>
                             <input type="date" id="purchaseDate" class="form-control" placeholder="Fecha de compra"
                                 required />
                             <label class="form-label" for="purchaseDate"></label>
                         </div>
 
-                        <iconify-icon icon="material-symbols:category-outline-rounded" style="color: #1f6f8b;"
-                            width="35">
-                        </iconify-icon>
-                        <div class="input-group mb-md-2 pb-md-4">
-                            <label class="input-group-text" for="categoria">Categoría</label>
+                        <div class="input-group my-md-4">
+                            <label class="input-group-text" for="categoria">
+                                <iconify-icon icon="material-symbols:category-outline-rounded" style="color: #1f6f8b;"
+                                    width="35">
+                                </iconify-icon>
+                            </label>
                             <select class="form-select" id="categoria">
-                                <option selected>Elija una opción...</option>
+                                <option selected>Elija una categoría...</option>
                                 <option value="1">Carpintería</option>
                                 <option value="2">Electricidad</option>
                                 <option value="3">Plomería</option>
@@ -99,24 +106,29 @@
                         </div>
 
                         <!-- Email input -->
-                        <div class="form-outline mb-md-2">
-                            <iconify-icon icon="material-symbols:alternate-email" style="color: #1f6f8b;" width="35">
-                            </iconify-icon>
+                        <div class="input-group my-md-4">
+                            <span class="input-group-text flex-nowrap" id="basic-addon1">
+                                <iconify-icon icon="material-symbols:alternate-email" style="color: #1f6f8b;"
+                                    width="35">
+                                </iconify-icon>
+                            </span>
                             <input type="email" id="emailInput" class="form-control" placeholder="Correo" required />
                             <label class="form-label" for="emailInput"></label>
                         </div>
 
                         <!-- Phone Number input -->
-                        <div class="form-outline mb-md-2">
-                            <iconify-icon icon="material-symbols:phone-callback-outline-rounded" style="color: #1f6f8b;"
-                                width="35"></iconify-icon>
+                        <div class="input-group my-md-4">
+                            <span class="input-group-text flex-nowrap" id="basic-addon1">
+                                <iconify-icon icon="material-symbols:phone-callback-outline-rounded"
+                                    style="color: #1f6f8b;" width="35"></iconify-icon>
+                            </span>
                             <input type="number" id="telefono" class="form-control"
                                 placeholder="Teléfono de contacto" />
                             <label class="form-label" for="telefono"></label>
                         </div>
 
                         <!-- Checkbox -->
-                        <h6 class="text-dark fw-bold mb-md-2">¿Desea agregar la cobertura extendida?</h6>
+                        <h6 class="text-dark fw-bold my-md-4">¿Desea agregar la cobertura extendida?</h6>
                         <div class="form-check my-md-2">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio1">
                             <label class="form-check-label" for="radio1">
@@ -139,7 +151,7 @@
                     </div>
                     <!-- pago de garantia extendida -->
                     <div id="pagoGarantia" class="col-12 col-md-5 py-md-0 px-md-0 mx-auto my-0">
-                        <div class="row bg-psglightgray p-md-5 p-3 rounded">
+                        <div class="row shadow bg-psglightgray p-md-5 p-3 rounded">
                             <iconify-icon icon="material-symbols:add-card-outline-rounded" style="color: #1f6f8b;"
                                 width="35"></iconify-icon>
                             <h6 class="text-dark fw-bold mb-2">Datos de pago</h6>
@@ -189,10 +201,11 @@
                                 </label>
                             </div>
                             <div class="text-center">
-                                <button id="reg" type="submit" class="btn btn-psgdarkblue btn-md-lg m-md-5 px-md-5 fs-1"
+                                <button id="reg" type="submit"
+                                    class="btn btn-psgdarkblue btn-md-lg m-md-5 px-md-5 fs-1 shadow"
                                     disabled>Registrar</button>
                                 <!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button> -->
-
+                                <!-- toas alerts -->
                                 <div class="toast-container position-fixed bottom-0 end-0 p-3">
                                     <div id="liveToast" class="toast" role="alert" aria-live="assertive"
                                         aria-atomic="true">
