@@ -21,45 +21,45 @@
 </head>
 
 <body>
-    <div class="container-fluid bg-light bg-opacity-25 px-0">
-        <!-- nav-bar -->
-        <nav class="navbar navbar-expand-lg bg-psgblue">
-            <div class="container-fluid">
-                <a class="navbar-brand text-psglightgold" href="#"><img src="/src/assets/psg-navbar-logo-night.png"
-                        height="72" width="128"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link text-psglightgold mx-2" href="/public/aboutUs.html">Sobre Nosotros</a>
-                        <a class="nav-link text-psglightgold mx-2" href="/public/lista_productos.html">Productos</a>
-                        <a class="nav-link text-psglightgold mx-2" href="/public/segundamano.html">Segunda Mano</a>
-                        <a class="nav-link text-psglightgold mx-2" href="/public/garantia.html">Garantías</a>
-                        <a class="nav-link text-psglightgold mx-2" href="/public/contactanos.html">Contacto</a>
-                        <!-- <a class="nav-link text-psglightgold mx-2" href="/">Carrito de Compras</a> -->
-                        <a class="nav-link text-psglightgold mx-2" href="/public/register.html">Registro</a>
-                        <a class="nav-link text-psglightgold mx-2" href="/public/login.html">Iniciar Sesión</a>
-                    </div>
+
+    <!-- nav-bar -->
+    <nav class="navbar navbar-expand-lg bg-psgblue">
+        <div class="container-fluid">
+            <a class="navbar-brand text-psglightgold" href="#"><img src="/src/assets/psg-navbar-logo-night.png"
+                    height="72" width="128"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link text-psglightgold mx-2" href="/public/aboutUs.html">Sobre Nosotros</a>
+                    <a class="nav-link text-psglightgold mx-2" href="/public/lista_productos.html">Productos</a>
+                    <a class="nav-link text-psglightgold mx-2" href="/public/segundamano.html">Segunda Mano</a>
+                    <a class="nav-link text-psglightgold mx-2" href="/public/garantia.html">Garantías</a>
+                    <a class="nav-link text-psglightgold mx-2" href="/public/contactanos.html">Contacto</a>
+                    <!-- <a class="nav-link text-psglightgold mx-2" href="/">Carrito de Compras</a> -->
+                    <a class="nav-link text-psglightgold mx-2" href="/public/register.html">Registro</a>
+                    <a class="nav-link text-psglightgold mx-2" href="/public/login.html">Iniciar Sesión</a>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
 
+    <main class="container">
         <!-- título de bienvenida -->
         <h1 class="text-psgblue fw-bold my-4 text-center bg-light bg-opacity-50">PSG FERRETERÍAS</h1>
         <!-- CAROUSEL -->
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide mb-4" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/src/assets/carrousel/BOAP-1-2.jpg" class="d-block w-100" alt="...">
+                    <img src="/src/assets/carrousel/BOAP-1-2.jpg" class="d-block w-100 rounded" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="/src/assets/carrousel/SET-104.jpg" class="d-block w-100" alt="...">
+                    <img src="/src/assets/carrousel/SET-104.jpg" class="d-block w-100 rounded" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="/src/assets/carrousel/TAL-3-8A2.jpg" class="d-block w-100" alt="...">
+                    <img src="/src/assets/carrousel/TAL-3-8A2.jpg" class="d-block w-100 rounded" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -74,61 +74,179 @@
             </button>
         </div>
 
-        <!-- Secciones -->
-        <h2 class="text-psgblue fw-bold my-4 text-center bg-light bg-opacity-50">EXPLORA</h2>
-        <!-- Galería páginas -->
-        <div class="container text-center rounded">
-            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-            <div class="row">
-                <div class="col-md-8 bg-psglightgray rounded">
-                    <a href="#">
-                        <img class="img-fluid h-100" src="/src/assets/fondoGarantia.jpg" alt="carretilla">
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 bg-psglightgold rounded">
-                    <a href="#">
-                        <img class="img-fluid" src="/src/assets/productos/8169238051.jpg" alt="carretilla">
-                    </a>
+        <!-- vista inicial -->
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-psglightgray">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-psglightgold">Descubre</strong>
+                        <h3 class="mb-0">Productos nuevos</h3>
+                        <div class="mb-1 text-muted">Catálogo</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to
+                            additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                            role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">Thumbnail</text>
+                        </svg> -->
+                        <img class="img-fluid" src="/src/assets/contactoBody.jpg" alt="">
+                    </div>
                 </div>
             </div>
-
-            <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-            <div class="row">
-                <div class="col-6 col-md-4 bg-psglightgold rounded">
-                    <a href="#">
-                        <img class="img-fluid" src="/src/assets/productos/5715620983.jpg" alt="carretilla">
-                    </a>
-
-                </div>
-                <div class="col-6 col-md-4 bg-psglightgray rounded"><a href="#">
-                        <img class="img-fluid" src="/src/assets/lista_productos/product_8.png" alt="carretilla">
-                    </a></div>
-                <div class="col-6 col-md-4 bg-psglightgray rounded"><a href="#">
-                        <img class="img-fluid" src="/src/assets/lista_productos/product_2.png" alt="carretilla">
-                    </a></div>
-
-            </div>
-
-            <!-- Columns are always 50% wide, on mobile and desktop -->
-            <div class="row">
-                <div class="col-6 bg-warning p-3">
-                    <button type="button" class="btn btn-psgblue btn-lg">GARANTIA DE PRODUCTOS</button>
-                </div>
-                <div class="col-6 bg-warning p-3">
-                    <button type="button" class="btn btn-psgblue btn-lg">VUÉLVETE SOCIO</button>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-psglightgray">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-psggray">Explora</strong>
+                        <h3 class="mb-0">Productos de segunda mano</h3>
+                        <div class="mb-1 text-muted">Recientes</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                            role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">Thumbnail</text>
+                        </svg> -->
+                        <img class="img-fluid" src="/src/assets/usados.jpg" alt="" srcset="">
+                    </div>
                 </div>
             </div>
         </div>
 
-        <footer class="bg-psgblue">
-            <!-- Copyright -->
-            <div class="text-center text-white py-1">
-                <a id="copy" class="text-white" href="https://github.com/IrmaPadilla/Proyecto-Integrador"
-                    target="_blank">2022 SwarmDev</a>
+        <div class="row g-5">
+            <div class="col-md-8">
+                <!-- Secciones -->
+                <h2 class="text-psgblue fw-bold my-4 text-center bg-light bg-opacity-50">EXPLORA</h2>
+                <!-- Galería páginas -->
+                <div class="container text-center rounded">
+                    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Productos nuevos
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the
+                                    <code>.accordion-flush</code> class. This is the first item's accordion body.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Segunda mano
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the
+                                    <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                                    imagine
+                                    this being
+                                    filled with some actual content.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Área de socios
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the
+                                    <code>.accordion-flush</code> class. This is the third item's accordion body.
+                                    Nothing more
+                                    exciting
+                                    happening here in terms of content, but just filling up the space to make it look,
+                                    at least
+                                    at first
+                                    glance, a bit more representative of how this would look in a real-world
+                                    application.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- Copyright -->
-        </footer>
-    </div>
+            <div class="col-md-4">
+                <div class="position-sticky" style="top: 2rem;">
+                    <div class="p-4 mb-3 bg-light rounded">
+                        <h4 class="fst-italic">About</h4>
+                        <p class="mb-0">Customize this section to tell your visitors a little bit about your
+                            publication,
+                            writers,
+                            content, or something else entirely. Totally up to you.</p>
+                    </div>
+
+                    <div class="p-4">
+                        <h4 class="fst-italic">Archives</h4>
+                        <ol class="list-unstyled mb-0">
+                            <li><a href="#">March 2021</a></li>
+                            <li><a href="#">February 2021</a></li>
+                            <li><a href="#">January 2021</a></li>
+                            <li><a href="#">December 2020</a></li>
+                            <li><a href="#">November 2020</a></li>
+                            <li><a href="#">October 2020</a></li>
+                            <li><a href="#">September 2020</a></li>
+                            <li><a href="#">August 2020</a></li>
+                            <li><a href="#">July 2020</a></li>
+                            <li><a href="#">June 2020</a></li>
+                            <li><a href="#">May 2020</a></li>
+                            <li><a href="#">April 2020</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="p-4">
+                        <h4 class="fst-italic">Elsewhere</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- about static -->
+        </div>
+    </main>
+    <footer class="bg-psgblue">
+        <!-- Copyright -->
+        <div class="text-center text-white py-1">
+            <a id="copy" class="text-white" href="https://github.com/IrmaPadilla/Proyecto-Integrador"
+                target="_blank">2022 SwarmDev</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
