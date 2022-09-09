@@ -3,35 +3,36 @@
 } */
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
-h3, h5 {
-  font-family: 'Days One', sans-serif;
+h3,
+h5 {
+  font-family: "Days One", sans-serif;
   font-size: 16px;
 }
 
 #descriptionBox {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .card {
-	background-color: #D9D9D9;
-	padding-top: 0rem;
-	cursor: pointer;
-    border-top: 0.3rem solid #1F6F8B !important;
-    transition: 0.5s;
+  background-color: #d9d9d9;
+  padding-top: 0rem;
+  cursor: pointer;
+  border-top: 0.3rem solid #1f6f8b !important;
+  transition: 0.5s;
 }
 
 .card:hover {
-    box-shadow: 0 0 0.2rem 0.2rem #1F6F8B;
-    transition: 0.5s;
+  box-shadow: 0 0 0.2rem 0.2rem #1f6f8b;
+  transition: 0.5s;
 }
 
 .btn:hover {
   opacity: 1;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .fa {
@@ -41,18 +42,18 @@ h3, h5 {
 }
 
 .li {
-  background-color: #0077B5;
-  opacity: 0.7;
+  background-color: #0077b5 !important;
+  opacity: 0.8;
 }
 
 .li:hover {
-  background-color: #0077B5;
+  background-color: #0077b5;
   opacity: 1;
   transition: 0.3s;
 }
 
 .gh {
-  background-color: #000000;
+  background-color: #000000 !important;
   opacity: 0.8;
 }
 
@@ -67,21 +68,34 @@ svg {
   width: 200px;
 }
 
-footer{
-  background-color: #1F6F8B;
-  height: 3rem;
+/*Footer*/
+
+#subscribe {
+  background-color: #e6d5b8;
 }
 
-footer .container {
-  padding-top: 1rem;
+.newsletter-links {
+  text-align: justify;
 }
 
-footer a, span{
-  font-family: 'Days One', sans-serif;
-  font-size: 1rem;
+#subscribe:hover {
+  color: white;
+  background-color: #1c2b2d;
+}
+
+footer {
+  background-color: #1c2b2d;
+  padding-top: 0.25rem;
+  height: 2rem;
+}
+
+footer a,
+span {
+  font-family: "Days One", sans-serif;
   color: #ffffff;
+  text-decoration: none;
 }
 
 footer a:hover {
-  color: #D9D9D9;
+  color: #d9d9d9;
 }
