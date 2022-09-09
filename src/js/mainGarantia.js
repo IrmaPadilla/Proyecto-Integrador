@@ -3,7 +3,7 @@ import { verifyPago } from './pago-completado.js';
 import { verifyInfo } from './personal-data-validation.js';
 import { cleanAlert } from './cleanAlert.js';
 
-const toastLiveExample = document.getElementById('liveToast');
+const toastPagoCompleto = document.getElementById('liveToast');
 
 const btnPagar = document.getElementById('pagar');
 const btnReg = document.getElementById('reg');
@@ -22,17 +22,18 @@ function cargarListeners() {
 	});
 	btnPagar.addEventListener('click', e => {
 		e.preventDefault();
-		const toast = new bootstrap.Toast(toastLiveExample);
+		const toast = new bootstrap.Toast(toastPagoCompleto);
 		toast.show();
 		btnPagar.setAttribute('disabled', true);
+		cleanAlert(alertaPago);
 	});
 	btnReg.addEventListener('click', e => {
 		e.preventDefault();
 		verifyInfo();
 	});
 
-	alertaPago.addEventListener('mouseleave', cleanAlert);
-	alertaReg.addEventListener('mouseleave', cleanAlert);
+	// alertaPago.addEventListener('mouseleave', cleanAlert);
+	// alertaReg.addEventListener('mouseleave', cleanAlert);
 }
 
 copyright();
