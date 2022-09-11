@@ -21,4 +21,9 @@ footer{
 .cardbutton {
     background-color: rgba(0, 136, 169, 1)!important;
     color: #e6d5b8!important;
+    border-radius: 4px;
+}
+
+.cardbutton:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
