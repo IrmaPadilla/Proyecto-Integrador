@@ -18,8 +18,11 @@ function cargarListeners() {
 		let ok = verifyPago();
 		if (ok) {
 			btnPagar.removeAttribute('disabled');
+		} else {
+			btnPagar.setAttribute('disabled', true);
 		}
 	});
+
 	btnPagar.addEventListener('click', e => {
 		e.preventDefault();
 		const toast = new bootstrap.Toast(toastPagoCompleto);
@@ -27,6 +30,7 @@ function cargarListeners() {
 		btnPagar.setAttribute('disabled', true);
 		cleanAlert(alertaPago);
 	});
+
 	btnReg.addEventListener('click', e => {
 		e.preventDefault();
 		verifyInfo();
