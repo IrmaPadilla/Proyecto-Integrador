@@ -66,6 +66,11 @@ h5 {
 svg {
   height: 200px;
   width: 200px;
+  filter: drop-shadow(0 0 7px #000000);
+}
+
+.bio p {
+  text-align: justify;
 }
 
 /*Footer*/
@@ -78,8 +83,13 @@ svg {
   text-align: justify;
 }
 
+.newsletter-links a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
 #subscribe:hover {
-  color: white;
+  color: #ffffff;
   background-color: #1c2b2d;
 }
 
