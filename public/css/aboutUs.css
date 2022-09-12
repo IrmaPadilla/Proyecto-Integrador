@@ -17,12 +17,46 @@ h5 {
   margin-top: 2rem;
 }
 
+.container-fluid label{
+  display: block;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.flipcard {
+  position:relative;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+	transition: all 0.5s ease-in-out;
+}
+
+.flipcard .front {
+  backface-visibility: hidden;
+}
+
+.flipcard .back {
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+}
+
+input {
+	display: none;
+}
+
+:checked + .flipcard {
+	transform: rotateX(180deg);
+}
+
+/* label:hover :checked + .flipcard {
+	transform: rotateX(175deg);
+} */
+
 .card {
   background-color: #d9d9d9;
   padding-top: 0rem;
   cursor: pointer;
   border-top: 0.3rem solid #1f6f8b !important;
-  transition: 0.5s;
+  height: 450px;
 }
 
 .card:hover {
@@ -67,6 +101,11 @@ svg {
   height: 200px;
   width: 200px;
   filter: drop-shadow(0 0 7px #000000);
+}
+
+.bio {
+  height: 100%;
+  padding: 2rem;
 }
 
 .bio p {
