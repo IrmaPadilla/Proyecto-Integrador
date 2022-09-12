@@ -1,0 +1,87 @@
+/* body {
+  font-size: 62.5%;
+} */
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+h3, h5 {
+  font-family: 'Days One', sans-serif;
+  font-size: 16px;
+}
+
+#descriptionBox {
+    margin-top: 2rem;
+}
+
+.card {
+	background-color: #D9D9D9;
+	padding-top: 0rem;
+	cursor: pointer;
+    border-top: 0.3rem solid #1F6F8B !important;
+    transition: 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0 0 0.2rem 0.2rem #1F6F8B;
+    transition: 0.5s;
+}
+
+.btn:hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.fa {
+  color: #ffffff;
+  width: 40px;
+  transition: 0.2s;
+}
+
+.li {
+  background-color: #0077B5;
+  opacity: 0.7;
+}
+
+.li:hover {
+  background-color: #0077B5;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.gh {
+  background-color: #000000;
+  opacity: 0.8;
+}
+
+.gh:hover {
+  background-color: #000000;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+svg {
+  height: 200px;
+  width: 200px;
+}
+
+footer{
+  background-color: #1F6F8B;
+  height: 3rem;
+}
+
+footer .container {
+  padding-top: 1rem;
+}
+
+footer a, span{
+  font-family: 'Days One', sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #D9D9D9;
+}

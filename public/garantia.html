@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="/public/src/styles/custom-boostrap.css">
+    <link rel="stylesheet" href="/public/css/header.css">
+    <link rel="stylesheet" href="/public/css/garantias.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js" defer></script>
+    <!-- Funciones -->
+    <script src="/src/js/mainGarantia.js" type="module" async defer></script>
+    <title>Garantía</title>
+</head>
+
+<body>
+    <div class="container-fluid bg-light bg-opacity-25 px-0">
+        <!-- nav-bar -->
+        <nav class="navbar navbar-expand-lg bg-psgblue">
+            <div class="container-fluid">
+                <a class="navbar-brand text-psglightgold" href="/public/paginaprincipal.html"><img src="/src/assets/psg-navbar-logo-night.png"
+                        height="72" width="128"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link text-psglightgold mx-2" href="/public/aboutUs.html">Sobre Nosotros</a>
+                        <a class="nav-link text-psglightgold mx-2" href="/public/lista_productos.html">Productos</a>
+                        <a class="nav-link text-psglightgold mx-2" href="/public/segundamano.html">Segunda Mano</a>
+                        <a class="nav-link text-psglightgold mx-2" href="/public/garantia.html">Garantías</a>
+                        <a class="nav-link text-psglightgold mx-2" href="/public/contactanos.html">Contacto</a>
+                        <!-- <a class="nav-link text-psglightgold mx-2" href="/">Carrito de Compras</a> -->
+                        <a class="nav-link text-psglightgold mx-2" href="/public/register.html">Registro</a>
+                        <a class="nav-link text-psglightgold mx-2" href="/public/login.html">Iniciar Sesión</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- título de bienvenida -->
+        <h1 class="text-psgblue fw-bold my-4 text-center bg-psglightgray">GARANTÍAS</h1>
+
+        <form>
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="container-fluid my-md-2 p-3">
+                <div class="row mb-md-4 mx-md-2 px-2">
+                    <div class="col-12 col-md-5 bg-psglightgray rounded p-md-5 p-3 mx-auto">
+
+                        <h6 class="text-dark fw-bold py-2">Por favor ingrese sus datos completos</h6>
+                        <!-- Name input -->
+                        <div class="form-outline my-md-4">
+                            <iconify-icon icon="material-symbols:account-circle" style="color: #1f6f8b;" width="35">
+                            </iconify-icon>
+                            <input type="text" id="name" class="form-control" placeholder="Nombre completo" required />
+                            <label class="form-label text-psgblue" for="name"></label>
+                        </div>
+
+                        <!-- Ticket number -->
+                        <div class="form-outline mb-md-2">
+                            <iconify-icon icon="material-symbols:receipt-long" style="color: #1f6f8b;" width="35">
+                            </iconify-icon>
+                            <input type="text" id="ticketNumber" class="form-control" placeholder="Ticket de compra"
+                                required />
+                            <label class="form-label" for="ticketNumber"></label>
+                        </div>
+
+                        <!-- Purchase date input -->
+                        <div class="form-outline mb-md-2">
+                            <iconify-icon icon="material-symbols:calendar-month-rounded" style="color: #1f6f8b;"
+                                width="35">
+                            </iconify-icon>
+                            <input type="date" id="purchaseDate" class="form-control" placeholder="Fecha de compra"
+                                required />
+                            <label class="form-label" for="purchaseDate"></label>
+                        </div>
+
+                        <iconify-icon icon="material-symbols:category-outline-rounded" style="color: #1f6f8b;"
+                            width="35">
+                        </iconify-icon>
+                        <div class="input-group mb-md-2 pb-md-4">
+                            <label class="input-group-text" for="categoria">Categoría</label>
+                            <select class="form-select" id="categoria">
+                                <option selected>Elija una opción...</option>
+                                <option value="1">Carpintería</option>
+                                <option value="2">Electricidad</option>
+                                <option value="3">Plomería</option>
+                            </select>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline mb-md-2">
+                            <iconify-icon icon="material-symbols:alternate-email" style="color: #1f6f8b;" width="35">
+                            </iconify-icon>
+                            <input type="email" id="emailInput" class="form-control" placeholder="Correo" required />
+                            <label class="form-label" for="emailInput"></label>
+                        </div>
+
+                        <!-- Phone Number input -->
+                        <div class="form-outline mb-md-2">
+                            <iconify-icon icon="material-symbols:phone-callback-outline-rounded" style="color: #1f6f8b;"
+                                width="35"></iconify-icon>
+                            <input type="number" id="telefono" class="form-control"
+                                placeholder="Teléfono de contacto" />
+                            <label class="form-label" for="telefono"></label>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <h6 class="text-dark fw-bold mb-md-2">¿Desea agregar la cobertura extendida?</h6>
+                        <div class="form-check my-md-2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio1">
+                            <label class="form-check-label" for="radio1">
+                                No, gracias
+                            </label>
+                        </div>
+                        <div class="form-check my-md-2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio2">
+                            <label class="form-check-label" for="radio2">
+                                +6 meses
+                            </label>
+                        </div>
+                        <div class="form-check my-md-2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio3" checked>
+                            <label class="form-check-label" for="radio3">
+                                +12 meses
+                            </label>
+                        </div>
+
+                    </div>
+                    <!-- pago de garantia extendida -->
+                    <div class="col-12 col-md-5 py-md-0 px-md-0 mx-auto my-0">
+                        <div class="row bg-psglightgray p-md-5 p-3 rounded">
+                            <iconify-icon icon="material-symbols:add-card-outline-rounded" style="color: #1f6f8b;"
+                                width="35"></iconify-icon>
+                            <h6 class="text-dark fw-bold mb-2">Datos de pago</h6>
+                            <h6 class="text-dark my-2">1 × Garantía extendida +12 meses</h6>
+
+                            <!-- Numero de tarjeta  -->
+                            <div class="form-outline mb-md-2">
+                                <input type="text" id="cardNumber" class="form-control"
+                                    placeholder="xxxx-xxxx-xxxx-xxxx" required />
+                                <label class="form-label" for="cardNumber">Número de tarjeta</label>
+                            </div>
+                            <div id="pago" class="row mx-1 g-2">
+                                <div class="col-md-8">
+                                    <div class="form-outline">
+                                        <input type="text" class="form-control" id="cardName"
+                                            placeholder="Alguien Ejemplo">
+                                        <label for="cardName">Nombre como aparece en la tarjeta</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-outline">
+                                        <input type="month" class="form-control" id="cardExpiration"
+                                            placeholder="MM/AA">
+                                        <label for="cardExpiration">Vencimiento</label>
+                                    </div>
+                                </div>
+                                <h5 id="alert" class="">
+                                </h5>
+                            </div>
+                            <button id="pagar" type="button" class="btn btn-psgdarkblue btn-block my-4">Pagar</button>
+
+                        </div>
+                        <!-- Terminos y condiciones -->
+                        <div class="my-md-5 my-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="newsletter" checked>
+                                <label class="form-check-label" for="newsletter">
+                                    Suscribirme al newsletter
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="terms" required>
+                                <label class="form-check-label" for="terms">
+                                    He leído y estoy de acuerdo con los <a href="#">Términos y Condiciones</a> de la
+                                    garantía limitada.
+                                </label>
+                            </div>
+                            <div class="text-center">
+                                <button id="reg" type="submit"
+                                    class="btn btn-psgdarkblue btn-md-lg m-md-5 px-md-5 fs-1">Registrar</button>
+                                <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+                                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                    <div id="liveToast" class="toast" role="alert" aria-live="assertive"
+                                        aria-atomic="true">
+                                        <div class="toast-header">
+                                            <img src="..." class="rounded me-2" alt="...">
+                                            <strong class="me-auto">Bootstrap</strong>
+                                            <small>11 mins ago</small>
+                                            <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="toast-body">
+                                            Hello, world! This is a toast message.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </form>
+
+        <footer class="bg-psgblue">
+            <!-- Copyright -->
+            <div class="text-center text-white py-1">
+                <a id="copy" class="text-white" href="https://github.com/IrmaPadilla/Proyecto-Integrador"
+                    target="_blank"></a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

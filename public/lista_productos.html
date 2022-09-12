@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Days+One&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/lista_productos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../src/assets/favicon-32x32.png" sizes="32x32" type="image/x-icon">
+    <link href="/public/src/styles/custom-boostrap.css" rel="stylesheet">
+    <title>Nuestros Productos</title>
+    <script src="/public/js/lista_productos/main.js" type="module" async defer></script>
+
+</head>
+
+<body>
+
+    <!-- ================= -->
+    <!-- Header  -->
+    <!-- ================= -->
+
+    <nav class="navbar navbar-expand-lg bg-psgblue">
+        <div class="container-fluid">
+            <a class="navbar-brand text-psglightgold" href="/public/paginaprincipal.html"><img src="/src/assets/navbar-logo-night.png"
+                    height="72" width="128"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link text-psglightgold mx-2" href="/public/aboutUs.html">Sobre Nosotros</a>
+                    <a class="nav-link text-psglightgold mx-2" href="/public/lista_productos.html">Productos</a>
+                    <a class="nav-link text-psglightgold mx-2" href="/public/segundamano.html">Segunda Mano</a>
+                    <a class="nav-link text-psglightgold mx-2" href="/public/garantia.html">Garantías</a>
+                    <a class="nav-link text-psglightgold mx-2" href="/public/contactanos.html">Contacto</a>
+                    <!-- <a class="nav-link text-psglightgold mx-2" href="/">Carrito de Compras</a> -->
+                    <a class="nav-link text-psglightgold mx-2" href="/public/register.html">Registro</a>
+                    <a class="nav-link text-psglightgold mx-2" href="/public/login.html">Iniciar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= -->
+    <!-- Barra de navegacion  -->
+    <!-- ================= -->
+    <form action="#" id="formulario" method="POST">
+        <div class="container mx-auto">
+            <div class="row mx-auto">
+                <div class="col-xl-11 col-sm-10 col-9 g-0 mx-auto">
+                    <input type="text" placeholder="Buscar un producto..." class="w-100 mt-3 searchbar form-check-input"
+                        id="buscar__productos">
+                </div>
+                <div class="col-xl-1 col-sm-2 col-3 g-0 mx-auto">
+                    <button class="search__button mt-3"><i class="bi bi-search w-100"></i></button>
+                </div>
+                </input>
+                <!-- ================= -->
+                <!-- Carrito de compras-->
+                <!-- ================= -->
+                <!-- <div class="col-xl-1 col-sm-1 col-1 g-0 mt-3 cart__icon">
+                    <i class="bi bi-cart fs-1"></i>
+                </div> -->
+            </div>
+        </div>
+    </form>
+
+
+    <!-- ================= -->
+    <!-- Filtros Busqueda  -->
+    <!-- ================= -->
+    <form id="buscador">
+        <div class="container mx-auto">
+            <div class="row mx-auto">
+                <div class="col-md-4 text-center col-4 mt">
+                    <p class="fs-2">Marca</p>
+                    <select name="" class="fs-4" id="marca">
+                        <option value="">--Seleccionar--</option>
+                        <option value="Trupper">TRUPPER</option>
+                    </select>
+                </div>
+                <div class="col-md-4 text-center col-4">
+                    <p class="fs-2">Precio</p>
+                    <select name="" class="fs-4" id="precio">
+                        <option value="">--Seleccionar--</option>
+                    </select>
+                </div>
+                <div class="col-md-4 text-center col-4">
+                    <p class="fs-2">Ordenar</p>
+                    <select name="" class="fs-4" id="ordenar">
+                        <option value="">--Seleccionar--</option>
+                        <option value="">Mayor a Menor</option>
+                        <option value="">Menor a Mayor</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- ================= -->
+    <!-- Cards de productos-->
+    <!-- ================= -->
+
+    <section class="seccion" id="lista__productos">
+        <div class="container mx-auto">
+            <div class="row" id="container__products">
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container" id="copyright"></div>
+    </footer>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
