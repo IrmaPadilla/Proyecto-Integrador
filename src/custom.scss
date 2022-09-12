@@ -1,0 +1,18 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// Creamos nuestra propia paleta de colores para usar con boostrap
+$custom-colors: (
+    "psgdarkblue": rgb(28, 43, 45),
+    "psgblue": rgb(31, 111, 139),
+    "psggray": rgb(125, 157, 156),
+    "psglightgray": rgb(217, 217, 217),
+    "psglightgold": rgb(230, 213, 184),
+);
+
+$theme-colors: map-merge(
+    $map1: $theme-colors,
+    $map2: $custom-colors,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
