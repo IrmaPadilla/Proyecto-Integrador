@@ -1,8 +1,13 @@
-
 const searchBar = document.querySelector('#searchBar');
 const containerProducts = document.querySelector('#container__products');
+const ordenarMayorMenor = document.querySelector('#mayorAMenor');
 
 let listProducts = [];
+
+//Filtrar de menor a mayor
+// function filtrarMenorMayor(price){
+//   listProducts.precio =
+// }
 
 //SearchBar
 searchBar.addEventListener('input', (e) => {
@@ -11,9 +16,20 @@ searchBar.addEventListener('input', (e) => {
     return (
       product.nombre.toLowerCase().includes(searchString) ||
       product.marca.toLowerCase().includes(searchString)
-      );
+    );
   });
   mostrarProductos(filteredProducts);
+});
+
+ordenarMayorMenor.addEventListener('click', (e) => {
+  const mayorAMenor = e.target;
+  // console.log(mayorAMenor);
+  if (mayorAMenor != null) {
+    let filteredPrice = listProducts.sort((a, b) => {
+      return a.precio - b.precio;
+    });
+    console.log(filteredPrice);
+  }
 });
 
 //Consumiendo JSON
@@ -31,20 +47,25 @@ export const obtenerProductos = async () => {
 const mostrarProductos = (listProducts) => {
   limpiarHTML();
   listProducts.forEach((product) => {
-    console.log(listProducts);
     const productosHTML = document.createElement('div');
-    productosHTML.classList.add('col-md-3', 'col-sm-6', 'mb-5', 'col-6');
+    productosHTML.classList.add(
+      'col-xl-3',
+      'col-md-6',
+      'col-sm-6',
+      'mb-5',
+      'col-6'
+    );
     productosHTML.innerHTML += `
     <div class="card h-100">
-    <img class="card-mg-top" src=${product.imagen} />
+    <img class="card-mg-top img_size"  src=${product.imagen} />
     <div class="card-body">
     <h2 class="fw-semibold">${product.marca}</h2>
-    <h2 class="card-title">${product.nombre}</h2>
+    <h2 class="card-title card_nombre">${product.nombre}</h2>
     <div>
       <p></p>
       </div>
       <p class="card-title fs-2 fw-bold precio">$${product.precio}</p>
-      <button href="#" class="btn btn-primary w-100 button__cart fs-3 agregar__carrito">
+      <button href="#" class="btn btn-primary w-100 mb-0 button__cart fs-4 ">
       Agregar al Carrito
       </button>
       </div>

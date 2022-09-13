@@ -2,65 +2,97 @@
   {
     "id": 1,
     "marca": "TRUPPER",
-    "nombre": "CARRETILLA DE 1 RUEDA 350 KG ROJO",
-    "precio": "2,099",
+    "nombre": "Motobomba autocebante 2\" x 2\" a gasolina 7 HP, Truper",
+    "precio": "3,450.00",
     "rating": "4",
     "imagen": "../src/assets/lista_productos/product_1.png"
   },
   {
     "id": 2,
-    "marca": "TRUPPER",
-    "nombre": "CARRETILLA DE 1 RUEDA 580 KG AZUL",
-    "precio": "1,969",
+    "marca": "PRETUL",
+    "nombre": "Esmeriladora angular 4-1/2\" 700 W, Pretul",
+    "precio": "575.00",
     "rating": "4",
     "imagen": "../src/assets/lista_productos/product_2.png"
   },
   {
     "id": 3,
-    "marca": "TRUPPER",
-    "nombre": "CARRETILLA DE 65 LITROS NARANJA METALICA",
-    "precio": "1,899",
+    "marca": "PRETUL",
+    "nombre": "Arco 12\" de solera para segueta, Pretul",
+    "precio": "89.00",
     "rating": "5",
     "imagen": "../src/assets/lista_productos/product_3.png"
   },
   {
     "id": 4,
     "marca": "TRUPPER",
-    "nombre": "CARRETILLA CONCHA PLASTICA NEGRA",
-    "precio": "1,785",
+    "nombre": "Hidrolavadora con motor a gasolina, 2,800 PSI, Truper",
+    "precio": "9,650.00",
     "rating": "4",
     "imagen": "../src/assets/lista_productos/product_4.png"
   },
   {
     "id": 5,
-    "marca": "TRUPPER",
-    "nombre": "CARRETILLA BASTIDOR TUBULAR ROJA",
-    "precio": "2,015",
+    "marca": "PRETUL",
+    "nombre": "Soldadora inversora, 100A, 127V, Pretul",
+    "precio": "1,795.00",
     "rating": "5",
     "imagen": "../src/assets/lista_productos/product_5.png"
   },
   {
     "id": 6,
-    "marca": "TRUPPER",
-    "nombre": "CARRETILLA BASTIDORES DE MADERA ROJA",
-    "precio": "2,015",
+    "marca": "PRETUL",
+    "nombre": "Revolvedora de cemento a gasolina 160 L, 1/2 saco",
+    "precio": "14,450.00",
     "rating": "5",
     "imagen": "../src/assets/lista_productos/product_6.png"
   },
   {
     "id": 7,
     "marca": "TRUPPER",
-    "nombre": "CARRETILLA IMPONCHABLE VERDE",
-    "precio": "2,015",
+    "nombre": "Cortadora de metales 14\" 2200 W industrial, mango recto",
+    "precio": "3,325.00",
     "rating": "4",
     "imagen": "../src/assets/lista_productos/product_7.png"
   },
   {
     "id": 8,
     "marca": "TRUPPER",
-    "nombre": "CARRETILLA PLASTICA DOBLE LLANTA NEGRA",
-    "precio": "2,165",
+    "nombre": "Patín traspaleta 2 ton con ruedas de hule/poliuretano",
+    "precio": "10,950.00",
     "rating": "5",
     "imagen": "../src/assets/lista_productos/product_8.png"
+  },
+  {
+    "id": 9,
+    "marca": "TRUPPER",
+    "nombre": "Rotomartillo 1/2\" 850 W, profesional, Truper",
+    "precio": "1,145.00",
+    "rating": "4",
+    "imagen": "../src/assets/lista_productos/product_9.png"
+  },
+  {
+    "id": 10,
+    "marca": "TRUPPER",
+    "nombre": "Lijadora de banda y disco 4 x 6\" de 370 W (1/2 HP), Truper",
+    "precio": "3,085.00",
+    "rating": "4",
+    "imagen": "../src/assets/lista_productos/product_10.png"
+  },
+  {
+    "id": 11,
+    "marca": "TRUPPER",
+    "nombre": "CARRETILLA IMPONCHABLE VERDE",
+    "precio": "2,695.00",
+    "rating": "4",
+    "imagen": "../src/assets/lista_productos/product_11.png"
+  },
+  {
+    "id": 12,
+    "marca": "TRUPPER",
+    "nombre": "Pinza de presión 8\" de cadena, Truper",
+    "precio": "379.00",
+    "rating": "4",
+    "imagen": "../src/assets/lista_productos/product_12.png"
   }
 ]

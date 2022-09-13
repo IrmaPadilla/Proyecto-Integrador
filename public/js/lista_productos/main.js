@@ -1,7 +1,6 @@
 //Imports
-import { llenarMarca, llenarPrecio } from './filters.js';
 import { obtenerProductos } from './mostrarProductos.js';
-import { copyrightDate } from './copyright.js';
+import {  copyrightDate } from './copyright.js';
 
 //Variables
 const botonCarrito = document.querySelector('#botonCarrito');
@@ -10,18 +9,9 @@ const formulario = document.querySelector('#formulario');
 const searchBar = document.querySelector('#searchBar');
 
 //Eventos
-cargarEventListeners();
-function cargarEventListeners() {
-  //Agregar al carrito presionando el boton
-  listaProductos.addEventListener('click', agregarAlCarrito);
 
-}
-
-//Llenar option Marca
-llenarMarca();
-
-//Llenar option Precio
-llenarPrecio();
+//Agregar al carrito presionando el boton
+listaProductos.addEventListener('click', agregarAlCarrito);
 
 //Funciones
 function agregarAlCarrito(e) {
@@ -42,14 +32,14 @@ function leerContenidoProducto(producto) {
     cantidad: 1,
   };
   console.table(infoProducto);
-  // console.table(infoProducto);
 }
 
+
+
+
+
 //Mostrando productos con JS
-mostrarProductos();
-
-//Copyright
-copyrightDate();
-
-//obtenerProductos
 obtenerProductos();
+
+
+copyrightDate();

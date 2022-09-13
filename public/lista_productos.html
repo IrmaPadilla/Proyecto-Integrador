@@ -16,9 +16,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="../src/assets/favicon-32x32.png" sizes="32x32" type="image/x-icon">
     <link href="/public/src/styles/custom-boostrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Nuestros Productos</title>
     <script src="/public/js/lista_productos/main.js" type="module" async defer></script>
-
 </head>
 
 <body>
@@ -29,8 +32,8 @@
 
     <nav class="navbar navbar-expand-lg bg-psgblue">
         <div class="container-fluid">
-            <a class="navbar-brand text-psglightgold" href="/public/paginaprincipal.html"><img src="/src/assets/navbar-logo-night.png"
-                    height="72" width="128"></a>
+            <a class="navbar-brand text-psglightgold" href="/public/paginaprincipal.html"><img
+                    src="/src/assets/navbar-logo-night.png" height="72" width="128"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,7 +56,7 @@
     <!-- ================= -->
     <!-- Barra de navegacion  -->
     <!-- ================= -->
-    <div >
+    <div>
         <div class="container mx-auto">
             <div class="row mx-auto">
                 <div class="col-xl-11 col-sm-10 col-9 g-0 mx-auto">
@@ -72,57 +75,125 @@
                 </div> -->
             </div>
         </div>
-    </form>
+        </form>
 
 
-    <!-- ================= -->
-    <!-- Filtros Busqueda  -->
-    <!-- ================= -->
-    <form id="buscador">
-        <div class="container mx-auto">
-            <div class="row mx-auto">
-                <div class="col-md-4 text-center col-4 mt">
-                    <p class="fs-2">Marca</p>
-                    <select name="" class="fs-4" id="marca">
-                        <option value="">--Seleccionar--</option>
-                        <option value="Trupper">TRUPPER</option>
-                    </select>
-                </div>
-                <div class="col-md-4 text-center col-4">
-                    <p class="fs-2">Precio</p>
-                    <select name="" class="fs-4" id="precio">
-                        <option value="">--Seleccionar--</option>
-                    </select>
-                </div>
-                <div class="col-md-4 text-center col-4">
-                    <p class="fs-2">Ordenar</p>
-                    <select name="" class="fs-4" id="ordenar">
-                        <option value="">--Seleccionar--</option>
-                        <option value="">Mayor a Menor</option>
-                        <option value="">Menor a Mayor</option>
-                    </select>
+        <!-- ================= -->
+        <!-- Filtros Busqueda  -->
+        <!-- ================= -->
+        <form id="buscador">
+            <div class="container mx-auto">
+                <div class="row mx-auto">
+                    <div class="col-md-4 text-center col-4 mt">
+                        <p class="fs-3">Marca</p>
+                        <select name="" class="fs-6" id="marca">
+                            <option value="">--Seleccionar--</option>
+                            <option value="Trupper">TRUPPER</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 text-center col-4">
+                        <p class="fs-3">Precio</p>
+                        <select name="" class="fs-6" id="precio">
+                            <option value="">--Seleccionar--</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 text-center col-4">
+                        <p class="fs-3">Ordenar</p>
+                        <select name="" class="fs-6" id="ordenar">
+                            <option value="">--Seleccionar--</option>
+                            <option value="MayorAMenor" id="mayorAMenor">Mayor a Menor</option>
+                            <option value="MenorAMayor">Menor a Mayor</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-        </div>
-    </form>
+        </form>
 
-    <!-- ================= -->
-    <!-- Cards de productos-->
-    <!-- ================= -->
+        <!-- ================= -->
+        <!-- Cards de productos-->
+        <!-- ================= -->
 
-    <section class="seccion" id="lista__productos">
-        <div class="container mx-auto">
-            <div class="row" id="container__products">
+        <section class="seccion" id="lista__productos">
+            <div class="container mx-auto">
+                <div class="row" id="container__products">
 
 
+                </div>
             </div>
-        </div>
 
-    </section>
+        </section>
 
-    <footer>
-        <div class="container" id="copyright"></div>
-    </footer>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <section class="newsletter-links bg-psgblue">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 mt-4 text-psglightgold">
+                        <p><strong>Suscribete a nuestro boletín de noticias:</strong></p>
+                    </div>
+                    <div class="col-md-12">
+                        <form action="" method="POST">
+                            <div class="row">
+                                <div class="col-md-6 col-g-12 mb-4">
+                                    <input type="email" class="form-control" placeholder="Tu e-mail" autocomplete="off"
+                                        pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}" required />
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <input id="subscribe" type="submit" class="btn border-0" value="Suscribirse" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row pb-4 g-5">
+                    <div class="col-md-4 text-psglightgold">
+                        <p>Sobre PSG Ferreterías</p>
+                        <p class="text-white">
+                            En nuestro sitio podrás encontrar todo lo necesario sobre
+                            reparación, construcción y renovación para tus proyectos. Siéntete
+                            libre de explorar nuestras categorías.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-psglightgold">
+                        <p>Recursos</p>
+                        <ul class="list-unstyled p-0">
+                            <li><a href="/public/tips.html">Tips</a></li>
+                            <li><a href="/public/faq.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 text-psglightgold">
+                        <p>Redes sociales</p>
+                        <div class="container px-0">
+                            <div class="row mx-0 gx-0">
+                                <div class="col-2">
+                                    <a href="https://github.com/AdalObregon" target="_blank"><i
+                                            class="fa-brands fa-square-facebook fa-xl text-white"></i></a>
+                                </div>
+                                <div class="col-2">
+                                    <a href="https://github.com/IrmaPadilla" target="_blank"><i
+                                            class="fa-brands fa-square-instagram fa-xl text-white"></i></a>
+                                </div>
+                                <div class="col-2">
+                                    <a href="https://github.com/JacielJM" target="_blank"><i
+                                            class="fa-brands fa-square-twitter fa-xl text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Copyright que se actualiza con funcion en JavaScript-->
+        <footer>
+            <div class="container-fluid text-center">
+                <span>&copy</span>
+                <span id="copyright"></span>
+                <a href="https://github.com/IrmaPadilla/Proyecto-Integrador" target="_blank"
+                    rel="noopener noreferrer">SwarmDev</a>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+        
 </body>
 </html>
