@@ -15,7 +15,9 @@ export function verifyInfo() {
 		email.value,
 		phone.value,
 	];
+
 	let flag = valores.some(v => v == '');
+
 	if (!flag) {
 		alertaReg.innerHTML =
 			'Producto registrado exitosamente <iconify-icon icon="flat-color-icons:ok"></iconify-icon>';
