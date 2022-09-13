@@ -242,14 +242,76 @@
         <!-- about static -->
         </div>
     </main>
-    <footer class="bg-psgblue">
-        <!-- Copyright -->
-        <div class="text-center text-white py-1">
-            <a id="copy" class="text-white" href="https://github.com/IrmaPadilla/Proyecto-Integrador"
-                target="_blank">2022 SwarmDev</a>
+    <!-- Footer -->
+    <section class="newsletter-links bg-psgblue">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 mt-4 text-psglightgold">
+                    <p><strong>Suscribete a nuestro boletín de noticias:</strong></p>
+                </div>
+                <div class="col-md-12">
+                    <form action="" method="POST">
+                        <div class="row">
+                            <div class="col-md-6 col-g-12 mb-4">
+                                <input type="email" class="form-control" placeholder="Tu e-mail" autocomplete="off"
+                                    pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}" required />
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <input id="subscribe" type="submit" class="btn border-0" value="Suscribirse" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <!-- Copyright -->
+        <div class="container">
+            <div class="row pb-4 g-5">
+                <div class="col-md-4 text-psglightgold">
+                    <p>Sobre PSG Ferreterías</p>
+                    <p class="text-white">
+                        En nuestro sitio podrás encontrar todo lo necesario sobre
+                        reparación, construcción y renovación para tus proyectos. Siéntete
+                        libre de explorar nuestras categorías.
+                    </p>
+                </div>
+                <div class="col-md-4 text-psglightgold">
+                    <p>Recursos</p>
+                    <ul class="list-unstyled p-0">
+                        <li><a href="/public/tips.html">Tips</a></li>
+                        <li><a href="/public/faq.html">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-psglightgold">
+                    <p>Redes sociales</p>
+                    <div class="container px-0">
+                        <div class="row mx-0 gx-0">
+                            <div class="col-2">
+                                <a href="https://github.com/AdalObregon" target="_blank"><i
+                                        class="fa-brands fa-square-facebook fa-xl text-white"></i></a>
+                            </div>
+                            <div class="col-2">
+                                <a href="https://github.com/IrmaPadilla" target="_blank"><i
+                                        class="fa-brands fa-square-instagram fa-xl text-white"></i></a>
+                            </div>
+                            <div class="col-2">
+                                <a href="https://github.com/JacielJM" target="_blank"><i
+                                        class="fa-brands fa-square-twitter fa-xl text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container text-center">
+            <span>&copy</span>
+            <span id="copyright"></span>
+            <a href="https://github.com/IrmaPadilla/Proyecto-Integrador" target="_blank"
+                rel="noopener noreferrer">SwarmDev</a>
+        </div>
     </footer>
+    <script src="./../src/js/footerUniversal.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
