@@ -1,6 +1,7 @@
 import { verifyPago } from './pago-completado.js';
 import { verifyInfo } from './personal-data-validation.js';
 import { cleanAlert } from './cleanAlert.js';
+import { getInfo } from './getTicket.js';
 
 const toastPagoCompleto = document.getElementById('liveToast');
 
@@ -9,7 +10,7 @@ const extGarantia = document.getElementById('garantiaExt');
 const btnPagar = document.getElementById('pagar');
 const btnReg = document.getElementById('reg');
 const alertaPago = document.getElementById('alert');
-const alertaReg = document.getElementById('alertReg');
+const ticketInput = document.getElementById('ticketNumber');
 const inputPago = document.getElementById('pagoGarantia');
 const formPago = document.getElementById('acordPago');
 
@@ -51,6 +52,10 @@ function cargarListeners() {
 		verifyInfo();
 	});
 
+	ticketInput.addEventListener('input', e => {
+		e.preventDefault();
+		getInfo(e.target.value);
+	});
 	// alertaPago.addEventListener('mouseleave', cleanAlert);
 	// alertaReg.addEventListener('mouseleave', cleanAlert);
 }
