@@ -26,7 +26,13 @@ ordenarMayorMenor.addEventListener('click', (e) => {
   // console.log(mayorAMenor);
   if (mayorAMenor != null) {
     let filteredPrice = listProducts.sort((a, b) => {
-      return a.precio - b.precio;
+      return a.precio > b.precio
+        ? 1
+        : a.precio === b.precio
+        ? a.precio > b.precio
+          ? 1
+          : -1
+        : -1;
     });
     console.log(filteredPrice);
   }
