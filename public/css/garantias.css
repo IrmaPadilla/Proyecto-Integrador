@@ -1,9 +1,42 @@
 #alertReg,
 #alert {
-	transition: 0.8s ease-out;
+	transition: 0s;
 }
 
-/* body {
-	background-image: url('/src/assets/fondogarantias.png');
-	background-size: cover;
-} */
+/*Footer*/
+
+#subscribe {
+	background-color: #e6d5b8;
+}
+
+.newsletter-links {
+	margin-top: 60px;
+	text-align: justify;
+}
+
+.newsletter-links a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#subscribe:hover {
+	color: #ffffff;
+	background-color: #1c2b2d;
+}
+
+footer {
+	background-color: #1c2b2d;
+	padding-top: 0.25rem;
+	height: 2rem;
+}
+
+footer a,
+span {
+	font-family: 'Days One', sans-serif;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #d9d9d9;
+}

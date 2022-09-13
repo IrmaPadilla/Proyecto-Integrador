@@ -1,6 +1,6 @@
 //Imports
 import { obtenerProductos } from './mostrarProductos.js';
-import {  copyrightDate } from './copyright.js';
+import { copyrightDate } from './copyright.js';
 
 //Variables
 const botonCarrito = document.querySelector('#botonCarrito');

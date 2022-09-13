@@ -3,35 +3,87 @@
 } */
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
-h3, h5 {
-  font-family: 'Days One', sans-serif;
+h3,
+h5 {
+  font-family: "Days One", sans-serif;
   font-size: 16px;
 }
 
 #descriptionBox {
-    margin-top: 2rem;
+  margin-top: 2rem;
+}
+
+/*Cards*/
+
+label {
+  display: grid;
+  position: relative;
+	top: 50%;
+	left: 50%;
+  margin-bottom: 20px;
+
+	height: 350px;
+	transform-style: preserve-3d;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.flipcard {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease-in-out;
+	z-index: 1;
+}
+
+.flipcard .front,
+.flipcard .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.flipcard .back {
+	transform: rotateX(180deg);
+}
+
+label:hover .flipcard {
+	transform: rotateX(2deg);
+}
+
+input {
+	display: none;
+}
+
+:checked + .flipcard {
+	transform: rotateX(180deg);
+}
+label:hover :checked + .flipcard {
+	transform: rotateX(175deg);
 }
 
 .card {
-	background-color: #D9D9D9;
-	padding-top: 0rem;
-	cursor: pointer;
-    border-top: 0.3rem solid #1F6F8B !important;
-    transition: 0.5s;
+  background-color: #d9d9d9;
+  padding-top: 0rem;
+  cursor: pointer;
+  border-top: 0.3rem solid #1f6f8b !important;
+  height: 450px;
 }
 
 .card:hover {
-    box-shadow: 0 0 0.2rem 0.2rem #1F6F8B;
-    transition: 0.5s;
+  box-shadow: 0 0 0.2rem 0.2rem #1f6f8b;
+  transition: 0.5s;
 }
 
 .btn:hover {
   opacity: 1;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .fa {
@@ -41,18 +93,18 @@ h3, h5 {
 }
 
 .li {
-  background-color: #0077B5;
-  opacity: 0.7;
+  background-color: #0077b5 !important;
+  opacity: 0.8;
 }
 
 .li:hover {
-  background-color: #0077B5;
+  background-color: #0077b5;
   opacity: 1;
   transition: 0.3s;
 }
 
 .gh {
-  background-color: #000000;
+  background-color: #000000 !important;
   opacity: 0.8;
 }
 
@@ -65,23 +117,52 @@ h3, h5 {
 svg {
   height: 200px;
   width: 200px;
+  filter: drop-shadow(0 0 7px #000000);
 }
 
-footer{
-  background-color: #1F6F8B;
-  height: 3rem;
+.bio {
+  height: 100%;
+  padding: 2rem;
 }
 
-footer .container {
-  padding-top: 1rem;
+.bio p {
+  text-align: justify;
 }
 
-footer a, span{
-  font-family: 'Days One', sans-serif;
-  font-size: 1rem;
+/*Footer*/
+
+#subscribe {
+  background-color: #e6d5b8;
+}
+
+.newsletter-links {
+  margin-top: 60px;
+  text-align: justify;
+}
+
+.newsletter-links a{
+  text-decoration: none;
   color: #ffffff;
 }
 
+#subscribe:hover {
+  color: #ffffff;
+  background-color: #1c2b2d;
+}
+
+footer {
+  background-color: #1c2b2d;
+  padding-top: 0.25rem;
+  height: 2rem;
+}
+
+footer a,
+span {
+  font-family: "Days One", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 footer a:hover {
-  color: #D9D9D9;
+  color: #d9d9d9;
 }
