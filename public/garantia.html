@@ -52,7 +52,7 @@
     </nav>
 
     <!-- título de bienvenida -->
-    <h1 class="text-psgblue fw-bold my-4 text-center bg-psglightgray">GARANTÍAS</h1>
+    <h1 class="text-psgblue fw-bold my-4 text-center">GARANTÍAS</h1>
 
     <form>
         <!-- 2 column grid layout with text inputs for the first and last names -->
@@ -60,16 +60,7 @@
             <div class="row mb-md-4 mx-md-2 px-2">
                 <div class="col-12 col-md-5 bg-psglightgray shadow rounded p-md-5 p-3 mx-auto">
 
-                    <h6 class="text-dark fw-bold py-2">Por favor ingrese sus datos completos</h6>
-                    <!-- Name input -->
-                    <div class="input-group my-2 my-md-4 rounded">
-                        <span class="input-group-text flex-nowrap" id="basic-addon1">
-                            <iconify-icon inline icon="material-symbols:account-circle" style="color: #1f6f8b;"
-                                width="35"></iconify-icon>
-                        </span>
-                        <input type="text" id="name" class="form-control" placeholder="Nombre completo" required />
-                        <label class="form-label text-psgblue" for="name"></label>
-                    </div>
+                    <h6 class="text-dark fw-bold py-2">Por favor ingrese su número de orden</h6>
 
                     <!-- Ticket number -->
                     <div class="input-group my-2 my-md-4">
@@ -82,6 +73,16 @@
                         <label class="form-label" for="ticketNumber"></label>
                     </div>
 
+                    <!-- Name input -->
+                    <div class="input-group my-2 my-md-4 rounded">
+                        <span class="input-group-text flex-nowrap" id="basic-addon1">
+                            <iconify-icon inline icon="material-symbols:account-circle" style="color: #1f6f8b;"
+                                width="35"></iconify-icon>
+                        </span>
+                        <input type="text" id="name" class="form-control" placeholder="Nombre completo" disabled />
+                        <label class="form-label text-psgblue" for="name"></label>
+                    </div>
+
                     <!-- Purchase date input -->
                     <div class="input-group my-2 my-md-4">
                         <span class="input-group-text" id="basic-addon1">
@@ -90,11 +91,11 @@
                             </iconify-icon>
                         </span>
                         <input type="date" id="purchaseDate" class="form-control" placeholder="Fecha de compra"
-                            required />
+                            disabled />
                         <label class="form-label" for="purchaseDate"></label>
                     </div>
 
-                    <div class="input-group my-2 my-md-4">
+                    <!-- <div class="input-group my-2 my-md-4">
                         <label class="input-group-text" for="categoria">
                             <iconify-icon icon="material-symbols:category-outline-rounded" style="color: #1f6f8b;"
                                 width="35">
@@ -106,7 +107,7 @@
                             <option value="2">Electricidad</option>
                             <option value="3">Plomería</option>
                         </select>
-                    </div>
+                    </div> -->
 
                     <!-- Email input -->
                     <div class="input-group my-2 my-md-4">
@@ -114,7 +115,7 @@
                             <iconify-icon icon="material-symbols:alternate-email" style="color: #1f6f8b;" width="35">
                             </iconify-icon>
                         </span>
-                        <input type="email" id="emailInput" class="form-control" placeholder="Correo" required />
+                        <input type="email" id="emailInput" class="form-control" placeholder="Correo" disabled />
                         <label class="form-label" for="emailInput"></label>
                     </div>
 
@@ -124,7 +125,8 @@
                             <iconify-icon icon="material-symbols:phone-callback-outline-rounded" style="color: #1f6f8b;"
                                 width="35"></iconify-icon>
                         </span>
-                        <input type="number" id="telefono" class="form-control" placeholder="Teléfono de contacto" />
+                        <input type="number" id="telefono" class="form-control" placeholder="Teléfono de contacto"
+                            disabled />
                         <label class="form-label" for="telefono"></label>
                     </div>
 
