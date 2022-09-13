@@ -17,26 +17,44 @@ h5 {
   margin-top: 2rem;
 }
 
-.container-fluid label{
-  display: block;
+/*Cards*/
+
+label {
+  display: grid;
   position: relative;
-  transform-style: preserve-3d;
+	top: 50%;
+	left: 50%;
+  margin-bottom: 20px;
+
+	height: 350px;
+	transform-style: preserve-3d;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
 }
 
 .flipcard {
-  position:relative;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
 	transition: all 0.5s ease-in-out;
+	z-index: 1;
 }
 
-.flipcard .front {
-  backface-visibility: hidden;
+.flipcard .front,
+.flipcard .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
 }
 
 .flipcard .back {
-  backface-visibility: hidden;
-  transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+label:hover .flipcard {
+	transform: rotateX(2deg);
 }
 
 input {
@@ -46,10 +64,9 @@ input {
 :checked + .flipcard {
 	transform: rotateX(180deg);
 }
-
-/* label:hover :checked + .flipcard {
+label:hover :checked + .flipcard {
 	transform: rotateX(175deg);
-} */
+}
 
 .card {
   background-color: #d9d9d9;
@@ -119,6 +136,7 @@ svg {
 }
 
 .newsletter-links {
+  margin-top: 60px;
   text-align: justify;
 }
 
