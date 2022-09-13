@@ -23,6 +23,13 @@
   sizes="32x32"
   type="image/x-icon"
 />
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
   <title>Segunda Mano</title>
 </head>
 <body>
@@ -79,6 +86,19 @@
   </div>
   </div>
 </div>
+<!--SEARCH-->
+<div class="container">
+  <div class="row height d-flex justify-content-center align-items-center" style="margin: 20px;">
+    <div class="col-md-80">
+      <div class="search">
+        <i class="fa fa-search"></i>
+        <input type="text" class="form-control" placeholder="Buscar productos">
+        <button class="btn btn-primary">Buscar</button>
+      </div>                     
+    </div>                     
+  </div>
+</div>
+<!--SEARCH-->
   <!--TARJETA1-->
  <div class="gallery container-fluid">
    <div class="row row-cols-1 row-cols-md-4 mx-2 px-2 g-2">
@@ -241,9 +261,102 @@
    </div>
  </div>
 </div>
- <footer>
+<!-- Footer -->
+    <!--Newsletter y links--> 
+    <section class="newsletter-links bg-psgblue" style="margin-top: 200px;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 mt-4 text-psglightgold">
+            <p><strong>Suscribete a nuestro boletín de noticias:</strong></p>
+          </div>
+          <div class="col-md-12">
+            <form action="" method="POST">
+              <div class="row">
+                <div class="col-md-6 col-g-12 mb-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Tu e-mail"
+                    autocomplete="off"
+                    pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}"
+                    required
+                  />
+                </div>
+                <div class="col-md-4 mb-4">
+                  <input
+                    id="subscribe"
+                    type="submit"
+                    class="btn border-0"
+                    value="Suscribirse"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row pb-4 g-5">
+          <div class="col-md-4 text-psglightgold">
+            <p>Sobre PSG Ferreterías</p>
+            <p class="text-white">
+              En nuestro sitio podrás encontrar todo lo necesario sobre
+              reparación, construcción y renovación para tus proyectos. Siéntete
+              libre de explorar nuestras categorías.
+            </p>
+          </div>
+          <div class="col-md-4 text-psglightgold">
+            <p>Recursos</p>
+            <ul class="list-unstyled p-0">
+              <li><a href="/public/tips.html">Tips</a></li>
+              <li><a href="/public/faq.html">Preguntas frecuentes</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-psglightgold">
+            <p>Redes sociales</p>
+            <div class="container px-0">
+              <div class="row mx-0 gx-0">
+                <div class="col-2">
+                  <a href="https://github.com/AdalObregon" target="_blank"
+                    ><i
+                      class="fa-brands fa-square-facebook fa-xl text-white"
+                    ></i
+                  ></a>
+                </div>
+                <div class="col-2">
+                  <a href="https://github.com/IrmaPadilla" target="_blank"
+                    ><i
+                      class="fa-brands fa-square-instagram fa-xl text-white"
+                    ></i
+                  ></a>
+                </div>
+                <div class="col-2">
+                  <a href="https://github.com/JacielJM" target="_blank"
+                    ><i class="fa-brands fa-square-twitter fa-xl text-white"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Copyright que se actualiza con funcion en JavaScript-->
+    <footer>
+      <div class="container text-center">
+        <span>&copy</span>
+        <span id="copyright"></span>
+        <a
+          href="https://github.com/IrmaPadilla/Proyecto-Integrador"
+          target="_blank"
+          rel="noopener noreferrer"
+          >SwarmDev</a
+        >
+      </div>
+    </footer>
+ <!-- <footer>
   <p class="text-center p-3" style="background-color: rgb(31, 111, 139);">Copyright: <span id="current-year"></span> © </p>
- </footer>
+ </footer> -->
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/public/js/copyright.js"></script>
 </body>

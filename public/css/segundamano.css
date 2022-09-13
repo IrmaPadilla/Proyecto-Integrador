@@ -1,14 +1,7 @@
 .titulo{
     text-align:center;
     letter-spacing: 0.1em;
-}
-
-footer{
-    margin-top: 125px;
-    border: 0px solid black;
-    letter-spacing: 0.1em;
-    }
-    
+} 
 .imgall{
     width: 250px;
     height: 250px;
@@ -56,3 +49,68 @@ footer{
 .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
   transform: scale3d(1, 1, 1);
 }
+/*Footer*/
+
+#subscribe {
+  background-color: #e6d5b8;
+}
+
+.newsletter-links {
+  text-align: justify;
+}
+
+.newsletter-links a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#subscribe:hover {
+  color: #ffffff;
+  background-color: #1c2b2d;
+}
+
+footer {
+  background-color: #1c2b2d;
+  padding-top: 0.25rem;
+  height: 2rem;
+}
+
+footer a,
+span {
+  font-family: "Days One", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #d9d9d9;
+}
+.search{
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, .1);    
+  }
+  .search input{
+
+   height: 60px;
+   text-indent: 25px;
+   border: 2px solid #d6d4d4;
+  }
+  .search input:focus{
+
+   box-shadow: none;
+   border: 1px solid rgb(255, 255, 255);
+  }
+  .search .fa-search{
+   position: absolute;
+   top: 20px;
+   left: 16px;
+  }
+  .search button{
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   height: 50px;
+   width: 110px;
+   background:rgb(0, 136, 169, 1);
+
+  }
