@@ -10,6 +10,7 @@ const extGarantia = document.getElementById('garantiaExt');
 const btnPagar = document.getElementById('pagar');
 const btnReg = document.getElementById('reg');
 const alertaPago = document.getElementById('alert');
+// const alertaReg = document.getElementById();
 const ticketInput = document.getElementById('ticketNumber');
 const inputPago = document.getElementById('pagoGarantia');
 const formPago = document.getElementById('acordPago');
@@ -32,11 +33,9 @@ function cargarListeners() {
 
 	inputPago.addEventListener('input', () => {
 		let ok = verifyPago();
-		if (ok) {
-			btnPagar.removeAttribute('disabled');
-		} else {
-			btnPagar.setAttribute('disabled', true);
-		}
+		ok
+			? btnPagar.removeAttribute('disabled')
+			: btnPagar.setAttribute('disabled', true);
 	});
 
 	btnPagar.addEventListener('click', e => {
@@ -54,7 +53,10 @@ function cargarListeners() {
 
 	ticketInput.addEventListener('input', e => {
 		e.preventDefault();
-		getInfo(e.target.value);
+		let okTicket = getInfo(e.target.value);
+		okTicket
+			? btnReg.removeAttribute('disabled')
+			: btnReg.setAttribute('disabled', 'true');
 	});
 	// alertaPago.addEventListener('mouseleave', cleanAlert);
 	// alertaReg.addEventListener('mouseleave', cleanAlert);

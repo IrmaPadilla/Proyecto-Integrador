@@ -6,11 +6,13 @@ export function getInfo(value) {
 
 	const fields = [clientName, purchaseDate, email, phone];
 
+	let flag = false;
+
 	let regex = /\b[0-9]{10}(?![\w -])\b/;
 
-	if (regex.test(value)) {
-		fields.forEach(field => field.removeAttribute('disabled'));
-	} else {
-		fields.forEach(field => field.setAttribute('disabled', 'true'));
-	}
+	regex.test(value)
+		? (fields.forEach(field => field.removeAttribute('disabled')),
+		  (flag = true))
+		: fields.forEach(field => field.setAttribute('disabled', 'true'));
+	return flag;
 }
