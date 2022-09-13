@@ -23,7 +23,6 @@ searchBar.addEventListener('input', (e) => {
 
 ordenarMayorMenor.addEventListener('click', (e) => {
   const mayorAMenor = e.target;
-  // console.log(mayorAMenor);
   if (mayorAMenor != null) {
     let filteredPrice = listProducts.sort((a, b) => {
       return a.precio > b.precio
@@ -34,7 +33,7 @@ ordenarMayorMenor.addEventListener('click', (e) => {
           : -1
         : -1;
     });
-    console.log(filteredPrice);
+    mostrarProductos(filteredPrice);
   }
 });
 
