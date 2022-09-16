@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preguntas frecuentes</title>
+    <!--Fonts y hojas de estilos-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/custom-boostrap.css" />
+    <link rel="stylesheet" href="./css/faq.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <!--Favicon de la página en diferentes tamaños-->
+    <link
+      rel="shortcut icon"
+      href="../src/assets/favicon-16x16.png"
+      sizes="16x16"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="../src/assets/favicon-32x32.png"
+      sizes="32x32"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-psgblue">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand text-psglightgold"
+          href="/public/paginaprincipal.html"
+          ><img src="./../src/assets/logo.png" height="72" width="128"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a
+              class="nav-link text-psglightgold mx-2"
+              href="/public/aboutUs.html"
+              >Sobre Nosotros</a
+            >
+            <a
+              class="nav-link text-psglightgold mx-2"
+              href="/public/lista_productos.html"
+              >Productos</a
+            >
+            <a
+              class="nav-link text-psglightgold mx-2"
+              href="/public/segundamano.html"
+              >Segunda Mano</a
+            >
+            <a
+              class="nav-link text-psglightgold mx-2"
+              href="/public/garantia.html"
+              >Garantías</a
+            >
+            <a
+              class="nav-link text-psglightgold mx-2"
+              href="/public/contactanos.html"
+              >Contacto</a
+            >
+            <!-- <a class="nav-link text-psglightgold mx-2" href="/">Carrito de Compras</a> -->
+            <a
+              class="nav-link text-psglightgold mx-2"
+              href="/public/register.html"
+              >Registro</a
+            >
+            <a class="nav-link text-psglightgold mx-2" href="../loginv2.html"
+              >Iniciar Sesión</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Footer -->
+    <!--Newsletter y links-->
+    <section class="newsletter-links bg-psgblue">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 mt-4 text-psglightgold">
+            <p><strong>Suscribete a nuestro boletín de noticias:</strong></p>
+          </div>
+          <div class="col-md-12">
+            <form action="" method="POST">
+              <div class="row">
+                <div class="col-md-6 col-g-12 mb-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Tu e-mail"
+                    autocomplete="off"
+                    pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}"
+                    required
+                  />
+                </div>
+                <div class="col-md-4 mb-4">
+                  <input
+                    id="subscribe"
+                    type="submit"
+                    class="btn border-0"
+                    value="Suscribirse"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row pb-4 g-5">
+          <div class="col-md-4 text-psglightgold">
+            <p>Sobre PSG Ferreterías</p>
+            <p class="text-white">
+              En nuestro sitio podrás encontrar todo lo necesario sobre
+              reparación, construcción y renovación para tus proyectos. Siéntete
+              libre de explorar nuestras categorías.
+            </p>
+          </div>
+          <div class="col-md-4 text-psglightgold">
+            <p>Recursos</p>
+            <ul class="list-unstyled p-0">
+              <li><a href="/public/tips.html">Tips</a></li>
+              <li><a href="/public/faq.html">Preguntas frecuentes</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-psglightgold">
+            <p>Redes sociales</p>
+            <div class="container px-0">
+              <div class="row mx-0 gx-0">
+                <div class="col-2">
+                  <a href="https://github.com/AdalObregon" target="_blank"
+                    ><i
+                      class="fa-brands fa-square-facebook fa-xl text-white"
+                    ></i
+                  ></a>
+                </div>
+                <div class="col-2">
+                  <a href="https://github.com/IrmaPadilla" target="_blank"
+                    ><i
+                      class="fa-brands fa-square-instagram fa-xl text-white"
+                    ></i
+                  ></a>
+                </div>
+                <div class="col-2">
+                  <a href="https://github.com/JacielJM" target="_blank"
+                    ><i class="fa-brands fa-square-twitter fa-xl text-white"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Copyright que se actualiza con funcion en JavaScript-->
+    <footer>
+      <div class="container text-center">
+        <span>&copy</span>
+        <span id="copyright"></span>
+        <a
+          href="https://github.com/IrmaPadilla/Proyecto-Integrador"
+          target="_blank"
+          rel="noopener noreferrer"
+          >SwarmDev</a
+        >
+      </div>
+    </footer>
+    <script src="./../src/js/footerUniversal.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

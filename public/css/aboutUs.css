@@ -1,0 +1,168 @@
+/* body {
+  font-size: 62.5%;
+} */
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+h3,
+h5 {
+  font-family: "Days One", sans-serif;
+  font-size: 16px;
+}
+
+#descriptionBox {
+  margin-top: 2rem;
+}
+
+/*Cards*/
+
+label {
+  display: grid;
+  position: relative;
+	top: 50%;
+	left: 50%;
+  margin-bottom: 20px;
+
+	height: 350px;
+	transform-style: preserve-3d;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.flipcard {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease-in-out;
+	z-index: 1;
+}
+
+.flipcard .front,
+.flipcard .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.flipcard .back {
+	transform: rotateX(180deg);
+}
+
+label:hover .flipcard {
+	transform: rotateX(2deg);
+}
+
+input {
+	display: none;
+}
+
+:checked + .flipcard {
+	transform: rotateX(180deg);
+}
+label:hover :checked + .flipcard {
+	transform: rotateX(175deg);
+}
+
+.card {
+  background-color: #d9d9d9;
+  padding-top: 0rem;
+  cursor: pointer;
+  border-top: 0.3rem solid #1f6f8b !important;
+  height: 450px;
+}
+
+.card:hover {
+  box-shadow: 0 0 0.2rem 0.2rem #1f6f8b;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.fa {
+  color: #ffffff;
+  width: 40px;
+  transition: 0.2s;
+}
+
+.li {
+  background-color: #0077b5 !important;
+  opacity: 0.8;
+}
+
+.li:hover {
+  background-color: #0077b5;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.gh {
+  background-color: #000000 !important;
+  opacity: 0.8;
+}
+
+.gh:hover {
+  background-color: #000000;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+svg {
+  height: 200px;
+  width: 200px;
+  filter: drop-shadow(0 0 7px #000000);
+}
+
+.bio {
+  height: 100%;
+  padding: 2rem;
+}
+
+.bio p {
+  text-align: justify;
+}
+
+/*Footer*/
+
+#subscribe {
+  background-color: #e6d5b8;
+}
+
+.newsletter-links {
+  margin-top: 60px;
+  text-align: justify;
+}
+
+.newsletter-links a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#subscribe:hover {
+  color: #ffffff;
+  background-color: #1c2b2d;
+}
+
+footer {
+  background-color: #1c2b2d;
+  padding-top: 0.25rem;
+  height: 2rem;
+}
+
+footer a,
+span {
+  font-family: "Days One", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #d9d9d9;
+}
