@@ -1,70 +1,110 @@
 html {
-  font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
+  /* font-size: 62.5%; */
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Barra de busqueda */
 .container {
-  margin-top: 4.5rem;
+  margin-top: 1.5rem;
 }
 .searchbar {
-  margin-top: 2rem;
-  height: 4rem !important;
-  font-size: 2rem;
+  margin-top: 3rem;
+  height: 3rem !important;
+  font-size: 1.5rem;
   padding-left: 2rem;
   border-radius: 12px 0 0 12px;
   border: 1px solid #d9d9d9;
 }
-.search__button,
+.search__button {
+	height: 3rem !important;
+	border-radius: 0 12px 12px 0;
+	background-color: rgb(31, 111, 139) !important;
+	color: white;
+	transition: all 0.3s ease 0s;
+	border: none;
+	width: 100px;
+}
 .button__cart {
   height: 4rem !important;
   border-radius: 0 12px 12px 0;
   background-color: rgb(31, 111, 139) !important;
-  padding: 9px 25px;
   color: white;
-  font-size: 1.5rem;
   transition: all 0.3s ease 0s;
-  border: none;
+  width: 100px;
 }
 .search__button:hover {
+	background-color: rgba(28, 43, 45, 0.8) !important;
+	color: #ffffff;
+}
+.button__cart:hover {
   background-color: rgba(28, 43, 45, 0.8) !important;
   color: #ffffff;
 }
-.button__cart:hover{
-  background-color: rgba(28, 43, 45, 0.8) !important;
-  color: #ffffff;
+
+.card_nombre {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 /* Carrito de compras */
 
 nav {
   font-family: Days One, sans-serif;
-  font-size: 1.6rem;
-  padding: 1.3rem !important;
-  font-weight: 400 !important;
+  font-size: 1.2rem;
 }
 /* Filtros */
 select {
   background-color: transparent;
   border: 1px solid #d9d9d9;
   border-radius: 12px;
-  width: auto;
+  width: 140px;
   padding: 0.5rem;
 }
 
 /* Productos */
 .seccion {
-  margin-top: 7rem;
+  margin-top: 1rem;
+}
+
+/*Footer*/
+
+#subscribe {
+	background-color: #e6d5b8;
+}
+
+.newsletter-links {
+	text-align: justify;
+}
+
+.newsletter-links a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#subscribe:hover {
+	color: #ffffff;
+	background-color: #1c2b2d;
 }
 
 footer {
-  background-color: rgb(31, 111, 139);
-  height: 5rem;
-  margin-bottom: 0;
-  align-items: center;
-  width: 100%;
+	background-color: #1c2b2d;
+	padding-top: 0.25rem;
+	height: 2rem;
 }
-footer p {
-  padding: 0.5rem;
-  width: 100%;
+
+footer a,
+span {
+	font-family: 'Days One', sans-serif;
+	color: #ffffff;
+	text-decoration: none;
 }
+
+footer a:hover {
+	color: #d9d9d9;
+}
+
+
+

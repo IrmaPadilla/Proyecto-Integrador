@@ -4,10 +4,9 @@ nav {
 
 body {
     font-family: Roboto, sans-serif;
-    background-image: url(/public/src/img/login-bg.jpg);
+    background-image: url(/public/src/img/login-background.jpg);
 }
 
 .registro-h1{
     text-align: center;
 }
-
