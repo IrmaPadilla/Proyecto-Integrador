@@ -1,0 +1,57 @@
+[{
+    "id": 1,
+    "imagen":"/src/assets/productos/taladro.jpg",
+    "nombre":"multifunción taladro",
+    "descrpcion":"220 V taladros taladros de percusión",
+    "precio":1500.00
+ },
+ {
+    "id":2,
+    "imagen":"/src/assets/productos/8128518251.webp",
+    "nombre":"Llaves españolas",
+    "descrpcion":"(20.6 mm a 41 mm)",
+    "precio":300.00
+ },
+ {
+    "id":3,
+    "imagen":"/src/assets/productos/0269888145.jpg",
+    "nombre":"Martillo",
+    "descrpcion":"(generico)Buen estado",
+    "precio":30.00
+ },
+ {
+    "id":4,
+    "imagen":"/src/assets/productos/4909136476.jpg",
+    "nombre":"Mazo",
+    "descrpcion":"Mazo de hule",
+    "precio":30.00
+ },
+ {
+    "id":5,
+    "imagen":"/src/assets/productos/5715620983.jpg",
+    "nombre":"Desarmadores Klein Tools",
+    "descrpcion":"cruz y plano",
+    "precio":40.00
+ },
+ {
+    "id":6,
+    "imagen":"/src/assets/productos/7453195920.jpg",
+    "nombre":"Sierra de disco BOSCH",
+    "descrpcion":"(No incluye discos)Potencia: 1400 W.Amper:11 5 A.Tensión: 127 V.Hertz: 60 Hz.",
+    "precio":2000.00
+ },
+ {
+    "id":7,
+    "imagen":"/src/assets/productos/D_NQ_NP_781478-MLM48371319319_112021-O.webp",
+    "nombre":"Pulidor Ridgid",
+    "descrpcion":"Pulidor RIDGID  (7 pulgadas con su llave y los dos discos) Semi nuevo",
+    "precio":3000.00
+ },
+ {
+    "id":8,
+    "imagen":"/src/assets/productos/8169238051.jpg",
+    "nombre":"Pulidora Koblenz",
+    "descrpcion":"Ideal para usar en pisos, alfombra, mármol, terrazo, etc.(Sin accesorios)",
+    "precio":7000.00
+ }
+]

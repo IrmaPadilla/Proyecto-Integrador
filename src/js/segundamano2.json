@@ -1,0 +1,57 @@
+[{
+    "id": 9,
+    "imagen":"/src/assets/productos2/7392289631.webp",
+    "nombre":"Llave Inglesa Antigua Diamond Tools!!",
+    "descrpcion":"antigua de 15 pulgadas!!",
+    "precio":1900.00
+ },
+ {
+    "id":10,
+    "imagen":"/src/assets/productos2/6630245572.webp",
+    "nombre":"Punta Cincel Para Taladro Rompedor",
+    "descrpcion":"Punta cincel para taladro rompedor",
+    "precio":800.00
+ },
+ {
+    "id":11,
+    "imagen":"/src/assets/productos2/4654979355.webp",
+    "nombre":"pulidor",
+    "descrpcion":"Pulidora rotativa truper buenas condiciones  velocidades hasta 3400rpm",
+    "precio":1470.00
+ },
+ {
+    "id":12,
+    "imagen":"/src/assets/productos2/1272437561.webp",
+    "nombre":"Sierra circular",
+    "descrpcion":"Sierra Circular DeWalt 7 1/4(semi nuevo)Potencia  1,800 WVelocidad sin carga",
+    "precio":2500.00
+ },
+ {
+    "id":13,
+    "imagen":"/src/assets/productos2/5985979619.webp",
+    "nombre":"Cortadora De Madera Craftman",
+    "descrpcion":".HP: 2.5.Voltaje: 110.Dimensiones 48 x 37 x 60",
+    "precio":2000.00
+ },
+ {
+    "id":14,
+    "imagen":"/src/assets/productos2/9055542628.webp",
+    "nombre":"Aspiradora Truper vacuum",
+    "descrpcion":"Motor de 2 HP .Capacidad del tanque 3 gal (11 L)",
+    "precio":750
+ },
+ {
+    "id":15,
+    "imagen":"/src/assets/productos2/4657574094.webp",
+    "nombre":"Caja de Herramientas CRAFTSMAN",
+    "descrpcion":"Caja de herramientas CRAFTSMAN de 216 Piezas juego de herramientas mecánicas  ",
+    "precio":3890.00
+ },
+ {
+    "id":16,
+    "imagen":"/src/assets/productos2/5576810395.jpg",
+    "nombre":"Herramienta Multiusos TRUPER",
+    "descrpcion":"Herramienta multifunción profesional fabricada de acero inoxidable ",
+    "precio":300.00
+ }
+]
