@@ -129,6 +129,12 @@ svg {
   text-align: justify;
 }
 
+@media (max-width: 700px) {
+  .bio p {
+    font-size: 0.75rem;
+  }
+}
+
 /*Footer*/
 
 #subscribe {
