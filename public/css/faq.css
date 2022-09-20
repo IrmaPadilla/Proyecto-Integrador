@@ -1,6 +1,20 @@
-p {
+p, h2 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+}
+
+.accordion-item button {
+  background-color:#416569;
+} 
+
+.accordion-item button:not(.collapsed) {
+  color: #000000!important;
+  background-color: #67a4ab;
+}
+
+.accordion-body {
+  text-align: justify;
+  background-color: #d9d9d9;
 }
 
 h3,
@@ -9,38 +23,42 @@ h5 {
   font-size: 16px;
 }
 
+.faqbox {
+  margin-top: 2rem;
+}
+
 #subscribe {
-    background-color: #e6d5b8;
-  }
-  
-  .newsletter-links {
-    margin-top: 40px;
-    text-align: justify;
-  }
-  
-  .newsletter-links a{
-    text-decoration: none;
-    color: #ffffff;
-  }
-  
-  #subscribe:hover {
-    color: #ffffff;
-    background-color: #1c2b2d;
-  }
-  
-  footer {
-    background-color: #1c2b2d;
-    padding-top: 0.25rem;
-    height: 2rem;
-  }
-  
-  footer a,
-  span {
-    font-family: "Days One", sans-serif;
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  footer a:hover {
-    color: #d9d9d9;
-  }
+  background-color: #e6d5b8;
+}
+
+.newsletter-links {
+  margin-top: 40px;
+  text-align: justify;
+}
+
+.newsletter-links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#subscribe:hover {
+  color: #ffffff;
+  background-color: #1c2b2d;
+}
+
+footer {
+  background-color: #1c2b2d;
+  padding-top: 0.25rem;
+  height: 2rem;
+}
+
+footer a,
+span {
+  font-family: "Days One", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #d9d9d9;
+}
