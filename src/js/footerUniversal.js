@@ -5,16 +5,12 @@ let form = document.getElementById('newsForm');
 form.addEventListener('submit', function(e){
   e.preventDefault();
   console.log("clic done")
-});
 
-copyrightDate();
-function copyrightDate() {
-  const year = new Date();
-  const copyright = document.querySelector("#copyright");
-  copyright.innerHTML = `
-    ${year.getFullYear()} Copyright:
-  `;
-}
+  let data = new FormData(form);
+  console.log(data);
+  console.log(data.get('email'));
+
+});
 
 fetch(URL_MAIN, { //URL del servicio a donde se hara el POST
   method: 'POST', // or 'PUT' 
@@ -30,3 +26,12 @@ fetch(URL_MAIN, { //URL del servicio a donde se hara el POST
 .catch((error) => { //si hay un error
   console.error('Error:', error); //se imprime el error
 });
+
+copyrightDate();
+function copyrightDate() {
+  const year = new Date();
+  const copyright = document.querySelector("#copyright");
+  copyright.innerHTML = `
+    ${year.getFullYear()} Copyright:
+  `;
+}
