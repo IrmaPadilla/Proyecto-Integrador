@@ -1,0 +1,13 @@
+nav {
+	font-family: Days One, sans-serif;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+	background-image: url(/src/assets/contactoBody.jpg);
+}
+
+.contacto-h1 {
+	text-align: center;
+	background-color: lightgray;
+}
