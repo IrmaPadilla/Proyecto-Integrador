@@ -2,6 +2,15 @@ const URL_MAIN = "http://localhost:8080/api/newsletter";
 
 let form = document.getElementById('newsForm');
 
+copyrightDate();
+function copyrightDate() {
+  const year = new Date();
+  const copyright = document.querySelector("#copyright");
+  copyright.innerHTML = `
+    ${year.getFullYear()} Copyright:
+  `;
+}
+
 form.addEventListener('submit', function(e){
   e.preventDefault();
   console.log("clic done")
@@ -27,11 +36,3 @@ fetch(URL_MAIN, { //URL del servicio a donde se hara el POST
   console.error('Error:', error); //se imprime el error
 });
 
-copyrightDate();
-function copyrightDate() {
-  const year = new Date();
-  const copyright = document.querySelector("#copyright");
-  copyright.innerHTML = `
-    ${year.getFullYear()} Copyright:
-  `;
-}
