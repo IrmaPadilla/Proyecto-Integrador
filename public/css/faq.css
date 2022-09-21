@@ -4,12 +4,12 @@ p, h2 {
 }
 
 .accordion-item button {
-  background-color:#416569;
+  background-color:#67a4ab;
 } 
 
 .accordion-item button:not(.collapsed) {
-  color: #000000!important;
-  background-color: #67a4ab;
+  color: #ffffff!important;
+  background-color: #416569;
 }
 
 .accordion-body {
