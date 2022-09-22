@@ -1,7 +1,5 @@
 const URL_MAIN = "http://localhost:8080/api/newsletter";
 
-let form = document.getElementById('newsForm');
-
 copyrightDate();
 function copyrightDate() {
   const year = new Date();
@@ -11,28 +9,31 @@ function copyrightDate() {
   `;
 }
 
-form.addEventListener('submit', function(e){
+document.getElementById("subscribe").addEventListener("click", function (e) {
   e.preventDefault();
   console.log("clic done")
+  // let data = new FormData(form);
+  // console.log(data);
+  // console.log(data.get('email'));
+  let email = document.getElementById("email");
+  console.log(email.value);
+  const data = {
+    correo: email.value,
+  };
 
-  let data = new FormData(form);
-  console.log(data);
-  console.log(data.get('email'));
+  fetch(URL_MAIN, {
+    method: "POST", // or 'PUT'
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data), //Aqui estoy llamando a mi cuerpo de la solicitud.
+  })
+    .then((response) => response.text())
+    .then((data) => {
+      console.log("Correo Guardado:", data); //Mensaje para cuando se agreguen los datos correctamente
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
 
-});
-
-fetch(URL_MAIN, { //URL del servicio a donde se hara el POST
-  method: 'POST', // or 'PUT' 
-  headers: { // se agrega el header
-    'Content-Type': 'application/json', //tipo de contenido
-  },
-  body: JSON.stringify(data), //se agrega el cuerpo del POST
 })
-.then(response => response.json()) //se obtiene la respuesta del servidor
-.then(data => { //se obtiene el json
-  console.log('Success:', data); //se imprime el json
-})
-.catch((error) => { //si hay un error
-  console.error('Error:', error); //se imprime el error
-});
-
