@@ -7,7 +7,10 @@ document.getElementById("btnSend").addEventListener("click", function(e){
     console.log(username.value);
     console.log(password.value);
     const data = { username: username.value, 
-                        password: password.value
+                        password: password.value,
+                        name: name.value,
+                        surname: surname.value,
+                        phoneNumber: phoneNumber.value
     };
 
 fetch("http://localhost:8080/api/register/", { // Falta cambiar esta URL a la verdadera q estemos usando
