@@ -1,3 +1,4 @@
+// Funcion que actualiza el año en el footer
 copyrightDate();
 function copyrightDate() {
   const year = new Date();
@@ -7,6 +8,7 @@ function copyrightDate() {
   `;
 }
 
+// Funcion que guarda correos ingresados en formulario de newsletter
 document.getElementById("subscribe").addEventListener("click", function (e) {
   e.preventDefault();
   console.log("clic done")

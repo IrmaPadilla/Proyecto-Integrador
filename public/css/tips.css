@@ -13,7 +13,12 @@ h5 {
   margin-top: 2rem;
 }
 
-iframe {
+.categorybox p, li {
+  text-align: justify;
+}
+
+li {
+  padding-bottom: 0.5rem;
 }
 
 #subscribe {
