@@ -1,16 +1,19 @@
 document.getElementById("btnSend").addEventListener("click", function(e){
-    let name = document.getElementById("name");
-    let surname = document.getElementById("surname");
-    let phoneNumber = document.getElementById("phoneNumber");
-    let username = document.getElementById("username");
-    let password = document.getElementById("password");
+    let nombre = document.getElementById("nombre");
+    let apellido = document.getElementById("apellido");
+    let telefono = document.getElementById("telefono");
+    let nombreUsuario = document.getElementById("nombreUsuario");
+    let contraseña = document.getElementById("contraseña");
+    let correo = document.getElementById("correo");
     console.log(username.value);
     console.log(password.value);
-    const data = { username: username.value, 
-                        password: password.value,
-                        name: name.value,
-                        surname: surname.value,
-                        phoneNumber: phoneNumber.value
+    const data = { 
+        nombreUsuario: nombreUsuario.value, 
+        contraseña: contraseña.value,
+        nombre: nombre.value,
+        apellido: apellido.value,
+        telefono: telefono.value,
+        correo: correo.value
     };
 
 fetch("http://localhost:8080/api/register/", { // Falta cambiar esta URL a la verdadera q estemos usando
