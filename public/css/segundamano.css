@@ -25,6 +25,7 @@
 }
 
 .card{
+  margin-bottom: 10px;
   transition:0.2s;
   cursor:pointer;
   text-align: center;
@@ -48,6 +49,11 @@
 
 .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
   transform: scale3d(1, 1, 1);
+}
+
+.card .descripcion{
+  margin: auto;
+  font-size: 18px;
 }
 /*Footer*/
 
