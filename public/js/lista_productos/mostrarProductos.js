@@ -80,7 +80,8 @@ ordenarMayorMenor.addEventListener('click', (e) => {
 //Consumiendo JSON
 export const obtenerProductos = async () => {
   try {
-    const res = await fetch('./js/lista_productos/db.json');
+    // const res = await fetch('./js/lista_productos/db.json');
+    const res = await fetch('http://localhost:8080/api/productos/');
     listProducts = await res.json();
     mostrarProductos(listProducts);
   } catch (e) {
