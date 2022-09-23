@@ -15,7 +15,7 @@ document.getElementById("subscribe").addEventListener("click", function (e) {
   let email = document.getElementById("email");
   console.log(email.value);
   const data = {
-    correo: email.value,
+    correo: email.value
   };
 
   fetch("http://localhost:8080/api/newsletter/", {
