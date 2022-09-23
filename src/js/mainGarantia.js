@@ -4,6 +4,7 @@ import { cleanAlert } from './cleanAlert.js';
 import { getInfo } from './getTicket.js';
 
 const toastPagoCompleto = document.getElementById('liveToast');
+const toastRegistro = document.getElementById('registroCompletado');
 
 const extGarantia = document.getElementById('garantiaExt');
 
@@ -48,7 +49,8 @@ function cargarListeners() {
 
 	btnReg.addEventListener('click', e => {
 		e.preventDefault();
-		verifyInfo();
+		const toast2 = new bootstrap.Toast(toastRegistro);
+		toast2.show();
 	});
 
 	ticketInput.addEventListener('input', e => {

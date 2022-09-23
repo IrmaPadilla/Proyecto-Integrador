@@ -48,7 +48,7 @@
                     <a class="nav-link text-psglightgold mx-2" href="/public/contactanos.html">Contacto</a>
                     <!-- <a class="nav-link text-psglightgold mx-2" href="/">Carrito de Compras</a> -->
                     <a class="nav-link text-psglightgold mx-2" href="/public/register.html">Registro</a>
-                    <a class="nav-link text-psglightgold mx-2" href="../loginv2.html">Iniciar Sesión</a>
+                    <a class="nav-link text-psglightgold mx-2" href="/public/login.html">Iniciar Sesión</a>
                 </div>
             </div>
         </div>
@@ -239,6 +239,19 @@
                                         Su pago ha sido completado con éxito.
                                     </div>
                                 </div>
+                                <div id="registroCompletado" class="toast" role="alert" aria-live="assertive"
+                                    aria-atomic="true">
+                                    <div class="toast-header">
+                                        <img src="/src/assets/favicon-32x32.png" class="rounded me-2" alt="...">
+                                        <strong class="me-auto">Ferretería PSG</strong>
+                                        <small>Garantia</small>
+                                        <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="toast-body">
+                                        Su producto ha sido registrado con éxito.
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -256,10 +269,10 @@
                     <p><strong>Suscribete a nuestro boletín de noticias:</strong></p>
                 </div>
                 <div class="col-md-12">
-                    <form id="newsForm" action="" method="POST">
+                    <form action="" method="POST">
                         <div class="row">
                             <div class="col-md-6 col-g-12 mb-4">
-                                <input id="email" type="email" class="form-control" placeholder="Tu e-mail" autocomplete="off"
+                                <input type="email" class="form-control" placeholder="Tu e-mail" autocomplete="off"
                                     pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}" required />
                             </div>
                             <div class="col-md-4 mb-4">
