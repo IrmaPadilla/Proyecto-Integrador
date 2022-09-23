@@ -58,7 +58,7 @@ function cargarListeners() {
 		let okTicket = getInfo(e.target.value);
 		okTicket
 			? btnReg.removeAttribute('disabled')
-			: btnReg.setAttribute('disabled', 'true');
+			: btnReg.removeAttribute('disabled')
 	});
 	// alertaPago.addEventListener('mouseleave', cleanAlert);
 	// alertaReg.addEventListener('mouseleave', cleanAlert);
