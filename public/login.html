@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/src/styles/custom-boostrap.css">
+  <link rel="stylesheet" href="/public/css/login.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Days+One&family=Roboto:wght@500&display=swap%27" >
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+
+  <title>PSG Ferretería || Inicia Sesión</title>
+</head>
+
+<body>
+  <!-- ======================================== -->
+  <!-- HEADER / NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-psgblue">
+    <div class="container-fluid">
+      <a class="navbar-brand text-psglightgold" href="/public/paginaprincipal.html"><img src="/public/src/img/navbar-logo-night.png" height="72" width="128"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link text-psglightgold mx-2" href="/public/aboutUs.html">Sobre Nosotros</a>
+          <a class="nav-link text-psglightgold mx-2" href="/public/lista_productos.html">Productos</a>
+          <a class="nav-link text-psglightgold mx-2" href="/public/segundamano.html">Segunda Mano</a>
+          <a class="nav-link text-psglightgold mx-2" href="/public/garantia.html">Garantías</a>
+          <a class="nav-link text-psglightgold mx-2" href="/public/contactanos.html">Contacto</a>
+          <a class="nav-link text-psglightgold mx-2" href="/public/carrito.html">Carrito de Compras</a>
+          <a class="nav-link active text-psglightgold mx-2" aria-current="page" href="#">Iniciar Sesión</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- título de bienvenida -->
+ 
+  
+  <!-- Login Card -->
+  <section class="vh-100">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 text-black">
+  
+          <div class="px-5 ms-xl-4">
+           
+            <!-- <span class="h1 fw-bold mb-0">Logo</span> -->
+          </div>
+  
+          <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
+  
+            <form class="needs-validation" style="width: 23rem;" novalidate>
+  
+              <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Inicia Sesión</h3>
+  
+            
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="nombreUsuario">Nombre de usuario</label>
+                <input type="text" id="nombreUsuario" class="form-control form-control-lg" required />
+                <div class="invalid-feedback">
+                  Nombre de usuario inválido
+                </div>
+              </div>
+
+
+  
+              <div class="form-outline mb-4">
+                <label class="form-label" for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" class="form-control form-control-lg"required />
+                <div class="invalid-feedback">
+                  Contraseña incorrecta
+                </div>
+              </div>
+  
+              <div class="pt-1 mb-4">
+                <button class="btn btn-psgdarkblue btn-lg btn-block text-psglightgrey" id="btnSend" type="submit">Inicia Sesión</button>
+              </div>
+  
+              <p class="small mb-5 pb-lg-2"><a class="text-muted" href="/forgotPassword.html">¿Olvidaste la contraseña?</a></p>
+              <p>¿No tienes una cuenta? <a href="/public/register.html" class="link-info">Regístrate ahora</a></p>
+  
+            </form>
+  
+          </div>
+  
+        </div>
+        <div class="col-sm-6 px-0 d-none d-sm-block">
+          <img src="/public/src/img/login-side-card.jpg"
+            alt="Login image" class="w-100 vh-100" style="object-fit: cover; object-position: left;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+<!-- Footer -->
+    <!--Newsletter y links-->
+    <section class="newsletter-links bg-psgblue">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 mt-4 text-psglightgold">
+            <p><strong>Suscribete a nuestro boletín de noticias:</strong></p>
+          </div>
+          <div class="col-md-12">
+            <form action="" method="POST">
+              <div class="row">
+                <div class="col-md-6 col-g-12 mb-4">
+                  <input
+                    id="email"
+                    type="email"
+                    class="form-control"
+                    placeholder="Tu e-mail"
+                    autocomplete="off"
+                    pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}"
+                    required
+                  />
+                </div>
+                <div class="col-md-4 mb-4">
+                  <input
+                    id="subscribe"
+                    type="submit"
+                    class="btn border-0"
+                    value="Suscribirse"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row pb-4 g-5">
+          <div class="col-md-4 text-psglightgold">
+            <p>Sobre PSG Ferreterías</p>
+            <p class="text-white">
+              En nuestro sitio podrás encontrar todo lo necesario sobre
+              reparación, construcción y renovación para tus proyectos. Siéntete
+              libre de explorar nuestras categorías.
+            </p>
+          </div>
+          <div class="col-md-4 text-psglightgold">
+            <p>Recursos</p>
+            <ul class="list-unstyled p-0">
+              <li><a href="/public/tips.html">Tips</a></li>
+              <li><a href="/public/faq.html">Preguntas frecuentes</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-psglightgold">
+            <p>Redes sociales</p>
+            <div class="container px-0">
+              <div class="row mx-0 gx-0">
+                <div class="col-2">
+                  <a href="https://github.com/AdalObregon" target="_blank"
+                    ><i
+                      class="fa-brands fa-square-facebook fa-xl text-white"
+                    ></i
+                  ></a>
+                </div>
+                <div class="col-2">
+                  <a href="https://github.com/IrmaPadilla" target="_blank"
+                    ><i
+                      class="fa-brands fa-square-instagram fa-xl text-white"
+                    ></i
+                  ></a>
+                </div>
+                <div class="col-2">
+                  <a href="https://github.com/JacielJM" target="_blank"
+                    ><i class="fa-brands fa-square-twitter fa-xl text-white"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Copyright que se actualiza con funcion en JavaScript-->
+    <footer>
+      <div class="container text-center">
+        <span>&copy</span>
+        <span id="copyright"></span>
+        <a
+          href="https://github.com/IrmaPadilla/Proyecto-Integrador"
+          target="_blank"
+          rel="noopener noreferrer"
+          >SwarmDev</a
+        >
+      </div>
+    </footer>
+
+
+
+
+  <script src="./../src/js/footerUniversal.js"></script>
+  <script src="/src/js/validacionLocoshona.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/footer.js"></script>
+  <script src="/src/js/fetchLogin.js"></script>
+</body>
+
+</html>

@@ -22,50 +22,50 @@ h5 {
 label {
   display: grid;
   position: relative;
-	top: 50%;
-	left: 50%;
+  top: 50%;
+  left: 50%;
   margin-bottom: 20px;
 
-	height: 350px;
-	transform-style: preserve-3d;
-	transform: translate(-50%, -50%);
-	cursor: pointer;
+  height: 350px;
+  transform-style: preserve-3d;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .flipcard {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	transform-style: preserve-3d;
-	transition: all 0.5s ease-in-out;
-	z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
 }
 
 .flipcard .front,
 .flipcard .back {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
 }
 
 .flipcard .back {
-	transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 
 label:hover .flipcard {
-	transform: rotateX(2deg);
+  transform: rotateX(2deg);
 }
 
 input {
-	display: none;
+  display: none;
 }
 
 :checked + .flipcard {
-	transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 label:hover :checked + .flipcard {
-	transform: rotateX(175deg);
+  transform: rotateX(175deg);
 }
 
 .card {
@@ -129,6 +129,12 @@ svg {
   text-align: justify;
 }
 
+@media (max-width: 700px) {
+  .bio p {
+    font-size: 0.85rem;
+  }
+}
+
 /*Footer*/
 
 #subscribe {
@@ -140,7 +146,7 @@ svg {
   text-align: justify;
 }
 
-.newsletter-links a{
+.newsletter-links a {
   text-decoration: none;
   color: #ffffff;
 }

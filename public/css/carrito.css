@@ -1,40 +1,6 @@
-nav {
-	font-family: Days One, sans-serif;
-	
-}
-
-
-
-body{
-	background-image: url(../src/img/tools.jpg);
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	
-}
-
 h1{
-	padding: 10px;
-	text-align: center;
-	color: white;
+  color: #1f6f8b;
 }
-
-.container{
-	align-items: center;
-}
-
-
-
-
-label{
-
-	color: white;
-	font-size: xx-large;
-	font-weight: 900;
-	
-}
-
 
 #subscribe {
 	background-color: #e6d5b8;
@@ -56,7 +22,7 @@ label{
   }
   
 footer {
-	background-color: #1c2b2d;
+	background-color: black;
 	padding-top: 0.25rem;
 	height: 2rem;
   }

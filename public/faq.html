@@ -93,13 +93,123 @@
               href="/public/register.html"
               >Registro</a
             >
-            <a class="nav-link text-psglightgold mx-2" href="../loginv2.html"
+            <a class="nav-link text-psglightgold mx-2" href="/public/login.html"
               >Iniciar Sesión</a
             >
           </div>
         </div>
       </div>
     </nav>
+    <div class="faqbox container">
+      <h5>Preguntas frecuentes</h5>
+      <div class="container-fluid my-5">
+        <div class="row justify-content-center">
+          <div class="col">
+            <div class="accordion" id="accordionFAQ">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingUno">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseUno"
+                    aria-expanded="false"
+                    aria-controls="collapseUno"
+                  >
+                  ¿Qué debo hacer si tengo problemas para hacer un pedido?
+                  </button>
+                </h2>
+                <div
+                  id="collapseUno"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingUno"
+                  data-bs-parent="#accordionFAQ"
+                >
+                  <div class="accordion-body">
+                    Si tiene problemas técnicos con nuestro sitio web, llame al envíe un correo electrónico a soporte@psgferreterias.com para recibir asistencia. Nuestro equipo de atención al cliente está disponible las 24 horas del día.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingDos">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseDos"
+                    aria-expanded="false"
+                    aria-controls="collapseDos"
+                  >
+                  Una vez que mi pedido esté listo, ¿en cuánto tiempo estará disponible para su entrega?
+                  </button>
+                </h2>
+                <div
+                  id="collapseDos"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingDos"
+                  data-bs-parent="#accordionFAQ"
+                >
+                  <div class="accordion-body">
+                    Su pedido permanecerá disponible para su entrega 2 días a partir del momento en que reciba una notificación de entrega.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTres">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTres"
+                    aria-expanded="false"
+                    aria-controls="collapseTres"
+                  >
+                    ¿Existe algún tipo de garantía en productos de segunda mano?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTres"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTres"
+                  data-bs-parent="#accordionFAQ"
+                >
+                  <div class="accordion-body">
+                    Por la naturaleza de los productos, estos no cuentan con garantia ni devolución.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCuatro">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseCuatro"
+                    aria-expanded="false"
+                    aria-controls="collapseCuatro"
+                  >
+                  ¿Puedo hacer una compra por teléfono?
+                  </button>
+                </h2>
+                <div
+                  id="collapseCuatro"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingCuatro"
+                  data-bs-parent="#accordionFAQ"
+                >
+                  <div class="accordion-body">
+                    Actualmente solo contamos con compras en línea y en tienda física.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-lg-block text-center">
+            <img src="../src/assets/faq/faq.png" alt="icono" />
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Footer -->
     <!--Newsletter y links-->
     <section class="newsletter-links bg-psgblue">
@@ -109,10 +219,11 @@
             <p><strong>Suscribete a nuestro boletín de noticias:</strong></p>
           </div>
           <div class="col-md-12">
-            <form action="" method="POST">
+            <form id="newsForm" action="" method="POST">
               <div class="row">
                 <div class="col-md-6 col-g-12 mb-4">
                   <input
+                    id="email"
                     type="email"
                     class="form-control"
                     placeholder="Tu e-mail"
@@ -149,6 +260,7 @@
             <ul class="list-unstyled p-0">
               <li><a href="/public/tips.html">Tips</a></li>
               <li><a href="/public/faq.html">Preguntas frecuentes</a></li>
+              <li><a href="./../tyc.html">Términos y condiciones</a></li>
             </ul>
           </div>
           <div class="col-md-4 text-psglightgold">

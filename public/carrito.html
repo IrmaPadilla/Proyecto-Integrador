@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="/public/src/styles/custom-boostrap.css">
+    <link rel="stylesheet" href="/public/css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../src/assets/favicon-32x32.png" sizes="32x32" type="image/x-icon" />
+    <link rel="stylesheet" href="/public/css/carrito.css">
+
+    <title>Carrito de compras </title>
+</head>
+
+<body>
+<!--Inicio NavBar-->
+  <nav class="navbar navbar-expand-lg bg-psgblue">
+    <div class="container-fluid">
+        <a class="navbar-brand text-psglightgold" href="/public/paginaprincipal.html"><img
+                src="/src/assets/psg-navbar-logo-night.png" height="72" width="128"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link text-psglightgold mx-2" href="/public/aboutUs.html">Sobre Nosotros</a>
+                <a class="nav-link text-psglightgold mx-2" href="/public/lista_productos.html">Productos</a>
+                <a class="nav-link text-psglightgold mx-2" href="/public/segundamano.html">Segunda Mano</a>
+                <a class="nav-link text-psglightgold mx-2" href="/public/garantia.html">Garantías</a>
+                <a class="nav-link text-psglightgold mx-2" href="/public/contactanos.html">Contacto</a>
+                <a class="nav-link text-psglightgold mx-2" href="carrito.html">Carrito de Compras</a>
+                <a class="nav-link text-psglightgold mx-2" href="/public/register.html">Registro</a>
+                <a class="nav-link text-psglightgold mx-2" href="/loginv2.html">Iniciar Sesión</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!--Fin NavBar-->
+
+
+    <div class="container">
+      <h1 class="fw-bold my-4 text-center">Carrito de compras</h1>
+      <hr>
+      <div class="row" id="cards"></div> 
+    </div>
+    
+      <!--
+      <template id="template-card">         
+        <div class="col-12 mb-2 col-md-4">
+          <div class="card">
+            <img src="" alt="" class="cars-img-top">
+               <div class="card-body">
+                 <h5>Titulo</h5>
+                  <p>precio</p>
+                  <button class="btn btn-dark">Comprar</button>
+                </div>
+          </div>
+        </div>
+      </template>
+      -->
+
+    <div >
+        
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Item</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Acción</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody id="items"></tbody>
+          <tfoot>
+            <tr id="footer">
+              <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+            </tr>
+          </tfoot>
+        </table>
+        
+      </div>
+  
+      <template id="template-footer">
+          <th scope="row" colspan="2">Total productos</th>
+          <td>10</td>
+          <td>
+              <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                  vaciar todo
+              </button>
+          </td>
+          <td class="font-weight-bold">$ <span>5000</span></td>
+      </template>
+      
+      <template id="template-carrito">
+        <tr>
+          <th scope="row">id</th>
+          <td>Café</td>
+          <td>1</td>
+          <td>
+              <button class="btn btn-info btn-sm">
+                  +
+              </button>
+              <button class="btn btn-danger btn-sm">
+                  -
+              </button>
+          </td>
+          <td>$ <span>500</span></td>
+        </tr>
+      </template>
+  
+
+
+      <div class="row" >
+        <div class="col-md-8 mb-4">
+          <div class="card mb-4">
+            <div class="card-header py-3">
+              <h5 class="mb-0">Detalles de compra</h5>
+            </div>
+            <div class="card-body">
+              <form>
+                
+                <div class="row mb-4">
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="estadoInput" class="form-control" />
+                      <label class="form-label" for="estadoInput">Estado</label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="municipioInput" class="form-control" />
+                      <label class="form-label" for="municipioInput">Municipio</label>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- Text input -->
+                <div class="form-outline mb-4">
+                  <input type="text" id="coloniaInput" class="form-control" />
+                  <label class="form-label" for="coloniaInput">Colonia</label>
+                </div>
+    
+                <!-- Text input -->
+                <div class="form-outline mb-4">
+                  <input type="text" id="calleInput" class="form-control" />
+                  <label class="form-label" for="calleInput">Calle y número</label>
+                </div>
+    
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="emailInput" class="form-control" />
+                  <label class="form-label" for="emailInput">Correo electrónico</label>
+                </div>
+    
+                <hr class="my-4" />
+    
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkoutForm1" />
+                  <label class="form-check-label" for="checkoutForm1">
+                    La dirección de envío es la misma para facturación
+                  </label>
+                </div>
+    
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" value="" id="checkoutForm2" checked />
+                  <label class="form-check-label" for="checkoutForm2">
+                    Guardar la información para compras posteriores
+                  </label>
+                </div>
+    
+                <hr class="my-4" />
+    
+                <h5 class="mb-4">Tipo de pago</h5>
+    
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="checkoutForm3"
+                    checked />
+                  <label class="form-check-label" for="checkoutForm3">
+                    Tarjeta de crédito
+                  </label>
+                </div>
+    
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="checkoutForm4" />
+                  <label class="form-check-label" for="checkoutForm4">
+                    Tarjeta de débito
+                  </label>
+                </div>
+    
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="checkoutForm5" />
+                  <label class="form-check-label" for="checkoutForm5">
+                    Paypal
+                  </label>
+                </div>
+    
+                <div class="row mb-4">
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="formNameOnCard" class="form-control" />
+                      <label class="form-label" for="formNameOnCard">Nombre igual que en la tarjeta</label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="formCardNumber" class="form-control" />
+                      <label class="form-label" for="formCardNumber">Número de serie</label>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="row mb-4">
+                  <div class="col-3">
+                    <div class="form-outline">
+                      <input type="text" id="formExpiration" class="form-control" />
+                      <label class="form-label" for="formExpiration">Vencimiento</label>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="form-outline">
+                      <input type="text" id="formCVV" class="form-control" />
+                      <label class="form-label" for="formCVV">CVV</label>
+                    </div>
+                  </div>
+                </div>
+    
+                <button class="btn btn-primary btn-lg btn-block" type="submit">
+                  Pagar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4 mb-4">
+          <div class="card mb-4">
+            <div class="card-header py-3">
+              <h5 class="mb-0">Resumen de compra</h5>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                  Productos
+                  <span>$53.98</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                  Envío
+                  <span>Gratis</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                  <div>
+                    <strong>Precio total</strong>
+                    <strong>
+                      <p class="mb-0">(Impuestos incluidos)</p>
+                    </strong>
+                  </div>
+                  <span><strong>$53.98</strong></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+    <!-- Credit card form -->
+
+
+      <!-- Footer -->
+  <!--Newsletter y links-->
+  <section class="newsletter-links bg-psgblue">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 mt-4 text-psglightgold">
+          <p><strong>Suscribete a nuestro boletín de noticias:</strong></p>
+        </div>
+        <div class="col-md-12">
+          <form action="" method="POST">
+            <div class="row">
+              <div class="col-md-6 col-g-12 mb-4">
+                <input type="email" class="form-control" placeholder="Tu e-mail" autocomplete="off"
+                  pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}" required />
+              </div>
+              <div class="col-md-4 mb-4">
+                <input id="subscribe" type="submit" class="btn border-0" value="Suscribirse" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row pb-4 g-5">
+        <div class="col-md-4 text-psglightgold">
+          <p>Sobre PSG Ferreterías</p>
+          <p class="text-white">
+            En nuestro sitio podrás encontrar todo lo necesario sobre
+            reparación, construcción y renovación para tus proyectos. Siéntete
+            libre de explorar nuestras categorías.
+          </p>
+        </div>
+        <div class="col-md-4 text-psglightgold">
+          <p>Recursos</p>
+          <ul class="list-unstyled p-0">
+            <li><a href="/public/tips.html">Tips</a></li>
+            <li><a href="/public/faq.html">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-psglightgold">
+          <p>Redes sociales</p>
+          <div class="container px-0">
+            <div class="row mx-0 gx-0">
+              <div class="col-2">
+                <a href="https://github.com/AdalObregon" target="_blank"><i
+                    class="fa-brands fa-square-facebook fa-xl text-white"></i></a>
+              </div>
+              <div class="col-2">
+                <a href="https://github.com/IrmaPadilla" target="_blank"><i
+                    class="fa-brands fa-square-instagram fa-xl text-white"></i></a>
+              </div>
+              <div class="col-2">
+                <a href="https://github.com/JacielJM" target="_blank"><i
+                    class="fa-brands fa-square-twitter fa-xl text-white"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Copyright que se actualiza con funcion en JavaScript-->
+  <footer>
+    <div class="container text-center">
+      <span>&copy</span>
+      <span id="copyright"></span>
+      <a href="https://github.com/IrmaPadilla/Proyecto-Integrador" target="_blank"
+        rel="noopener noreferrer">SwarmDev</a>
+    </div>
+  </footer>
+  <script src="./../src/js/footerUniversal.js"></script>
+
+
+
+
+
+
+
+
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+    <script src="/src/js/carrito.js"></script>
+</body>
+</html>
