@@ -1,5 +1,5 @@
 export function verifyInfo() {
-	const alertaReg = document.getElementById('alertReg');
+	const terms = document.getElementById('terms');
 	const clientName = document.getElementById('name');
 	const ticketNumber = document.getElementById('ticketNumber');
 	const purchaseDate = document.getElementById('purchaseDate');
